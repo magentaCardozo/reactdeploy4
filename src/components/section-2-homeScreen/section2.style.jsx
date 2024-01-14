@@ -457,7 +457,7 @@ position : relative;
   top:90rem;
   left:0;
   height:40rem;
-  gap: 0px 3px;
+  gap: 0px 2px;
   overflow:hidden;
   display:grid;
   grid-template-columns:50% 50%;
