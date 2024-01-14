@@ -229,7 +229,7 @@ const SingleArticle2=({name,image,price,pricePromo,longName})=>{
         <div >
         </div>
         <div className="_button">
-            <a target='_blank' href="https://wa.me/message/UNKT6MU5OODWI1">
+            <a  href="https://wa.me/message/UNKT6MU5OODWI1">
             Acheter maintenant
 
             </a>

@@ -181,7 +181,7 @@ position : relative;
   }
   .promo-1{
     margin-left:10px;
-    text-decoration:line-through yellow 2px;
+    text-decoration:line-through black 2px;
     font-size:14px;
     font-weight:900;
   }
