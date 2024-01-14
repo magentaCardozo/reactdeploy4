@@ -186,8 +186,9 @@ const ListArticles=({id,articles,category,categories})=>{
                                     <div>
                                         <span>{article.name}</span>
                                         <span>{article.price} <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
-                                        <a href="#">Acheter</a>
-                                        <a href="#">Ajouter au panier</a>
+                                        <div >
+                                                    acheter maintenant
+                                        </div>
                                     </div>
                                 </div>
                                 )
@@ -207,7 +208,7 @@ const SingleArticle=({name,image,price,pricePromo,longName})=>{
         <span>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
         <span>{name} </span>
         <span>{longName}</span>
-        <div>
+        <div className='_button'>
             Ajouter au panier
         </div>
     </div>
@@ -222,8 +223,7 @@ const SingleArticle2=({name,image,price,pricePromo,longName})=>{
         <span>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
         <span>{name} </span>
         <span> {longName} </span>
-        <a href="#" target='_blank'>Discuter avec nous</a>
-        <div>
+        <div className="_button">
             Acheter maintenant
         </div>
         <div>

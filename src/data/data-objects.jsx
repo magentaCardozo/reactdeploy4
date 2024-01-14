@@ -117,7 +117,7 @@ export const articles=[
 export const categories=[
     {
         category: 'accessoires',
-        slug:'Les chargeurs et tous type d\'accessoires que vous voudrez'
+        slug:'Les chargeurs et tous type d\'accessoires que vous voudrez Les chargeurs et tous type d\'accessoires que vous voudrez Les chargeurs et tous type d\'accessoires que vous voudrezLes chargeurs et tous type d\'accessoires que vous voudrez'
     },
     {
         category: 'telephones',
