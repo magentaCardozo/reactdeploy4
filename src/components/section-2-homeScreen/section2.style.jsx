@@ -439,6 +439,7 @@ position : relative;
   margin-top:0px;
   grid-template-columns:repeat(1,100%);
   grid-template-rows:130.4rem 130.4rem 130.4rem ;
+  
   grid-template-areas:unset;
   gap:0px;
 }
@@ -456,6 +457,7 @@ position : relative;
   top:90rem;
   left:0;
   height:40rem;
+  gap: 0px 3px;
   overflow:hidden;
   display:grid;
   grid-template-columns:50% 50%;
