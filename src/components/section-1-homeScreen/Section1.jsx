@@ -31,7 +31,7 @@ const Section1 = () => {
     useEffect(()=>{
       const interval=setInterval(()=>{
         nextSlide();
-      },2000)
+      },5000)
       return()=>{
         clearInterval(interval)
 
