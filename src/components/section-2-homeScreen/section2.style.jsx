@@ -28,7 +28,7 @@ position : relative;
     top:11rem;
     margin-top:6rem;
     height:2.4rem;
-    background-color:#F9FF00;
+    background-color:transparent;
     opacity:1;
     margin-bottom:3px;
     border: solid 1px #E5E9EC;
@@ -181,7 +181,7 @@ position : relative;
   }
   .promo-1{
     margin-left:10px;
-    text-decoration:line-through black 2px;
+    text-decoration:line-through black 1px;
     font-size:14px;
     font-weight:900;
   }

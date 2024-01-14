@@ -21,21 +21,6 @@ const telephones=articles.filter(article=>{
   return (
     <div className={className} style={{backgroundColor:'#DADAD6'}}>
         <div className='nav'>
-            <div>
-                <span>
-                    <a href="#potable-link" >Portable</a>
-                </span>
-                <span>
-                    <a href="#montre-link">
-                        Montre
-                    </a>
-                    </span>
-                <span>
-                    <a href="#accessoitre-link">
-                        Accessoire
-                    </a>
-                </span>
-            </div>
         </div>
         <div className='section2-1'>
             <ListArticles  id="accessoitre-link" articles={accessoires} categories={categories} category={"accessoires"} />
