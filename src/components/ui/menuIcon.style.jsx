@@ -6,7 +6,7 @@ export const StyledMenuIcon=styled(MenuIcon)`
 
 
         @media screen and (max-width: 767px) {
-        width:22px;
+        width:17px;
         height:22px;
     
         &>div{
@@ -40,9 +40,8 @@ export const StyledMenuIcon=styled(MenuIcon)`
             display: block;
             height:2px;
             margin-top:3px;
-            width:70%;
+            width:100%;
             background-color: black;   
-            transform: translateX(30%);
         }
         .menu-down>span:nth-child(2){
             display:none;
@@ -65,7 +64,7 @@ export const StyledMenuIcon=styled(MenuIcon)`
 
 
         display:block;
-        transform:translateY(18%);
+        transform:translateY(50%);
 
         
     }

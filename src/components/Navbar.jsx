@@ -2,6 +2,8 @@ import React from 'react'
 import Button from './ui/Button'
 import { Link } from 'react-router-dom'
 import Panier from './Panier'
+
+import Logo from '../assets/images/logo.jpg'
 import whatsapp from '../assets/whatsapp.svg'
 import { StyledInput } from './ui/input.style'
 import { StyledSearchIcon } from './ui/searchIcon.style'
@@ -18,38 +20,28 @@ const Navbar = ({className}) => {
       <div className=" navbar  row container-fluid-css-2">
         <div className='first-col col-md-8 col-lg-9 col-12 d-flex align-items-center flex-row justify-content-between' >
 
+          <div style={{display:"flex", flexDirection:'row'}}>
+          <StyledMenuIcon></StyledMenuIcon>
+          <div style={{ marginRight:"6px"}}>
+            
+          </div>
           <Link to={RoutesList.Home} className='link-css title-css navbar-brand  d-block'>
-            <img src='' width="30" height="30" class="d-inline-block align-top" alt=""/>
+            <img src={Logo} width="30" height="30" class="d-inline-block align-top" alt=""/>
             ChezArdi            
-    </Link>
+          </Link>
+
+          </div>
+
 
           <StyledInput/>
           <div className='d-flex flex-row flex-row justify-content-between'>
             <StyledSearchIcon ></StyledSearchIcon>
               <div style={{marginLeft:'12px'}}></div>
 
-            <StyledMenuIcon></StyledMenuIcon>
           </div>
 
         </div>
-      <div className="second-col  col-md-4 col-lg-3 col-12 " >
-        <ul className="navbar-nav  list-css d-flex flex-row align-items-center justify-content-between">
 
-          <Link to={RoutesList.Products} className='link-css nav-item d-block'>
-              Produits
-              </Link>
-          
-          <li className="nav-item d-block d-flex flex-row">
-            <StyledLogoWhatsapp></StyledLogoWhatsapp>
-            <div style={{marginLeft:'7px'}}></div>
-            <StyledPanier></StyledPanier>
-          </li>
-
-        </ul>
-          
-
-
-      </div>
       </div>
 
   </nav> 
