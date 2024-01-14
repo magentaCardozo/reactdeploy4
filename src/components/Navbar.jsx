@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from './ui/Button'
 import { Link } from 'react-router-dom'
-import Logo from './Logo'
 import Panier from './Panier'
 import whatsapp from '../assets/whatsapp.svg'
 import { StyledInput } from './ui/input.style'
@@ -20,7 +19,7 @@ const Navbar = ({className}) => {
         <div className='first-col col-md-8 col-lg-9 col-12 d-flex align-items-center flex-row justify-content-between' >
 
           <Link to={RoutesList.Home} className='link-css title-css navbar-brand  d-block'>
-            <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""/>
+            <img src='' width="30" height="30" class="d-inline-block align-top" alt=""/>
             ChezArdi            
     </Link>
 

@@ -2,7 +2,12 @@ import Section2 from "./Section2";
 import styled from "styled-components";
 
 export const StyledSection2=styled(Section2)`
+  a{
+    color: inherit;
+    text-decoration:none;
+  }
   --gradient: linear-gradient(
+
     45deg,#845ec2,#d65db1,#ff6f91,#ff9671,#ffc75f,#f9f871
   );
 position : relative;
@@ -176,7 +181,7 @@ position : relative;
   }
   .promo-1{
     margin-left:10px;
-    text-decoration:line-through;
+    text-decoration:line-through yellow 2px;
     font-size:14px;
     font-weight:900;
   }
@@ -267,7 +272,7 @@ position : relative;
     width:100%;
     height:100%;
     border-radius:3px;
-    background-color:rgba(0,0,0,0.1);
+    background-color:rgba(0,0,0,0.4);
     
 
   }

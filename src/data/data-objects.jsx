@@ -110,14 +110,35 @@ export const articles=[
     pricePromo:19,
     slug:"",
     image:png1
-}
+},
+{
+        id:11,
+    categorie: "montre",
+    name:'versace-9',
+    longName:"sdsdsd",
+    price:23,
+    pricePromo:15,
+    slug:"",
+    image:png9
+},
+
+{
+        id:12,
+    categorie: "telephone",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:png8
+},
 
 ]
 
 export const categories=[
     {
         category: 'accessoires',
-        slug:'Les chargeurs et tous type d\'accessoires que vous voudrez Les chargeurs et tous type d\'accessoires que vous voudrez Les chargeurs et tous type d\'accessoires que vous voudrezLes chargeurs et tous type d\'accessoires que vous voudrez'
+        slug:'Les chargeurs et tous type d\'accessoires que'
     },
     {
         category: 'telephones',

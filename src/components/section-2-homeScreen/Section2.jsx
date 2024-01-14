@@ -187,8 +187,11 @@ const ListArticles=({id,articles,category,categories})=>{
                                         <span>{article.name}</span>
                                         <span>{article.price} <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
                                         <div >
-                                                    acheter maintenant
-                                        </div>
+                                            <a target='_blank' href="https://wa.me/message/UNKT6MU5OODWI1">
+                                            Acheter maintenant
+
+                                            </a> 
+                                       </div>
                                     </div>
                                 </div>
                                 )
@@ -223,11 +226,13 @@ const SingleArticle2=({name,image,price,pricePromo,longName})=>{
         <span>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
         <span>{name} </span>
         <span> {longName} </span>
-        <div className="_button">
-            Acheter maintenant
+        <div >
         </div>
-        <div>
+        <div className="_button">
+            <a target='_blank' href="https://wa.me/message/UNKT6MU5OODWI1">
             Acheter maintenant
+
+            </a>
         </div>
 
     </div>
