@@ -971,7 +971,7 @@ grid-template-columns:32% 34% 34%;
     
 }
 
-`,Op=()=>{const[e,t]=L.useState(0),n=[c.jsx(Jv,{}),c.jsx(Xv,{}),c.jsx(Zv,{})],r=()=>{t(i=>(i+1)%n.length)};return L.useEffect(()=>{const i=setInterval(()=>{r()},5e3);return()=>{clearInterval(i)}},[]),c.jsxs("div",{className:"section1-1",children:[c.jsx("div",{className:"box-section1-1",children:n[e]}),c.jsx(ny,{})]})},oo="/reactdeploy4/assets/png_1-psFfvH_j.png",Fp="/reactdeploy4/assets/png_3-ilcu5yhJ.png",$p="/reactdeploy4/assets/png_4-pi7uzOjc.png",ry="/reactdeploy4/assets/png_5-PB77ItoP.png",Up="/reactdeploy4/assets/png_6-IaEkgori.png",Ns="/reactdeploy4/assets/png_9-HkEXkKWn.png",iy="/reactdeploy4/assets/png_2-op38kcqj.png",ly="/reactdeploy4/assets/png_7-zH4XEwQ0.png",_d="/reactdeploy4/assets/png_8-JODtVRir.png",wa=[{id:1,categorie:"accessoire",name:"ecouteur1-1",longName:"accessoire pour tous type de marque de telephone",price:2344,pricePromo:"",slug:"",image:oo},{id:2,categorie:"montre",name:"Gucci-2",longName:"cable samsung Iphone 4, 5",price:288,pricePromo:119,slug:"",image:iy},{id:3,categorie:"montre",name:"Rolex-3",longName:"china whash",price:288,pricePromo:119,slug:"",image:Fp},{id:4,categorie:"accessoire",name:"ecouteur1-4",longName:"Pros like that",price:23,pricePromo:"",slug:"",image:$p},{id:5,categorie:"accessoire",name:"Baladeur-5",longName:"Baladeur pro max",price:23,pricePromo:179,slug:"",image:ry},{id:6,categorie:"telephone",name:"camon-6",longName:"pour les petit et les grand",price:23,pricePromo:129,slug:"",image:Up},{id:7,categorie:"telephone",name:"techno-7",longName:"pour tous",price:23,pricePromo:19,slug:"",image:ly},{id:8,categorie:"telephone",name:"samsung-8",longName:"lefsd",price:23,pricePromo:139,slug:"",image:_d},{id:9,categorie:"montre",name:"versace-9",longName:"sdsdsd",price:23,pricePromo:15,slug:"",image:Ns},,{id:10,categorie:"accessoire",name:"flash-10",price:23,longName:"grfgdf",pricePromo:19,slug:"",image:oo},{id:11,categorie:"montre",name:"versace-9",longName:"sdsdsd",price:23,pricePromo:15,slug:"",image:Ns},{id:12,categorie:"telephone",name:"samsung-8",longName:"lefsd",price:23,pricePromo:139,slug:"",image:_d}],xa=[{category:"accessoires",slug:"Les chargeurs et tous type d'accessoires que"},{category:"telephones",slug:"iphone, samsung et tous types de telephone que vous voudrez vous procurer"},{category:"montres",slug:"Gucci, louis vuitton, davinchi, toustes ses marques sont disponibles ice chez nous"}],oy=({className:e})=>{const t=wa.filter(i=>i.categorie=="accessoire"),n=wa.filter(i=>i.categorie=="montre"),r=wa.filter(i=>i.categorie=="telephone");return c.jsxs("div",{className:e,style:{backgroundColor:"#DADAD6"},children:[c.jsx("div",{className:"nav",children:c.jsxs("div",{children:[c.jsx("span",{children:c.jsx("a",{href:"#potable-link",children:"Portable"})}),c.jsx("span",{children:c.jsx("a",{href:"#montre-link",children:"Montre"})}),c.jsx("span",{children:c.jsx("a",{href:"#accessoitre-link",children:"Accessoire"})})]})}),c.jsxs("div",{className:"section2-1",children:[c.jsx(Sa,{id:"accessoitre-link",articles:t,categories:xa,category:"accessoires"}),c.jsx(Sa,{id:"montre-link",articles:n,categories:xa,category:"montres"}),c.jsx(Sa,{id:"potable-link",articles:r,categories:xa,category:"telephones"}),c.jsxs("div",{className:"box2-1 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Ecouteurs Bluetooth"})}),c.jsx("div",{className:"img1 img",children:c.jsx("img",{src:oo,width:"100%",alt:"",className:"w-100"})})]}),c.jsxs("div",{className:"box2-2 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Ecouteurs Bluetooth"})}),c.jsx("div",{className:"img1 img",children:c.jsx("img",{src:oo,width:"100%",alt:"",className:"w-100"})})]}),c.jsxs("div",{className:"box2-3 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Montres connectées"})}),c.jsx("div",{className:"img3 img",children:c.jsx("img",{src:$p,width:"100%",alt:"",className:"w-100"})})]}),c.jsxs("div",{className:"box2-4 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Balladeurs"})}),c.jsx("div",{className:"img4 img",children:c.jsx("img",{src:Fp,width:"100%",alt:"",className:"w-100"})})]}),c.jsxs("div",{className:"box2-5 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Cables chargeurs"})}),c.jsx("div",{className:"img5 img",children:c.jsx("img",{src:Up,width:"100%",alt:"",className:"w-100 h-100"})})]}),c.jsxs("div",{className:"box2-6 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Chargeurs"})}),c.jsx("div",{className:"img6 img",children:c.jsx("img",{src:Ns,alt:"",width:"100%",className:"h-100 "})})]})]}),c.jsx("div",{})]})},Sa=({id:e,articles:t,category:n,categories:r})=>{const i=t[0];console.log("-------",i);const[l,o]=L.useState({...i}),[a,s]=L.useState(i.id);console.log("****",l);function u(d){const h=t.filter(g=>g.id==d);o(h[0]),console.log("%%%%%",l),s(d),console.log("??????",a)}return c.jsxs("div",{style:{width:"100%"},className:"list-article",children:[c.jsxs("div",{className:"category",style:{},children:[c.jsx("div",{}),c.jsx("div",{children:n}),c.jsx("div",{id:e})]}),c.jsx("div",{className:"articles",children:t.map((d,h)=>c.jsx(ay,{...d},h))}),c.jsxs("div",{className:"slug",children:[c.jsx("div",{}),c.jsx("div",{children:r.filter(d=>d.category===n)[0].slug})]}),c.jsx("div",{className:"listImg",style:{overflowX:"hidden"},children:c.jsx("div",{children:t.map(d=>c.jsx("div",{className:`${a==d.id?"imgHover":""}`,style:{height:"100%",aspectRatio:"1/1",flexShrink:0},children:c.jsx("img",{src:d.image,className:"img-fluid",alt:"",style:{filter:"drop-shadow(10px 10px 5px 4px)",display:"block",height:"100%",width:"100%"},onClick:()=>u(d.id)},d.id)}))})}),c.jsx("div",{className:"articleBox",children:c.jsx(sy,{...l})}),c.jsx("div",{className:"square",children:t.filter((d,h)=>h<5).map(d=>c.jsxs("div",{className:"square-box",children:[c.jsx("img",{src:d.image,width:"100%",alt:"",className:"w-100"}),c.jsxs("div",{children:[c.jsx("span",{children:d.name}),c.jsxs("span",{children:[d.price," ",c.jsx("span",{className:"dollarSign",children:"$"})," ",!d.pricePromo||c.jsxs("span",{className:"promo-1",children:[d.pricePromo," ",c.jsx("span",{className:"dollarSign",children:"$"})]})," "]}),c.jsx("div",{children:c.jsx("a",{target:"_blank",href:"https://wa.me/message/UNKT6MU5OODWI1",children:"Acheter maintenant"})})]})]}))})]})},ay=({name:e,image:t,price:n,pricePromo:r,longName:i})=>c.jsxs("div",{className:"singleArticle",children:[c.jsx("img",{src:t,alt:""}),c.jsxs("span",{children:[n," ",c.jsx("span",{className:"dollarSign",children:"$"})," ",!r||c.jsxs("span",{className:"promo-1",children:[r," ",c.jsx("span",{className:"dollarSign",children:"$"})]})," "]}),c.jsxs("span",{children:[e," "]}),c.jsx("span",{children:i}),c.jsx("div",{className:"_button",children:"Ajouter au panier"})]}),sy=({name:e,image:t,price:n,pricePromo:r,longName:i})=>c.jsxs("div",{className:"singleArticle2",children:[c.jsx("img",{src:t,alt:""}),c.jsxs("span",{children:[n," ",c.jsx("span",{className:"dollarSign",children:"$"})," ",!r||c.jsxs("span",{className:"promo-1",children:[r," ",c.jsx("span",{className:"dollarSign",children:"$"})]})," "]}),c.jsxs("span",{children:[e," "]}),c.jsxs("span",{children:[" ",i," "]}),c.jsx("div",{}),c.jsx("div",{className:"_button",children:c.jsx("a",{href:"https://wa.me/message/UNKT6MU5OODWI1",children:"Acheter maintenant"})})]}),uy=ee(oy)`
+`,Op=()=>{const[e,t]=L.useState(0),n=[c.jsx(Jv,{}),c.jsx(Xv,{}),c.jsx(Zv,{})],r=()=>{t(i=>(i+1)%n.length)};return L.useEffect(()=>{const i=setInterval(()=>{r()},5e3);return()=>{clearInterval(i)}},[]),c.jsxs("div",{className:"section1-1",children:[c.jsx("div",{className:"box-section1-1",children:n[e]}),c.jsx(ny,{})]})},oo="/reactdeploy4/assets/png_1-psFfvH_j.png",Fp="/reactdeploy4/assets/png_3-ilcu5yhJ.png",$p="/reactdeploy4/assets/png_4-pi7uzOjc.png",ry="/reactdeploy4/assets/png_5-PB77ItoP.png",Up="/reactdeploy4/assets/png_6-IaEkgori.png",Ns="/reactdeploy4/assets/png_9-HkEXkKWn.png",iy="/reactdeploy4/assets/png_2-op38kcqj.png",ly="/reactdeploy4/assets/png_7-zH4XEwQ0.png",_d="/reactdeploy4/assets/png_8-JODtVRir.png",wa=[{id:1,categorie:"accessoire",name:"ecouteur1-1",longName:"accessoire pour tous type de marque de telephone",price:2344,pricePromo:"",slug:"",image:oo},{id:2,categorie:"montre",name:"Gucci-2",longName:"cable samsung Iphone 4, 5",price:288,pricePromo:119,slug:"",image:iy},{id:3,categorie:"montre",name:"Rolex-3",longName:"china whash",price:288,pricePromo:119,slug:"",image:Fp},{id:4,categorie:"accessoire",name:"ecouteur1-4",longName:"Pros like that",price:23,pricePromo:"",slug:"",image:$p},{id:5,categorie:"accessoire",name:"Baladeur-5",longName:"Baladeur pro max",price:23,pricePromo:179,slug:"",image:ry},{id:6,categorie:"telephone",name:"camon-6",longName:"pour les petit et les grand",price:23,pricePromo:129,slug:"",image:Up},{id:7,categorie:"telephone",name:"techno-7",longName:"pour tous",price:23,pricePromo:19,slug:"",image:ly},{id:8,categorie:"telephone",name:"samsung-8",longName:"lefsd",price:23,pricePromo:139,slug:"",image:_d},{id:9,categorie:"montre",name:"versace-9",longName:"sdsdsd",price:23,pricePromo:15,slug:"",image:Ns},,{id:10,categorie:"accessoire",name:"flash-10",price:23,longName:"grfgdf",pricePromo:19,slug:"",image:oo},{id:11,categorie:"montre",name:"versace-9",longName:"sdsdsd",price:23,pricePromo:15,slug:"",image:Ns},{id:12,categorie:"telephone",name:"samsung-8",longName:"lefsd",price:23,pricePromo:139,slug:"",image:_d}],xa=[{category:"accessoires",slug:"Les chargeurs et tous type d'accessoires que"},{category:"telephones",slug:"iphone, samsung et tous types de telephone que vous voudrez vous procurer"},{category:"montres",slug:"Gucci, louis vuitton, davinchi, toustes ses marques sont disponibles ice chez nous"}],oy=({className:e})=>{const t=wa.filter(i=>i.categorie=="accessoire"),n=wa.filter(i=>i.categorie=="montre"),r=wa.filter(i=>i.categorie=="telephone");return c.jsxs("div",{className:e,style:{backgroundColor:"#DADAD6"},children:[c.jsx("div",{className:"nav"}),c.jsxs("div",{className:"section2-1",children:[c.jsx(Sa,{id:"accessoitre-link",articles:t,categories:xa,category:"accessoires"}),c.jsx(Sa,{id:"montre-link",articles:n,categories:xa,category:"montres"}),c.jsx(Sa,{id:"potable-link",articles:r,categories:xa,category:"telephones"}),c.jsxs("div",{className:"box2-1 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Ecouteurs Bluetooth"})}),c.jsx("div",{className:"img1 img",children:c.jsx("img",{src:oo,width:"100%",alt:"",className:"w-100"})})]}),c.jsxs("div",{className:"box2-2 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Ecouteurs Bluetooth"})}),c.jsx("div",{className:"img1 img",children:c.jsx("img",{src:oo,width:"100%",alt:"",className:"w-100"})})]}),c.jsxs("div",{className:"box2-3 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Montres connectées"})}),c.jsx("div",{className:"img3 img",children:c.jsx("img",{src:$p,width:"100%",alt:"",className:"w-100"})})]}),c.jsxs("div",{className:"box2-4 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Balladeurs"})}),c.jsx("div",{className:"img4 img",children:c.jsx("img",{src:Fp,width:"100%",alt:"",className:"w-100"})})]}),c.jsxs("div",{className:"box2-5 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Cables chargeurs"})}),c.jsx("div",{className:"img5 img",children:c.jsx("img",{src:Up,width:"100%",alt:"",className:"w-100 h-100"})})]}),c.jsxs("div",{className:"box2-6 flexDisplay hoverEffect",children:[c.jsx("div",{className:"textStyle",children:c.jsx("p",{children:"Chargeurs"})}),c.jsx("div",{className:"img6 img",children:c.jsx("img",{src:Ns,alt:"",width:"100%",className:"h-100 "})})]})]}),c.jsx("div",{})]})},Sa=({id:e,articles:t,category:n,categories:r})=>{const i=t[0];console.log("-------",i);const[l,o]=L.useState({...i}),[a,s]=L.useState(i.id);console.log("****",l);function u(d){const h=t.filter(g=>g.id==d);o(h[0]),console.log("%%%%%",l),s(d),console.log("??????",a)}return c.jsxs("div",{style:{width:"100%"},className:"list-article",children:[c.jsxs("div",{className:"category",style:{},children:[c.jsx("div",{}),c.jsx("div",{children:n}),c.jsx("div",{id:e})]}),c.jsx("div",{className:"articles",children:t.map((d,h)=>c.jsx(ay,{...d},h))}),c.jsxs("div",{className:"slug",children:[c.jsx("div",{}),c.jsx("div",{children:r.filter(d=>d.category===n)[0].slug})]}),c.jsx("div",{className:"listImg",style:{overflowX:"hidden"},children:c.jsx("div",{children:t.map(d=>c.jsx("div",{className:`${a==d.id?"imgHover":""}`,style:{height:"100%",aspectRatio:"1/1",flexShrink:0},children:c.jsx("img",{src:d.image,className:"img-fluid",alt:"",style:{filter:"drop-shadow(10px 10px 5px 4px)",display:"block",height:"100%",width:"100%"},onClick:()=>u(d.id)},d.id)}))})}),c.jsx("div",{className:"articleBox",children:c.jsx(sy,{...l})}),c.jsx("div",{className:"square",children:t.filter((d,h)=>h<5).map(d=>c.jsxs("div",{className:"square-box",children:[c.jsx("img",{src:d.image,width:"100%",alt:"",className:"w-100"}),c.jsxs("div",{children:[c.jsx("span",{children:d.name}),c.jsxs("span",{children:[d.price," ",c.jsx("span",{className:"dollarSign",children:"$"})," ",!d.pricePromo||c.jsxs("span",{className:"promo-1",children:[d.pricePromo," ",c.jsx("span",{className:"dollarSign",children:"$"})]})," "]}),c.jsx("div",{children:c.jsx("a",{target:"_blank",href:"https://wa.me/message/UNKT6MU5OODWI1",children:"Acheter maintenant"})})]})]}))})]})},ay=({name:e,image:t,price:n,pricePromo:r,longName:i})=>c.jsxs("div",{className:"singleArticle",children:[c.jsx("img",{src:t,alt:""}),c.jsxs("span",{children:[n," ",c.jsx("span",{className:"dollarSign",children:"$"})," ",!r||c.jsxs("span",{className:"promo-1",children:[r," ",c.jsx("span",{className:"dollarSign",children:"$"})]})," "]}),c.jsxs("span",{children:[e," "]}),c.jsx("span",{children:i}),c.jsx("div",{className:"_button",children:"Ajouter au panier"})]}),sy=({name:e,image:t,price:n,pricePromo:r,longName:i})=>c.jsxs("div",{className:"singleArticle2",children:[c.jsx("img",{src:t,alt:""}),c.jsxs("span",{children:[n," ",c.jsx("span",{className:"dollarSign",children:"$"})," ",!r||c.jsxs("span",{className:"promo-1",children:[r," ",c.jsx("span",{className:"dollarSign",children:"$"})]})," "]}),c.jsxs("span",{children:[e," "]}),c.jsxs("span",{children:[" ",i," "]}),c.jsx("div",{}),c.jsx("div",{className:"_button",children:c.jsx("a",{href:"https://wa.me/message/UNKT6MU5OODWI1",children:"Acheter maintenant"})})]}),uy=ee(oy)`
   a{
     color: inherit;
     text-decoration:none;
@@ -998,7 +998,7 @@ position : relative;
     top:11rem;
     margin-top:6rem;
     height:2.4rem;
-    background-color:#F9FF00;
+    background-color:transparent;
     opacity:1;
     margin-bottom:3px;
     border: solid 1px #E5E9EC;
@@ -1151,7 +1151,7 @@ position : relative;
   }
   .promo-1{
     margin-left:10px;
-    text-decoration:line-through black 2px;
+    text-decoration:line-through black 1px;
     font-size:14px;
     font-weight:900;
   }
@@ -1844,7 +1844,7 @@ height :100vh;
         
     }
 
-`;const zy=({className:e})=>{const[t,n]=L.useState(!0);function r(){n(i=>!i),console.log(t)}return c.jsx("div",{className:e,children:c.jsxs("div",{className:t&&"menu-down",onClick:()=>r(),children:[c.jsx("span",{}),c.jsx("span",{}),c.jsx("span",{}),c.jsx("div",{})]})})},Ry=ee(zy)`
+`;const zy=({className:e})=>{const[t,n]=L.useState(!0);function r(){n(i=>!i),console.log(t)}return c.jsx("div",{className:e,children:c.jsxs("div",{className:t&&"menu-down",onClick:()=>r(),children:[c.jsx("span",{}),c.jsx("span",{}),c.jsx("span",{}),c.jsx("div",{children:c.jsxs("ul",{children:[c.jsx("li",{children:"Télephone"}),c.jsx("li",{children:"Montre"}),c.jsx("li",{children:"Accessoires"}),c.jsx("li",{children:"Produit"}),c.jsx("li",{children:"Produit"})]})})]})})},Ry=ee(zy)`
         display:none;
 
 
@@ -1855,15 +1855,26 @@ height :100vh;
         &>div{
             height:100%;
             width:100%;
+
         }
         &>div>div{
-            background-color:red;
+            background-color:grey;
+            border-right: solid 1px black;
             position: absolute;
-            top:66px;
-            right:0;
-            width:50px;
-            height:300%;
+            width:70vw;
+            height:100vh;
+            position: absolute;
+            top:2rem;
+            opacity:0.2;
+            left :-100%;
+            transform: translateX(-100%);
+            display: none;
+            transition: display 2s ease-in;
+            display	: flex;
+        }
+        &>div>div>div{
 
+            display: block;
         }
         span{
             transition: all .2s;
@@ -1900,15 +1911,79 @@ height :100vh;
             transform:  translateX(20%) translateY(0px) rotate(-45deg);
         }
         .menu-down{
+            display: block;
             width:100%;
             height:100%;
             position: relative;
         }
+        .menu-down>div{
+            display: block;
+            animation: right 1.3s;
+            animation-fill-mode:forwards;
 
+
+        }
+        .menu-down ul li:nth-child(1){
+            animation: liSlide .4s ;
+            animation-fill-mode:forwards;
+            animation-delay:.7s;
+        }
+        .menu-down li:nth-child(2){
+            animation: liSlide .4s ;
+            animation-fill-mode:forwards;
+            animation-delay:.8s;
+        }
+        .menu-down li:nth-child(3){
+            animation: liSlide .4s ;
+            animation-fill-mode:forwards;
+            animation-delay:1s;
+        }
+        .menu-down li:nth-child(4){
+            animation: liSlide .4s ;
+            animation-fill-mode:forwards;
+            animation-delay:1.2s;
+        }
+        .menu-down li:nth-child(5){
+            animation: liSlide .5s ;
+            animation-fill-mode:forwards;
+            animation-delay:2s;
+        }
+
+        @keyframes liSlide {
+                                    100%{
+                transform : translateX(0%);
+                opacity:1;
+
+            }
+        }
 
         display:block;
         transform:translateY(50%);
+        ul{
+            height:100%;
+            list-style-type:none;
+        }
+        ul>li:last-child{
+            float: bottom;
+        }
+        li{
+            font-weight: 400;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif !important;
+            transform: translateX(-100%);
+            opacity: 0.5;
+        }
 
+        @keyframes right {
+
+            
+                        100%{
+                transform : translateX(0%);
+                opacity:1;
+
+            }
+            
+        }
         
     }
 `;ee(Cy)`
