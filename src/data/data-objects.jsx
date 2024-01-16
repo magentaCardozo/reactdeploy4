@@ -17,7 +17,7 @@ export const articles=[
     price:2344,
     pricePromo:"",
     slug:"",
-    image:png1
+    image:[png1,png9,png7,png8]
 },
 {
     id:2,
@@ -27,7 +27,7 @@ export const articles=[
     price:288,
     pricePromo:119,
     slug:"",
-    image:png2
+    image:[png2,png9,png7,png8]
 },
 {
     id:3,
@@ -37,7 +37,7 @@ export const articles=[
     price:288,
     pricePromo:119,
     slug:"",
-    image:png3
+    image:[png3,png9,png7,png8]
 },
 {
     id:4,
@@ -47,7 +47,7 @@ export const articles=[
     price:23,
     pricePromo:"",
     slug:"",
-    image:png4
+    image:[png4,png9,png7,png8]
 },
 {
     id:5,
@@ -58,7 +58,7 @@ export const articles=[
     price:23,
     pricePromo:179,
     slug:"",
-    image:png5
+    image:[png5,png9,png7,png8]
 },
 {
         id:6,
@@ -68,7 +68,7 @@ export const articles=[
     price:23,
     pricePromo:129,
     slug:"",
-    image:png6
+    image:[png6,png9,png7,png8]
 },
 {
     id:7,
@@ -78,7 +78,7 @@ export const articles=[
     price:23,
     pricePromo:19,
     slug:"",
-    image:png7
+    image:[png9,png7,png8]
 },
 {
         id:8,
@@ -88,7 +88,7 @@ export const articles=[
     price:23,
     pricePromo:139,
     slug:"",
-    image:png8
+    image:[png9,png7,png8]
 },
 {
         id:9,
@@ -98,7 +98,7 @@ export const articles=[
     price:23,
     pricePromo:15,
     slug:"",
-    image:png9
+    image:[png9,png7,png8]
 },
 ,
 {
@@ -109,17 +109,17 @@ export const articles=[
     longName:"grfgdf",
     pricePromo:19,
     slug:"",
-    image:png1
+    image:[png1,png9,png7,png8]
 },
 {
         id:11,
     categorie: "montre",
     name:'versace-9',
-    longName:"sdsdsd",
+    longName:"fsdfdsfdsf",
     price:23,
     pricePromo:15,
     slug:"",
-    image:png9
+    image:[png9,png7,png8]
 },
 
 {
@@ -130,7 +130,7 @@ export const articles=[
     price:23,
     pricePromo:139,
     slug:"",
-    image:png8
+    image:[png9,png7,png8,png8]
 },
 
 ]

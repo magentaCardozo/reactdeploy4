@@ -7,6 +7,10 @@
     font-family: _salsa;
     src: url('fonts/Salsa-Regular.ttf');
 }
+@font-face {
+    font-family: _jaldi;
+    src: url('fonts/Jaldi-Regular.ttf');
+}
 
 :root {
     --gradient: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
@@ -15,7 +19,8 @@
 *::after,
 *::before,
 * {
-    font-family: _roboto !important;
+    font-family: _jaldi !important;
+    color : black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,7 +29,9 @@
 /*THE APP*/
 .theApp {
     overflow-x: hidden;
+    position : relative;
 }
+
 
 /*THE APP*/
 

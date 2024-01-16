@@ -1,13 +1,14 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect, useContext} from 'react'
 import png1 from '../../assets/images/png_1.png'
 import png3 from '../../assets/images/png_3.png'
 import png4 from '../../assets/images/png_4.png'
 import png5 from '../../assets/images/png_5.png'
 import png6 from '../../assets/images/png_6.png'
 import png9 from '../../assets/images/png_9.png'
-import { articles, categories } from '../../data/data-objects'
-
+import { ArticleContext } from '../../App'
 const Section2 = ({className}) => {
+const {articles,categories} =useContext(ArticleContext)
+
 
 const accessoires=articles.filter(article=>{
     return (article.categorie=="accessoire")
@@ -92,16 +93,12 @@ const telephones=articles.filter(article=>{
 
 const ListArticles=({id,articles,category,categories})=>{
     const initArticle=articles[0]
-    console.log('-------',initArticle)
     const [articleBox, setArticleBox]=useState({...initArticle})
     const [focus, setFocus]=useState(initArticle.id);
-    console.log('****', articleBox)
     function changeArticleBox(id){
         const newArticle=articles.filter(article=>article.id==id)
         setArticleBox(newArticle[0])
-        console.log('%%%%%', articleBox)
         setFocus(id);
-        console.log("??????",focus)
 
     }
 
@@ -146,7 +143,7 @@ const ListArticles=({id,articles,category,categories})=>{
             {articles.map(article=>{
                 return(
                         <div className={`${focus==article.id ? "imgHover":""}`} style={{height:"100%",aspectRatio:"1/1", flexShrink:0  }}>
-                            <img key={article.id} src={article.image} className={`img-fluid`}
+                            <img key={article.id} src={article.image[0]} className={`img-fluid`}
                             alt="" style={{filter:"drop-shadow(10px 10px 5px 4px)",display:'block', 
                             height:"100%" ,width:"100%"}}  onClick={()=>changeArticleBox(article.id)}/>
               
@@ -167,10 +164,11 @@ const ListArticles=({id,articles,category,categories})=>{
                                 return(
 
                                 <div className="square-box">
-                                    <img src={article.image} width="100%" alt="" className='w-100' />
+                                    <img src={article.image[0]} width="100%" alt="" className='w-100' />
                                     <div>
                                         <span>{article.name}</span>
                                         <span>{article.price} <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
+                                        <p></p>
                                         <div >
                                             <a target='_blank' href="https://wa.me/message/UNKT6MU5OODWI1">
                                             Acheter maintenant
@@ -192,7 +190,7 @@ const SingleArticle=({name,image,price,pricePromo,longName})=>{
     return(
     <div className="singleArticle">
         
-        <img src={image} alt=""  /> 
+        <img src={image[0]} alt=""  /> 
         <span>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
         <span>{name} </span>
         <span>{longName}</span>
@@ -204,10 +202,30 @@ const SingleArticle=({name,image,price,pricePromo,longName})=>{
 
 }
 const SingleArticle2=({name,image,price,pricePromo,longName})=>{
+    const [imageOn, setImageOn]=useState(0);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setImageOn(prevCount => (prevCount + 1));
+    }, 4000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
     return(
     <div className="singleArticle2" >
         
-        <img src={image} alt=""  /> 
+        <img src={image[imageOn%image.length]} alt=""  /> 
+        <div>
+            {
+                image.map((singleImage,index,images)=>{
+                    return (
+                        <span className={`${(imageOn %images.length) ==index && "imageOn"} circle`} onClick={()=>setImageOn(index)}></span>
+                    )
+                })
+            }
+        </div>
         <span>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
         <span>{name} </span>
         <span> {longName} </span>

@@ -16,9 +16,9 @@ export const StyledMenuIcon=styled(MenuIcon)`
         }
         &>div>div{
             background-color:grey;
-            border-right: solid 1px black;
+            border-right: solid .5px #DADAD6;
             position: absolute;
-            width:70vw;
+            width:80vw;
             height:100vh;
             position: absolute;
             top:2rem;
@@ -28,6 +28,7 @@ export const StyledMenuIcon=styled(MenuIcon)`
             display: none;
             transition: display 2s ease-in;
             display	: flex;
+            justify-content:space-between;
         }
         &>div>div>div{
 
@@ -74,9 +75,12 @@ export const StyledMenuIcon=styled(MenuIcon)`
             position: relative;
         }
         .menu-down>div{
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             animation: right 1.3s;
             animation-fill-mode:forwards;
+
 
 
         }
@@ -88,22 +92,42 @@ export const StyledMenuIcon=styled(MenuIcon)`
         .menu-down li:nth-child(2){
             animation: liSlide .4s ;
             animation-fill-mode:forwards;
-            animation-delay:.8s;
+            animation-delay:.9s;
         }
         .menu-down li:nth-child(3){
             animation: liSlide .4s ;
             animation-fill-mode:forwards;
-            animation-delay:1s;
+            animation-delay:1.1s;
         }
         .menu-down li:nth-child(4){
             animation: liSlide .4s ;
             animation-fill-mode:forwards;
-            animation-delay:1.2s;
+            animation-delay:1.3s;
         }
         .menu-down li:nth-child(5){
-            animation: liSlide .5s ;
+            animation: liSlide .4s ;
             animation-fill-mode:forwards;
-            animation-delay:2s;
+            animation-delay:1.5s;
+        }
+        li>*{
+            text-decoration: none;
+            color:black;
+
+        }
+        .menu-down li:nth-child(5){
+            animation: liSlide .4s ;
+            animation-fill-mode:forwards;
+            animation-delay:1.7s;
+        }
+        .menu-down li:nth-child(5){
+            animation: liSlide .4s ;
+            animation-fill-mode:forwards;
+            animation-delay:1.7s;
+        }
+        .menu-down li:nth-child(6){
+            animation: liSlide .4s ;
+            animation-fill-mode:forwards;
+            animation-delay:1.9s;
         }
 
         @keyframes liSlide {
@@ -125,10 +149,13 @@ export const StyledMenuIcon=styled(MenuIcon)`
         }
         li{
             font-weight: 400;
-            font-size: 16px;
-            font-family: Arial, Helvetica, sans-serif !important;
+            font-size: 19px;
             transform: translateX(-100%);
             opacity: 0.5;
+            border-bottom: solid 1px #DADAD6;
+            margin: 10px 0;
+            margin-right: 1rem;
+            color: black;
         }
 
         @keyframes right {

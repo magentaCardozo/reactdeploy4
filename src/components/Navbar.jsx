@@ -21,7 +21,7 @@ const Navbar = ({className}) => {
         <div className='first-col col-md-8 col-lg-9 col-12 d-flex align-items-center flex-row justify-content-between' >
 
           <div style={{display:"flex", flexDirection:'row'}}>
-          <StyledMenuIcon></StyledMenuIcon>
+              <StyledMenuIcon></StyledMenuIcon>
           <div style={{ marginRight:"6px"}}>
             
           </div>
