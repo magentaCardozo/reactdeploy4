@@ -16,17 +16,17 @@ const MenuIcon = ({className}) => {
         <div>
           <ul>
             <li>
-              <Link to={RoutesList.Telephones}>
+              <Link to={`${RoutesList.Categorie}telephone`}>
                   Télephone
               </Link>
             </li>
             <li>
-              <Link to={RoutesList.Montres}>
+              <Link to={`${RoutesList.Categorie}montre`}>
                   Montres
               </Link>
             </li>
             <li>
-              <Link to={RoutesList.Accessoires}>
+              <Link to={`${RoutesList.Categorie}accessoire`}>
                   Accessoires
               </Link>
               

@@ -42,7 +42,7 @@ const Section1 = () => {
     <div className='section1-1'>
         <div className="box-section1-1">
           {slides[index]}
-         {/* <StyledBox2/> */}
+         {/* <StyledBox3/> */}
         </div>
         <StyledCardBox></StyledCardBox>
 

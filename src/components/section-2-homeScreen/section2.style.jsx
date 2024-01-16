@@ -18,6 +18,7 @@ position : relative;
 .square{
   display:none;
 }
+
 .nav{
     width:100%;
     display:flex;
@@ -27,23 +28,17 @@ position : relative;
     position: sticky;
     top:11rem;
     margin-top:6rem;
-    height:2.4rem;
     background-color:transparent;
     opacity:1;
     margin-bottom:3px;
     border: solid 1px #E5E9EC;
   }
-  .nav>div>span:nth-child(1){
-    display:inline-block;
-  }
-  .nav>div>span:nth-child(2){
-    display:inline-block;
-    margin-left:20rem;
-  }
-  .nav>div>span:nth-child(3){
-    display:inline-block;
-    margin-left:20rem;
-  }
+  .nav>div{
+
+
+  display : none;
+}
+
   .img1{
     width:35rem;
     height:25rem;
@@ -410,22 +405,14 @@ position : relative;
   }
 
   /* rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
-  .nav>div>span>*{
-      font-size:16px;
-      text-decoration:none;
-      color: black;
-    }
-  .nav>div>span:nth-child(1){
-    display:inline-block;
-  }
-  .nav>div>span:nth-child(2){
-    display:inline-block;
-    margin-left:2rem;
-  }
-  .nav>div>span:nth-child(3){
-    display:inline-block;
-    margin-left:2rem;
-  }
+  .nav>div{
+    margin: 1rem;
+    font-size : 20px;
+    font-weight:500;
+  display : block;
+  color : black;
+}
+ 
   .section2-1{
   height: unset;
   width: 100%;

@@ -12,25 +12,26 @@ export const StyledTextBox2 = styled(TextBox2)`
     height:70%;
     width:100%;
     background-color:rgba(0,0,0,0.1);
-    font-family:audrey;
 
 h2{
-    margin-left:10%;
-    margin-top:10%;
+    margin-left:5%;
+    margin-top:15%;
     font-size:5rem;
+    color : black;
+    font-weight:800;
     text-align:left;
     letter-spacing:1px;
     font-weight:100;
 }
 h2 span{
-    color:purple;
+    color:black;
 }
 h3{
-    margin-top:5%;
-    margin-left:20%;
+    margin-top:10%;
+    margin-left:5%;
     width:70%;
     font-size:30px;
-    text-align:justify;
+    text-align:center;
     letter-spacing:1px;
     font-weight:500
 }
@@ -58,7 +59,16 @@ h3{
         top:-13%;
 
     h2{
-    font-size:4rem;
+    font-size:3rem;
+    font-weight:500;
+    text-transform: uppercase;
+
+    }
+        h3{
+    font-size:30px;
+    width:90%;
+    font-weight:400;
+
 
     }
 }

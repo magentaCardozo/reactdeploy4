@@ -5,9 +5,9 @@ import HomeScreen from './pages/HomeScreen'
 import { RoutesList } from './data/Routes';
 import ProductsPage from './pages/ProductsPage';
 import App from './App';
-import AccessoiresScreen from './pages/AccessoiresScreen';
-import TelephonesScreen from './pages/TelephonesScreen';
-import MontresScreen from './pages/MontresScreen';
+import { StyledCategoryScreen } from './pages/categoryScreen.syle';
+import { StyledDetailsPage } from './pages/detailsPage.style';
+import DetailsPage from './pages/DetailsPage';
 import Error from './pages/Error'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
@@ -21,9 +21,10 @@ const router = createBrowserRouter(
         <Route path='/' element={<App/>}>
             <Route index element={<HomeScreen/>}></Route>
             <Route path={RoutesList.Products} element={<ProductsPage/>}></Route>
-            <Route path={RoutesList.Accessoires} element={<AccessoiresScreen/>}></Route>
-            <Route path={RoutesList.Telephones} element={<TelephonesScreen/>}></Route>
-            <Route path={RoutesList.Montres} element={<MontresScreen/>}></Route>
+            <Route path={`${RoutesList.Categorie}:categorie`} element={<StyledCategoryScreen/>}></Route>
+            <Route path={`${RoutesList.Details}:id`} element={<StyledDetailsPage/>}></Route>
+
+            <Route path="/error" element={<Error/>}></Route>
             <Route path="*" element={<Error/>}></Route>
 
 

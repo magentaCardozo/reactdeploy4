@@ -3,8 +3,10 @@ import styled from "styled-components";
 
 export const StyledSearchIcon=styled(SeachIcon)`
         display:none;
+        
 
     @media screen and (max-width: 767px) {
+
         display:block;
         width:20px;
         color:#333;
@@ -130,6 +132,14 @@ export const StyledSearchIcon=styled(SeachIcon)`
         img{
             width:100%;
             height:100%;
+        }
+        .link{
+            text-decoration:none;
+            color : black;
+        }
+        a{
+            color : black;
+            text-decoration:none;
         }
 
         @keyframes slideRight {

@@ -19,11 +19,11 @@ const Footer = () => {
                 <h5 className="text-uppercase mb-4 text-white">Nous contacter</h5>
 
                 <ul className="list-unstyled mb-4">
-                    <li>
-                    <a href="#!" className="text-white">ardi@gmail.com</a>
+                    <li style={{color: "white"}}>
+                    0810001000
                     </li>
                     <li>
-                    <a href="#!" className="text-white">ardi2@gmail.com</a>
+                    <a mailTo="" className="text-white">ardi2@gmail.com</a>
                     </li>
 
                 </ul>

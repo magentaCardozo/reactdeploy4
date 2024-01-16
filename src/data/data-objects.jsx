@@ -132,6 +132,16 @@ export const articles=[
     slug:"",
     image:[png9,png7,png8,png8]
 },
+{
+        id:13,
+    categorie: "telephone",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:[png9,png7,png8,png8]
+},
 
 ]
 

@@ -5,7 +5,7 @@ export const  StyledBox1Image1=styled(Box1Image1)`
     all:unset;
     position:absolute;
     top:0rem; 
-    left:0rem;width :100%;
+    left:0rem;
     width : 100%;
     height : 100%;
     

@@ -12,8 +12,8 @@ const DotContent2 = ({className}) => {
         <img src={dot1} className='style2'  alt="" />
         <img src={dot2} className='style3' alt="" />
         <img src={dot4} className='style5' alt="" />
-        <StyledBox1Image3></StyledBox1Image3>
         <img src={dot3} className='style4'  alt="" />
+        <StyledBox1Image3></StyledBox1Image3>
 
     </div>
   )

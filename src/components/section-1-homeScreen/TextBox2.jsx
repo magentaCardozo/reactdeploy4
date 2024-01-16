@@ -8,7 +8,7 @@ const TextBox2 = ({className}) => {
   return (
     <div className={className}>
       <h2 >
-        <span >chezArdi</span>
+        <span >chez Ardi</span>
       </h2>
         <h3>
           Commandez vos produits et soyez livrer où que vous soyer à Kinshasa

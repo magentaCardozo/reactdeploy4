@@ -33,7 +33,8 @@ const Box1 = ({className}) => {
           <div className='third-container'>
           <StyledBox1Image1></StyledBox1Image1>
 
-          <StyledLinesBox1></StyledLinesBox1>          </div>
+          <StyledLinesBox1></StyledLinesBox1>          
+          </div>
 
         </div>
     </div>

@@ -22,6 +22,9 @@ const telephones=articles.filter(article=>{
   return (
     <div className={className} style={{backgroundColor:'#DADAD6'}}>
         <div className='nav'>
+            <div>
+                Cliquer sur les barres  en haut à gauche pour ouvrir le menu, cliquer sur l'icon de recherche en haut à gauche pour rechercher rapidement parmi tous nos articles et enfin, cliquer sur le bouton acheter maintenant pour discuter diretement avec nous
+            </div>
         </div>
         <div className='section2-1'>
             <ListArticles  id="accessoitre-link" articles={accessoires} categories={categories} category={"accessoires"} />
@@ -207,7 +210,6 @@ const SingleArticle2=({name,image,price,pricePromo,longName})=>{
     const intervalId = setInterval(() => {
       setImageOn(prevCount => (prevCount + 1));
     }, 4000);
-
     return () => {
       clearInterval(intervalId);
     };
@@ -216,7 +218,7 @@ const SingleArticle2=({name,image,price,pricePromo,longName})=>{
     return(
     <div className="singleArticle2" >
         
-        <img src={image[imageOn%image.length]} alt=""  /> 
+        <img src={image[imageOn%image.length]} alt=""/> 
         <div>
             {
                 image.map((singleImage,index,images)=>{

@@ -27,7 +27,7 @@ export const StyledBox1Image3 =styled(Box1Image3)`
 @media screen and ((width< 400px)) {
     .img{
         left:-3%;
-        top:6rem;
+        top:1.2rem;
         scale:0.8;
     }
 }

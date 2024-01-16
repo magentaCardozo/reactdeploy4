@@ -1,6 +1,8 @@
 import React ,{useState,useContext}from 'react'
 import { FaSearch } from 'react-icons/fa';
 import { ArticleContext } from '../../App';
+import { Link } from 'react-router-dom';
+import { RoutesList } from '../../data/Routes';
 
 
 
@@ -31,7 +33,8 @@ const SeachIcon = ({className}) => {
             articles.filter(article=>(article.name.includes(text) ||article.longName.includes(text))).length!=0?
             articles.filter(article=>(article.name.includes(text) ||article.longName.includes(text))).map(article=>{
               return(
-                <div key={article.id} className='article'>
+                <Link className="link" to={`${RoutesList.Details}${article.id}`}  onClick={()=>active()}>
+                      <div key={article.id} className='article'>
                   <div>
                     <img src={article.image[0]} alt="" />
                   </div>
@@ -43,6 +46,8 @@ const SeachIcon = ({className}) => {
                   </div>
 
                 </div>
+                </Link>
+
               )
             }) : <div style={{color:'red', textAlign:"center", fontSize:"20px"}}>Aucun Article correstondant</div>
 
