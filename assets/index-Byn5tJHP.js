@@ -1771,7 +1771,8 @@ position : relative;
   /* rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
   .nav>div{
     margin: 1rem;
-    font-size : 20px;
+    line-height:20px;
+    font-size : 18px;
     font-weight:500;
   display : block;
   color : black;
@@ -2187,13 +2188,13 @@ height :100vh;
     width:80%;
     height : fit-content;
 }
-`,Uy=()=>u.jsxs("div",{children:[u.jsx(Ry,{}),u.jsx($y,{})]}),by=()=>u.jsx("div",{children:u.jsx(Uy,{})}),By=({className:e})=>{const{articles:t,categories:n}=N.useContext(Xi),{categorie:r}=pp(),i=Tu(),l=()=>{i("/error")};return t.filter(o=>o.categorie==r).length==0?l:u.jsx("div",{className:e,children:t.filter(o=>o.categorie==r).map(o=>u.jsxs("div",{className:"square-box",children:[u.jsx("img",{src:o.image[0],width:"100%",alt:"",className:"w-100"}),u.jsxs("div",{children:[u.jsx("span",{children:o.name}),u.jsxs("span",{children:[o.price," ",u.jsx("span",{className:"dollarSign",children:"$"})," ",!o.pricePromo||u.jsxs("span",{className:"promo-1",children:[o.pricePromo," ",u.jsx("span",{className:"dollarSign",children:"$"})]})," "]}),u.jsx("p",{}),u.jsx("div",{children:u.jsx("a",{target:"_blank",href:"https://wa.me/message/UNKT6MU5OODWI1",children:"Acheter maintenant"})})]})]}))})},Hy=J(By)`
+`,Uy=()=>u.jsxs("div",{children:[u.jsx(Ry,{}),u.jsx($y,{})]}),by=()=>u.jsx("div",{children:u.jsx(Uy,{})}),By=({className:e})=>{const{articles:t,categories:n}=N.useContext(Xi),{categorie:r}=pp(),i=Tu(),l=()=>{i("/error")};return t.filter(o=>o.categorie==r).length==0?l:u.jsxs("div",{style:{paddingTop:"3.4rem"},children:[u.jsx("div",{style:{fontSize:"22px",textTransform:"uppercase",fontWeight:"400",backgroundColor:"yellow",textAlign:"center"},children:r}),u.jsx("div",{className:e,children:t.filter(o=>o.categorie==r).map(o=>u.jsxs("div",{className:"square-box",children:[u.jsx("img",{src:o.image[0],width:"100%",alt:"",className:"w-100"}),u.jsxs("div",{children:[u.jsx("span",{children:o.name}),u.jsxs("span",{children:[o.price," ",u.jsx("span",{className:"dollarSign",children:"$"})," ",!o.pricePromo||u.jsxs("span",{className:"promo-1",children:[o.pricePromo," ",u.jsx("span",{className:"dollarSign",children:"$"})]})," "]}),u.jsx("p",{}),u.jsx("div",{children:u.jsx("a",{target:"_blank",href:"https://wa.me/message/UNKT6MU5OODWI1",children:"Acheter maintenant"})})]})]}))})]})},Hy=J(By)`
 
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 2px 2px;
     flex-wrap: wrap;
-    margin-top:3.3rem;
+    margin-top:1rem;
     a{
         color : black;
         text-decoration: none;
