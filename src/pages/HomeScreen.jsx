@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Section1 from '../components/section-1-homeScreen/Section1'
 import Section2 from '../components/section-2-homeScreen/Section2'
 import { StyledSection2 } from '../components/section-2-homeScreen/section2.style'
 import { StyledSection1 } from '../components/section-1-homeScreen/section1.style'
+import { useLocation } from 'react-router-dom'
 
 const HomeScreen = () => {
+    const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="home-screen"style={{backgroundColor:'#DADAD6'}}>
         <Section1></Section1>

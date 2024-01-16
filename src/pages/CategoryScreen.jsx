@@ -1,8 +1,14 @@
-import React, { useContext } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import React, { useContext, useEffect } from 'react'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { ArticleContext } from '../App'
 
 const CategoryScreen = ({className}) => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
     const {articles,categories}=useContext(ArticleContext)
     const {categorie}=useParams()
         const navigate=useNavigate()

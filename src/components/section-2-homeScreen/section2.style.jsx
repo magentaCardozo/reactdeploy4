@@ -227,14 +227,14 @@ position : relative;
     align-items: center;
   }
   .circle{
-    border : solid .5px blue;
+    border : solid .5px grey;
     height: 100%;
     aspect-ratio:1/1;
     border-radius:50%;
     background-color: transparent;
   }
   .imageOn{
-    background-color:blue;
+    background-color:grey;
   }
     .singleArticle2>span:nth-child(5){
         padding-top:2px;

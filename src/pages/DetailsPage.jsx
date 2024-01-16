@@ -1,8 +1,16 @@
-import React, { useContext, useState } from 'react'
-import {  BrowserRouter, Route, Routes, redirect, useNavigate, useParams } from 'react-router-dom'
+import React, { useContext, useEffect, useState } from 'react'
+import {  BrowserRouter, Route, Routes, redirect, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { ArticleContext } from '../App'
 
 const DetailsPage = ({className}) => {
+
+      const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+
     const [imgCount, setImgCount]=useState(0);
     const {articles}=useContext(ArticleContext)
     const {id}=useParams()

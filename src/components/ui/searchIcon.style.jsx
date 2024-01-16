@@ -94,7 +94,7 @@ export const StyledSearchIcon=styled(SeachIcon)`
 
         .activated{
             display:flex;
-            animation: slideRight 1s forwards;
+            animation: slideRight .5s forwards;
 
         }
         .article{
