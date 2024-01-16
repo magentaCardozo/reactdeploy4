@@ -7,7 +7,7 @@ export const StyledCategoryScreen=styled(CategoryScreen)`
     grid-template-columns: 50% 50%;
     gap: 2px 2px;
     flex-wrap: wrap;
-    margin-top:3.3rem;
+    margin-top:1rem;
     a{
         color : black;
         text-decoration: none;

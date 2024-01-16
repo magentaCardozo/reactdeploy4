@@ -15,7 +15,9 @@ const CategoryScreen = ({className}) => {
 
     }
   return (
-    <div className={className} >
+    <div style={{paddingTop:"3.4rem"}}>
+        <div style={{fontSize:'22px',textTransform:'uppercase', fontWeight:'400',backgroundColor:'yellow', textAlign:'center'}}>{categorie}</div>
+        <div className={className} >
         {
             articles.filter(article=>(article.categorie==categorie))
             .map(article=>(
@@ -36,6 +38,8 @@ const CategoryScreen = ({className}) => {
             ))
         }
     </div>
+    </div>
+
   )
 }
 

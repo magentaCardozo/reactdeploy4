@@ -407,7 +407,8 @@ position : relative;
   /* rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
   .nav>div{
     margin: 1rem;
-    font-size : 20px;
+    line-height:20px;
+    font-size : 18px;
     font-weight:500;
   display : block;
   color : black;
