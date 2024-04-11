@@ -130,7 +130,7 @@
 @media screen and (max-width:500px) {
     .container-fluid-css {
         padding: 0px 3px;
-        background-color: #DADAD6;
+        background-color: grey;
     }
 
     .container-fluid-css-2 {
@@ -145,9 +145,9 @@
 
 
 .spanText {
-    font-size: 27px !important;
+    font-size: 25px !important;
+    line-height: 30px;
     font-weight: 500;
-    font-family: _salsa !important;
 
 
 }

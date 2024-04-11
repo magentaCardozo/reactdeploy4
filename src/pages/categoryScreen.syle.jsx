@@ -1,64 +1,94 @@
 import styled from "styled-components";
 import CategoryScreen from "./CategoryScreen";
+import { COLOR,TEXT_COLOR } from "../data/Constantes";
 
 export const StyledCategoryScreen=styled(CategoryScreen)`
+
+  width:100%;
 
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 2px 2px;
-    flex-wrap: wrap;
-    margin-top:1rem;
+
+  overflow:hidden;
+
+    background-color:${COLOR.MAIN};
+
     a{
-        color : black;
+        color : ${TEXT_COLOR.MAIN};
         text-decoration: none;
     }
-
-  .square-box>div>span:nth-child(2) span,.singleArticle>span:nth-child(2) span,.singleArticle2>span:nth-child(3) span{
-        display:inline-block;
-
+      .promo-1{
+    margin-left:10px;
+    text-decoration:line-through ${TEXT_COLOR.SECOND} 1px;
+    font-size:14px;
+    font-weight:100;
+    color: ${TEXT_COLOR.SECOND};
   }
-  .square-box>div>span:nth-child(2)>.dollarSign{
-    transform:translate(-50%,-20%);
-    font-size:12px;
+.square-box{
 
-  }
-  .square-box{
-    flex-shrink:0;
   position: relative;
-  height:20rem;
+  height:  17rem;
+
   width:100%;
-  display: inline-block;
-  background-color:grey;
+  background-color:${COLOR.MAIN};
   overflow: hidden;
 }
-.square-box>img{
+.square-box::after{
+  content:'Promotion';
+  font-size:16px;
+  text-align: center;
+  padding-bottom:2px 0px;
+  width:100%;
+  height: 25px;
+  top:0;
+  position: absolute;
+  left:0;
+  background-color:${COLOR.FOURTH} ;
+  transform: rotate(-45deg) translateX(-30%) translateY(-2rem);
+}
+.square-box img{
   width:100%;
   height:60%;
   display: block;
 }
 .square-box>div>span:nth-child(1){
 
-  font-weight:900;
+  font-weight:100;
   text-transform: uppercase;
-  color : #353131;
-  text-align:center;
+  color :  ${TEXT_COLOR.SECOND};
 }
 .square-box>div>span:nth-child(2){
 
-  color : #353131;
-  text-align:center;
-  font-family: _salsa !important;
+  color :  ${TEXT_COLOR.SECOND};
+  
     display:inline-block;
 
 }
+.squarePrice{
+  font-size:16px;
+  color:${TEXT_COLOR.MAIN}
+}
+.squarePrice{
+  font-size:16px;
+  color:${TEXT_COLOR.MAIN}
+}
+  .dollarSign{
+    font-size:13px;
+    line-height:14px;
+    font-weight:100;
+    color :  ${TEXT_COLOR.MAIN};
+
+  }
 .square-box>div>div{
-  color : #353131;
+  color :  ${TEXT_COLOR.FOURTH};
+  text-decoration:underline;
   font-size:14px;
-    text-align:center;
-    font-weight:bold;
-    padding:0 5px;
-    border: solid 1px grey;
-    border-radius:10px/10px;
+  color:${TEXT_COLOR.MAIN};
+    font-weight:100;
+    /* padding:0 5px; */
+    /* border: solid 1px grey;
+    border-radius:10px/10px; */
 
 }
 .square-box>div>span{
@@ -66,12 +96,16 @@ export const StyledCategoryScreen=styled(CategoryScreen)`
 }
 .square-box>div{
   display:flex;
-  color:white;
-  background-color:#DADAD6;
+  line-height:20px;
+  padding-left:.4rem;
+  color: ${TEXT_COLOR.SECOND};
+  background-color:${COLOR.MAIN};
   flex-direction: column;
-  align-items:center;
+  /* align-items:center; */
   justify-content: center;
   width:100%;
-  height:40%;
+  height:25%;
 }
+
+
 `

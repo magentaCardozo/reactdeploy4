@@ -77,7 +77,18 @@ export const StyledCardBox=styled(CardBox)`
 
             animation: animation2 10s infinite;
             animation-delay:4s;
+            border-left: double 1px white;
+            font-size:unset;
+            font-family:unset;
+        line-height:25px;
+        font-size : 16px;
+        font-weight:0;
+        padding-left:0.5rem;
+        text-align:justify;
+        display : block;
+        color :  white;
         }
+
         .third{
             /* animation: animation3 12s infinite;
             animation-delay:6s; */

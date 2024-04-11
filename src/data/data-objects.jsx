@@ -142,10 +142,413 @@ export const articles=[
     slug:"",
     image:[png9,png7,png8,png8]
 },
+{
+    id:1,
+    categorie: "accessoire",
+    name:'ecouteur1-1',
+    longName:'accessoire pour tous type de marque de telephone',
+    price:2344,
+    pricePromo:"",
+    slug:"",
+    image:[png1,png9,png7,png8]
+},
+{
+    id:2,
+    categorie: "montre",
+    name:'Gucci-2',
+    longName:"cable samsung Iphone 4, 5",
+    price:288,
+    pricePromo:119,
+    slug:"",
+    image:[png2,png9,png7,png8]
+},
+{
+    id:3,
+    categorie: "montre",
+    name:'Rolex-3',
+    longName:"china whash",
+    price:288,
+    pricePromo:119,
+    slug:"",
+    image:[png3,png9,png7,png8]
+},
+{
+    id:4,
+    categorie: "accessoire",
+    name:'ecouteur1-4',
+    longName:'Pros like that',
+    price:23,
+    pricePromo:"",
+    slug:"",
+    image:[png4,png9,png7,png8]
+},
+{
+    id:5,
+    categorie: "accessoire",
+    name:'Baladeur-5',
+    longName:"Baladeur pro max",
+    
+    price:23,
+    pricePromo:179,
+    slug:"",
+    image:[png5,png9,png7,png8]
+},
+{
+        id:6,
+    categorie: "telephone",
+    name:'camon-6',
+    longName:"pour les petit et les grand",
+    price:23,
+    pricePromo:129,
+    slug:"",
+    image:[png6,png9,png7,png8]
+},
+{
+    id:7,
+    categorie: "telephone",
+    name:'techno-7',
+    longName:"pour tous",
+    price:23,
+    pricePromo:19,
+    slug:"",
+    image:[png9,png7,png8]
+},
+{
+        id:8,
+    categorie: "telephone",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:[png9,png7,png8]
+},
+{
+        id:9,
+    categorie: "montre",
+    name:'versace-9',
+    longName:"sdsdsd",
+    price:23,
+    pricePromo:15,
+    slug:"",
+    image:[png9,png7,png8]
+},
+,
+{
+        id:10,
+    categorie: "accessoire",
+    name:'flash-10',
+    price:23,
+    longName:"grfgdf",
+    pricePromo:19,
+    slug:"",
+    image:[png1,png9,png7,png8]
+},
+{
+        id:11,
+    categorie: "montre",
+    name:'versace-9',
+    longName:"fsdfdsfdsf",
+    price:23,
+    pricePromo:15,
+    slug:"",
+    image:[png9,png7,png8]
+},
+
+{
+        id:12,
+    categorie: "telephone",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:[png9,png7,png8,png8]
+},
+{
+        id:13,
+    categorie: "telephone",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:[png9,png7,png8,png8]
+},
+{
+    id:1,
+    categorie: "accessoire",
+    name:'ecouteur1-1',
+    longName:'accessoire pour tous type de marque de telephone',
+    price:2344,
+    pricePromo:"",
+    slug:"",
+    image:[png1,png9,png7,png8]
+},
+{
+    id:2,
+    categorie: "montre",
+    name:'Gucci-2',
+    longName:"cable samsung Iphone 4, 5",
+    price:288,
+    pricePromo:119,
+    slug:"",
+    image:[png2,png9,png7,png8]
+},
+{
+    id:3,
+    categorie: "montre",
+    name:'Rolex-3',
+    longName:"china whash",
+    price:288,
+    pricePromo:119,
+    slug:"",
+    image:[png3,png9,png7,png8]
+},
+{
+    id:4,
+    categorie: "accessoire",
+    name:'ecouteur1-4',
+    longName:'Pros like that',
+    price:23,
+    pricePromo:"",
+    slug:"",
+    image:[png4,png9,png7,png8]
+},
+{
+    id:5,
+    categorie: "accessoire",
+    name:'Baladeur-5',
+    longName:"Baladeur pro max",
+    
+    price:23,
+    pricePromo:179,
+    slug:"",
+    image:[png5,png9,png7,png8]
+},
+{
+        id:6,
+    categorie: "telephone",
+    name:'camon-6',
+    longName:"pour les petit et les grand",
+    price:23,
+    pricePromo:129,
+    slug:"",
+    image:[png6,png9,png7,png8]
+},
+{
+    id:7,
+    categorie: "telephone",
+    name:'techno-7',
+    longName:"pour tous",
+    price:23,
+    pricePromo:19,
+    slug:"",
+    image:[png9,png7,png8]
+},
+{
+        id:8,
+    categorie: "telephone",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:[png9,png7,png8]
+},
+{
+        id:9,
+    categorie: "montre",
+    name:'versace-9',
+    longName:"sdsdsd",
+    price:23,
+    pricePromo:15,
+    slug:"",
+    image:[png9,png7,png8]
+},
+,
+{
+        id:10,
+    categorie: "accessoire",
+    name:'flash-10',
+    price:23,
+    longName:"grfgdf",
+    pricePromo:19,
+    slug:"",
+    image:[png1,png9,png7,png8]
+},
+{
+        id:11,
+    categorie: "montre",
+    name:'versace-9',
+    longName:"fsdfdsfdsf",
+    price:23,
+    pricePromo:15,
+    slug:"",
+    image:[png9,png7,png8]
+},
+
+{
+        id:12,
+    categorie: "telephone",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:[png9,png7,png8,png8]
+},
+{
+        id:13,
+    categorie: "telephone",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:[png9,png7,png8,png8]
+},
+{
+    id:1,
+    categorie: "accessoire",
+    name:'ecouteur1-1',
+    longName:'accessoire pour tous type de marque de telephone',
+    price:2344,
+    pricePromo:"",
+    slug:"",
+    image:[png1,png9,png7,png8]
+},
+{
+    id:2,
+    categorie: "montre",
+    name:'Gucci-2',
+    longName:"cable samsung Iphone 4, 5",
+    price:288,
+    pricePromo:119,
+    slug:"",
+    image:[png2,png9,png7,png8]
+},
+{
+    id:3,
+    categorie: "montre",
+    name:'Rolex-3',
+    longName:"china whash",
+    price:288,
+    pricePromo:119,
+    slug:"",
+    image:[png3,png9,png7,png8]
+},
+{
+    id:4,
+    categorie: "accessoire",
+    name:'ecouteur1-4',
+    longName:'Pros like that',
+    price:23,
+    pricePromo:"",
+    slug:"",
+    image:[png4,png9,png7,png8]
+},
+{
+    id:5,
+    categorie: "accessoire",
+    name:'Baladeur-5',
+    longName:"Baladeur pro max",
+    
+    price:23,
+    pricePromo:179,
+    slug:"",
+    image:[png5,png9,png7,png8]
+},
+{
+        id:6,
+    categorie: "telephone",
+    name:'camon-6',
+    longName:"pour les petit et les grand",
+    price:23,
+    pricePromo:129,
+    slug:"",
+    image:[png6,png9,png7,png8]
+},
+{
+    id:7,
+    categorie: "cosmetique",
+    name:'techno-7',
+    longName:"pour tous",
+    price:23,
+    pricePromo:19,
+    slug:"",
+    image:[png9,png7,png8]
+},
+{
+        id:8,
+    categorie: "cosmetique",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:[png9,png7,png8]
+},
+{
+        id:9,
+    categorie: "montre",
+    name:'versace-9',
+    longName:"sdsdsd",
+    price:23,
+    pricePromo:15,
+    slug:"",
+    image:[png9,png7,png8]
+},
+,
+{
+        id:10,
+    categorie: "accessoire",
+    name:'flash-10',
+    price:23,
+    longName:"grfgdf",
+    pricePromo:19,
+    slug:"",
+    image:[png1,png9,png7,png8]
+},
+{
+        id:11,
+    categorie: "montre",
+    name:'versace-9',
+    longName:"fsdfdsfdsf",
+    price:23,
+    pricePromo:15,
+    slug:"",
+    image:[png9,png7,png8]
+},
+
+{
+        id:12,
+    categorie: "telephone",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:[png9,png7,png8,png8]
+},
+{
+        id:13,
+    categorie: "telephone",
+    name:'samsung-8',
+    longName:"lefsd",
+    price:23,
+    pricePromo:139,
+    slug:"",
+    image:[png9,png7,png8,png8]
+},
 
 ]
 
 export const categories=[
+    {
+        category: 'cosmetiques',
+        slug:'Produits de beauté, manicure, pédicures, tous est disponible chez nous'
+    },
     {
         category: 'accessoires',
         slug:'Les chargeurs et tous type d\'accessoires que'
@@ -158,4 +561,26 @@ export const categories=[
         category: 'montres',
         slug:'Gucci, louis vuitton, davinchi, toustes ses marques sont disponibles ice chez nous'
     },
+
 ]
+
+export const infos=[
+    {
+    title:"aPropos",
+    title2:"A propos de nous",
+    slug:`VOUS FAIRE VIVRE UNE VIE MEILLEURE ET VOUS DONNER CONFIANCE EN VOUS ! Nous sommes une boutique en ligne basée à Kinshasa, Lubumbashi, Kolwezi et Likasi, et nous nous engageons activement à créer des produits remarquables qui vont vous aider à améliorer la qualité de votre vie, ainsi que celle de vos proches.
+
+
+    Nous croyons que vous méritez d'avoir accès à des produits de qualité et nous ferons tout pour vous satisfaire. Nos produits sont minutieusement fabriqués avec amour et passion afin de vous offrir ce qu'il y a de mieux. Nous proposons une livraison rapide en moins de 48h, car nous ne voulons pas que vous ayez à attendre trop longtemps après avoir passé votre commande. De plus, nous travaillons chaque jour pour améliorer nos services afin de vous offrir une expérience gratifiante.`,
+},
+{
+    title:"commentAcheter",
+    title2:"Comment acheter",
+    slug:`Le site est conçu de manière simple pour aider chacun de vous à y accéder facilement et rapidement. Si vous êtes intéressé par l'un de nos produits, il vous suffit de cliquer sur l'icône correspondante, ce qui vous dirigera vers WhatsApp pour discuter ensuite avec nos agents de manière simple et rapide. Ainsi, vous pourrez passer votre commande en toute sécurité.`,
+},
+{
+    title:"modePaiement",
+    title2:"Mode de paiement",
+    slug:`Dans le but de rassurer tout le monde, la boutique n'accepte pas de transfert d'argent ni paiement en ligne, seulement en cas d'urgence. Nous sommes une boutique en cours de développement, le paiement se fait cash à la livraison.`,
+}
+] 

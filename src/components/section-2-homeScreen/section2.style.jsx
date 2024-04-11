@@ -1,5 +1,8 @@
 import Section2 from "./Section2";
 import styled from "styled-components";
+import { COLOR } from "../../data/Constantes";
+import { TEXT_COLOR } from "../../data/Constantes";
+
 
 export const StyledSection2=styled(Section2)`
   a{
@@ -133,11 +136,20 @@ position : relative;
   .singleArticle2> span{
     display: block;
   }
-  .singleArticle2>img{
-    display:block;
-     margin:0 auto;
-     width:300px;
-    height:300px
+
+      .singleArticle2>div:nth-child(1){
+    display:flex;
+    flex-shrink:0;
+    justify-content:center;
+    align-items:center;
+     width:100% !important;
+    height:290px !important;
+    margin-bottom:10px;
+  }
+      .singleArticle2>div:nth-child(1)>img{
+      display:block;
+
+     
   }
     .singleArticle{
       position:relative;
@@ -151,12 +163,13 @@ position : relative;
     padding:5px;
   }
 
-
+singlearticle>*{
+  padding-left:10px;
+}
 
     .singleArticle>span:nth-child(2){
-      font-size:25px;
-      font-family:_salsa !important;
-      color: #302e2e;
+      font-size:40px;
+      color: ${TEXT_COLOR.MAIN};
       padding-bottom:.6rem;
   }
   .square-box>div>span:nth-child(2) span,.singleArticle>span:nth-child(2) span,.singleArticle2>span:nth-child(3) span{
@@ -176,21 +189,30 @@ position : relative;
   }
   .promo-1{
     margin-left:10px;
-    text-decoration:line-through black 1px;
+    text-decoration:line-through ${TEXT_COLOR.SECOND} 1px;
     font-size:14px;
-    font-weight:900;
+    font-weight:100;
+    color: ${TEXT_COLOR.SECOND};
   }
   .dollarSign{
     font-size:13px;
     line-height:14px;
+    font-weight:100;
+    color :  ${TEXT_COLOR.MAIN};
+
+  }
+  .dollarSign2{
+    font-size:30px;
+    font-weight:0;
+    line-height:14px;
     font-weight:900;
-    color : black;
+    transform:translate(-100%,-30%);
+    color :  ${TEXT_COLOR.MAIN};
 
   }
     .singleArticle2>span:nth-child(3){
-      font-size:25px;
-      font-family:_salsa !important;
-      color: black;
+      font-size:55px;
+      color:  ${TEXT_COLOR.MAIN};
       text-align:center;
   }
     .singleArticle>span:nth-child(3){
@@ -202,19 +224,20 @@ position : relative;
 
   }
     .singleArticle2>span:nth-child(4){
-      font-size:25px;
+      font-size:40px;
       text-transform:uppercase;
-      font-weight:900;
+      font-weight:800;
       letter-spacing:1px;
       line-height:25px;
       text-align:center;
+      padding-bottom:10px;
   }
     .singleArticle>span:nth-child(4){
         padding-top:2px;
         padding-right: 5px;
       font-size:14px;
       line-height:15px;
-      color: #353333;
+      color:  ${TEXT_COLOR.SECOND};
       height:45px;
       overflow-y:scroll;
   }
@@ -241,37 +264,45 @@ position : relative;
         padding-right: 5px;
       font-size:14px;
       line-height:15px;
-      color: #353333;
+      color: ${TEXT_COLOR.SECOND};
       height:70px;
       text-align:center;
       overflow-y:scroll;
   }
   ._button{
     text-align:center;
-    font-weight:bold;
+    font-weight:100;
     padding:.3rem;
     border: solid 1px grey;
     border-radius:30px/30px;
     margin:1rem 1rem;
+    color: ${TEXT_COLOR.MAIN}
   }
     ._button:active{
-        background-color:#F9FF00 ;
+        background-color:${COLOR.SECOND} ;
   }
   .singleArticle2>a{
     display: block;
     margin:0px auto;
-    color: black;
+    color:  ${TEXT_COLOR.MAIN};
 
 
   }
 
 
-    .singleArticle>img{
-    display:block;
-     margin:.5rem auto;
-     width:300px;
-    height:300px;
+    .singleArticle>div:nth-child(1){
+    display:flex;
+    flex-shrink:0;
+    justify-content:center;
+    align-items:center;
+     margin:0;
+     width:300px !important;
+    height:300px !important;
+  }
+    .singleArticle>div:nth-child(1)>img{
+      display:block;
 
+     
   }
   
   .imgHover::before{
@@ -294,20 +325,18 @@ position : relative;
 
   }
   .articleBox{
-    position:absolute;
-    top : 55rem;
-    left:0;
-    height:35rem;
+    margin:8px 0;
+    min-height:0rem;
     width:100%;
     overflow:hidden;
-    background-color:#DADAD6;
+    background-color:${COLOR.MAIN};
 
   }
 
   .listImg{
-    position: absolute;
+    /* position: absolute;
     top:45rem;
-    left:0;
+    left:0; */
     height:10rem;
     width:100%;
   }
@@ -321,55 +350,49 @@ position : relative;
     display:flex;
     gap:0 .7rem;
     overflow-x:scroll;
-    position: absolute;
+    /* position: absolute;
     top:0;
-    right:0;
+    right:0; */
     width:100%;
-    padding-top:4rem;
+    padding-top:1rem;
     height:35rem;
-    background-color:#DADAD6 ;
+    background-color:${COLOR.MAIN};
 
   }
 
   .slug{
-    z-index:  3000;;
-    position: absolute;
+    /* position: absolute;
     left:0;
-    top:35rem;
+    top:35rem; */
+    display:block;
     overflow-x:hidden;
-    height:10rem;
+    min-height:0rem;
     width:100%;
-    background-color:#DADAD6 ;
+    background-color:${COLOR.MAIN} ;
   }
   .slug>div:nth-child(1){
-    height:80%;
-    width:100%;
-    transform: scale(1.3);
-    background-color:#DADAD6;
-    border-radius: 0 0 50% 50%/0 0 100% 100%;
 
   }
   .slug>div:nth-child(2){
-    position: absolute;
-    width:100%;
+
     background-color: transparent;
     text-align: left;
     font-size:18px;
     padding:8px;
-    color : black;
-    top:0%;
+    color :  ${TEXT_COLOR.MAIN};
 
 
   }
   .category{
-    z-index:  3000;;
-
-    height:4.1rem;
+    margin:0;
+    padding:0;
+    display:block;
     width:100%;
-    position: absolute;
+    /* position: absolute;
     top:0;
-    left:0;
+    left:0; */
     overflow-x:hidden;
+    overflow-y:hidden;
     background-color:transparent;
   }
   .category>div:nth-child(1){
@@ -378,49 +401,49 @@ position : relative;
     height:80%;
     width:100%;
     transform: scale(1.3);
-    background-color:#DADAD6;
+    background-color:${COLOR.MAIN};
     border-radius: 0 0 50% 50%/0 0 100% 100%;
+    display:none;
   }
    .category>div:nth-child(3){
-    position: absolute;
-    height: 5rem;
-    left:0;
-    bottom: 100%;
-    width:100%;
-    z-index:-100;
+    display:none;
    }
     .category>div:nth-child(2){
-    position: absolute;
     font-size:22px;
     text-transform:uppercase;
     width:100%;
-    background-color: transparent;
     text-align: center;
-    color : black;
-    top:10%;
-    left:0;
-    background-color: #F9FF00;
+    line-height:25px;
+    text-decoration:underline white 1px;
+    color :  ${TEXT_COLOR.MAIN};
+    padding-top:8%;
 
 
   }
 
   /* rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
   .nav>div{
+    border-left: double 1px ${TEXT_COLOR.SECOND};
     margin: 1rem;
-    line-height:20px;
-    font-size : 18px;
-    font-weight:500;
+
+    line-height:25px;
+    font-size : 16px;
+    font-weight:0;
+    padding-left:0.5rem;
+    text-align:justify;
   display : block;
-  color : black;
+  color :  ${TEXT_COLOR.MAIN};
 }
  
   .section2-1{
   height: unset;
+  min-height:100%;
   width: 100%;
   display: grid;
   margin-top:0px;
   grid-template-columns:repeat(1,100%);
-  grid-template-rows:130.4rem 130.4rem 130.4rem ;
+  /* grid-template-rows:130.4rem 130.4rem 130.4rem ; */
+  grid-template-rows:unset ;
   
   grid-template-areas:unset;
   gap:0px;
@@ -432,24 +455,25 @@ position : relative;
 .section2-1+div{
   height:1rem;
   width:100%;
-  background-color:#DADAD6 ;
+  background-color:${COLOR.MAIN};
 }
 .square{
-  position: absolute;
+  /* position: absolute;
   top:90rem;
-  left:0;
-  height:40rem;
+  left:0; */
+  min-height:0rem;
   gap: 0px 1px;
   overflow:hidden;
   display:grid;
   grid-template-columns:50% 50%;
-  grid-template-rows:50% 50%;
+  grid-template-rows:unset;
 }
 .square-box{
+
   position: relative;
-  height:100%;
+  height:17rem;
   width:100%;
-  background-color:grey;
+  background-color:${COLOR.MAIN};
   overflow: hidden;
 }
 .square-box::after{
@@ -462,37 +486,40 @@ position : relative;
   top:0;
   position: absolute;
   left:0;
-  background-color:#F9FF00 ;
+  background-color:${COLOR.FOURTH} ;
   transform: rotate(-45deg) translateX(-30%) translateY(-2rem);
 }
-.square-box>img{
+.square-box img{
   width:100%;
   height:60%;
   display: block;
 }
 .square-box>div>span:nth-child(1){
 
-  font-weight:900;
+  font-weight:100;
   text-transform: uppercase;
-  color : #353131;
-  text-align:center;
+  color :  ${TEXT_COLOR.SECOND};
 }
 .square-box>div>span:nth-child(2){
 
-  color : #353131;
-  text-align:center;
-  font-family: _salsa !important;
+  color :  ${TEXT_COLOR.SECOND};
+  
     display:inline-block;
 
 }
+.squarePrice{
+  font-size:16px;
+  color:${TEXT_COLOR.MAIN}
+}
 .square-box>div>div{
-  color : #353131;
+  color :  ${TEXT_COLOR.FOURTH};
+  text-decoration:underline;
   font-size:14px;
-    text-align:center;
-    font-weight:bold;
-    padding:0 5px;
-    border: solid 1px grey;
-    border-radius:10px/10px;
+  color:${TEXT_COLOR.MAIN};
+    font-weight:100;
+    /* padding:0 5px; */
+    /* border: solid 1px grey;
+    border-radius:10px/10px; */
 
 }
 .square-box>div>span{
@@ -500,13 +527,15 @@ position : relative;
 }
 .square-box>div{
   display:flex;
-  color:white;
-  background-color:#DADAD6;
+  line-height:20px;
+  padding-left:.4rem;
+  color: ${TEXT_COLOR.SECOND};
+  background-color:${COLOR.MAIN};
   flex-direction: column;
-  align-items:center;
+  /* align-items:center; */
   justify-content: center;
   width:100%;
-  height:40%;
+  height:25%;
 }
 .textStyle{
   all: unset;
@@ -524,40 +553,45 @@ position : relative;
 
 
 .list-article{
+
   display:block;
   position:relative;
-  height:100%;
+  width:100%;
+  min-height:100%;
+  /* height:100%; */
   overflow-y:hidden;
-  background-color:#DADAD6;
+  background-color:${COLOR.MAIN};
+  padding:0;
+  margin:0;
 }
   .box2-1 {
     grid-area: unset;
-    background-color: #DADAD6;
+    background-color: ${COLOR.MAIN};
 }
 
 .box2-2 {
     grid-area: unset;
-    background-color: #DADAD6;
+    background-color: ${COLOR.MAIN};
 }
 
 .box2-3 {
     grid-area: unset;
-    background-color: #DADAD6;
+    background-color: ${COLOR.MAIN};
 }
 
 .box2-4 {
     grid-area: unset;
-    background-color: #DADAD6;
+    background-color: ${COLOR.MAIN};
 }
 
 .box2-5 {
     grid-area: unset;
-    background-color: #DADAD6;
+    background-color: ${COLOR.MAIN};
 }
 
 .box2-6 {
     grid-area: unset;
-    background-color: #DADAD6;
+    background-color: ${COLOR.MAIN};
 }
 }
 @media screen and ((width>500px) and (width<=900px)) {

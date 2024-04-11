@@ -1,6 +1,6 @@
 import Box2 from "./Box2";
 import styled from "styled-components";
-
+import { COLOR } from "../../data/Constantes";
 export const StyledBox2=styled(Box2)`
     all: unset;
     width: 100%;
@@ -8,7 +8,9 @@ export const StyledBox2=styled(Box2)`
     display: grid;
         margin-top:3.5rem;
     grid-template-columns : 50% 50%;
-    background-image: linear-gradient(to bottom, #F9FF00, #F9FF00, #F9FF00, #FFFFFF);
+    
+    /* background-image: linear-gradient(to bottom, #F9FF00, #F9FF00, #F9FF00, #FFFFFF); */
+    background-image: linear-gradient(to bottom, ${()=>{COLOR.MAIN}}, ${()=>{COLOR.MAIN}}, ${()=>{COLOR.MAIN}}, #FFFFFF);
     position: relative;
 
     .first{

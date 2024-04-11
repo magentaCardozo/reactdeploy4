@@ -44,13 +44,14 @@ export const StyledSearchIcon=styled(SeachIcon)`
             background-color: #F9FF00;
         }
         .result{
+            padding-top:1rem;
             height: 94%;
             width:100%;
             display: flex;
             flex-direction: column;
             gap: 4px;
             overflow-y: scroll;
-            overflow-x:hidden;
+                overflow-x:hidden;
             background-color: #DADAD6;
         }
         .searchField{

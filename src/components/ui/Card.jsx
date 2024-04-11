@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { COLOR } from '../../data/Constantes'
 const Card = ({image, text,style}) => {
     const style2={
     position:"Absolute",
@@ -7,7 +7,8 @@ const Card = ({image, text,style}) => {
     fontSize:'inherit',
     fontWeight:"bolder",
     color:'white',
-    textAlign:'center'
+    textAlign:'center',
+
 
   }
   const style1={

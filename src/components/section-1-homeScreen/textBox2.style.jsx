@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import TextBox2 from "./TextBox2";
+import { TEXT_COLOR } from "../../data/Constantes";
 
 export const StyledTextBox2 = styled(TextBox2)`
     all: unset;
@@ -11,11 +12,12 @@ export const StyledTextBox2 = styled(TextBox2)`
     border-bottom-left-radius:45%;
     height:70%;
     width:100%;
+    margin-top:1rem;
     background-color:rgba(0,0,0,0.1);
 
 h2{
     margin-left:5%;
-    margin-top:15%;
+    margin-top:12%;
     font-size:5rem;
     color : black;
     font-weight:800;
@@ -27,13 +29,13 @@ h2 span{
     color:black;
 }
 h3{
-    margin-top:10%;
+    margin-top:7%;
     margin-left:5%;
     width:70%;
-    font-size:30px;
-    text-align:center;
+    font-size:20px;
+    text-align:justify;
     letter-spacing:1px;
-    font-weight:500
+    color:${TEXT_COLOR.FOURTH};
 }
 @media screen and  ((width>=500px) and (width<950px)){
     h3{

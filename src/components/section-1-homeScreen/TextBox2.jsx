@@ -11,7 +11,7 @@ const TextBox2 = ({className}) => {
         <span >chez Ardi</span>
       </h2>
         <h3>
-          Commandez vos produits et soyez livrer où que vous soyer à Kinshasa
+          Commandez vos produits et soyez livrer où que vous soyer en RDC
         </h3>      
         <div>
         </div>

@@ -1,4 +1,5 @@
 import Box3 from "./Box3";
+import { COLOR } from "../../data/Constantes";
 import styled from "styled-components";
 
 export const StyledBox3=styled(Box3)`
@@ -19,7 +20,8 @@ export const StyledBox3=styled(Box3)`
 
 }
 .second {
-    background-image: linear-gradient(to bottom, #F9FF00, #F9FF00, #F9FF00, #FFFFFF);
+    /* background-image: linear-gradient(to bottom, #F9FF00, #F9FF00, #F9FF00, #FFFFFF); */
+    background-image: linear-gradient(to bottom, ${()=>{COLOR.MAIN}}, ${()=>{COLOR.MAIN}}, ${()=>{COLOR.MAIN}}, #FFFFFF);
     position: relative;
     display: grid;
     place-items:center;

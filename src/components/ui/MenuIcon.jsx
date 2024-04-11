@@ -31,13 +31,23 @@ const MenuIcon = ({className}) => {
               </Link>
               
               </li>
-            <li>Mode de paiement</li>
-            <li>Comment acheter chez nous ?</li>
-            <li>FAQs</li>
+            <li>
+              <Link to={`${RoutesList.Info}modePaiement`}>
+                  Mode de paiement
+              </Link>
+            </li>
+                        <li>
+              <Link to={`${RoutesList.Info}commentAcheter`}>
+                  Comment acheter chez nous ?
+              </Link>
+            </li>
+              <li>
+              <Link to={`${RoutesList.Info}aPropos`}>
+                  A propos
+              </Link>
+            </li>
+
           </ul>
-          <p >
-            chezArdi,,,,,
-          </p>
         </div>
       </div>
     </div>

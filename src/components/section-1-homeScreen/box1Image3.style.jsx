@@ -16,11 +16,18 @@ export const StyledBox1Image3 =styled(Box1Image3)`
         scale:0.8;
     }
 }
-@media screen and ((width >=400px) and (width< 755px)) {
+@media screen and ((width >=500px) and (width< 755px)) {
     .img{
         left:13%;
         top:20%;
 
+        scale:0.8;
+    }
+}
+@media screen and ((width >=400px) and (width< 500px)) {
+    .img{
+        left:-1%;
+        top:-1%;
         scale:0.8;
     }
 }

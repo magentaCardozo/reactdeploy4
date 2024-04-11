@@ -6,6 +6,9 @@ import png5 from '../../assets/images/png_5.png'
 import png6 from '../../assets/images/png_6.png'
 import png9 from '../../assets/images/png_9.png'
 import { ArticleContext } from '../../App'
+import { COLOR } from '../../data/Constantes'
+import { Link } from 'react-router-dom';
+import { RoutesList } from '../../data/Routes'
 const Section2 = ({className}) => {
 const {articles,categories} =useContext(ArticleContext)
 
@@ -19,14 +22,18 @@ const montres=articles.filter(article=>{
 const telephones=articles.filter(article=>{
     return (article.categorie=="telephone")
 })
+const cosmetiques=articles.filter(article=>{
+    return (article.categorie=="cosmetique")
+})
   return (
-    <div className={className} style={{backgroundColor:'#DADAD6'}}>
+    <div className={className} style={{backgroundColor:COLOR.MAIN}}>
         <div className='nav'>
             <div>
                 Cliquer sur les barres  en haut à gauche pour ouvrir le menu, cliquer sur l'icon de recherche en haut à gauche pour rechercher rapidement parmi tous nos articles et enfin, cliquer sur le bouton acheter maintenant pour discuter diretement avec nous
             </div>
         </div>
         <div className='section2-1'>
+            <ListArticles  id="accessoitre-link" articles={cosmetiques} categories={categories} category={"cosmetiques"} />
             <ListArticles  id="accessoitre-link" articles={accessoires} categories={categories} category={"accessoires"} />
             <ListArticles id="montre-link" articles={montres} categories={categories} category={"montres"} />
             <ListArticles id="potable-link" articles={telephones} categories={categories} category={"telephones"} />
@@ -163,14 +170,16 @@ const ListArticles=({id,articles,category,categories})=>{
         </div>
                     <div className="square">
                         {
-                            articles.filter((article,index)=>(index<5)).map(article=>{
+                            articles.map(article=>{
                                 return(
 
                                 <div className="square-box">
-                                    <img src={article.image[0]} width="100%" alt="" className='w-100' />
+                                    <Link className="link" to={`${RoutesList.Details}${article.id}`}  onClick={()=>active()}>
+                                        <img src={article.image[0]} width="100%" alt="" className='w-100' />
+                                    </Link>
                                     <div>
                                         <span>{article.name}</span>
-                                        <span>{article.price} <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
+                                        <span><span className='squarePrice'>{article.price}</span> <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
                                         <p></p>
                                         <div >
                                             <a target='_blank' href="https://wa.me/message/UNKT6MU5OODWI1">
@@ -192,13 +201,14 @@ const ListArticles=({id,articles,category,categories})=>{
 const SingleArticle=({name,image,price,pricePromo,longName})=>{
     return(
     <div className="singleArticle">
-        
-        <img src={image[0]} alt=""  /> 
+        <div>
+            <img src={image[0]} alt="" width="100%" height="100%" />         
+        </div>
         <span>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
         <span>{name} </span>
         <span>{longName}</span>
         <div className='_button'>
-            Ajouter au panier
+            Acheter maintenant
         </div>
     </div>
     )
@@ -217,8 +227,9 @@ const SingleArticle2=({name,image,price,pricePromo,longName})=>{
 
     return(
     <div className="singleArticle2" >
-        
-        <img src={image[imageOn%image.length]} alt=""/> 
+        <div>
+            <img src={image[imageOn%image.length]} alt="" width="100%" height="100%"/> 
+        </div>
         <div>
             {
                 image.map((singleImage,index,images)=>{
@@ -228,7 +239,7 @@ const SingleArticle2=({name,image,price,pricePromo,longName})=>{
                 })
             }
         </div>
-        <span>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
+        <span>{price} <span className='dollarSign2'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
         <span>{name} </span>
         <span> {longName} </span>
         <div >

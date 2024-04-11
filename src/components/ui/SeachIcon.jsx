@@ -30,11 +30,11 @@ const SeachIcon = ({className}) => {
         </div>
         <div className='result'>
           {
-            articles.filter(article=>(article.name.includes(text) ||article.longName.includes(text))).length!=0?
-            articles.filter(article=>(article.name.includes(text) ||article.longName.includes(text))).map(article=>{
+            articles.filter(article=>(article.name.toUpperCase().includes(text.toUpperCase()) ||article.longName.toUpperCase().includes(text.toUpperCase()))).length!=0?
+            articles.filter(article=>(article.name.toUpperCase().includes(text.toUpperCase()) ||article.longName.toUpperCase().includes(text.toUpperCase()))).map(article=>{
               return(
                 <Link className="link" to={`${RoutesList.Details}${article.id}`}  onClick={()=>active()}>
-                      <div key={article.id} className='article'>
+                  <div key={article.id} className='article'>
                   <div>
                     <img src={article.image[0]} alt="" />
                   </div>
