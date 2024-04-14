@@ -23,7 +23,7 @@ const Footer = () => {
                     +243840199718
                     </li>
                     <li>
-                    <a mailTo="" className="text-white">mbuyiarsen095@gmail.com</a>
+                    <a mailTo="mbuyiarsen095@gmail.com" className="text-white">mbuyiarsen095@gmail.com</a>
                     </li>
 
                 </ul>

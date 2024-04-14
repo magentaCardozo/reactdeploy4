@@ -33,12 +33,12 @@ const DetailsPage = ({className}) => {
                 {
                     article.image.map((image,index,images)=>(
                         <div key={index} className={`${index==imgCount && 'activate'} imageBox`} onClick={()=> setImgCount(index)}>
-                            <img src={image} alt="" />
+                            <img src={image} alt="" width="100%" height="100%" />
                         </div>
                     ))
                 }
             </div>
-            <div className='grid-center'><img src={image[imgCount]} alt=""/> </div>
+            <div className='grid-center'><img src={image[imgCount]} alt="" width="100%" height="100%"/> </div>
         </div>
 
 
@@ -49,7 +49,7 @@ const DetailsPage = ({className}) => {
         <span className='maincolor'> {slug} </span>
         </div>
         <div className="_button">
-            <a  href="https://wa.me/message/UNKT6MU5OODWI1">
+        <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${name}.%20Merci`}>
             Acheter maintenant
 
             </a>

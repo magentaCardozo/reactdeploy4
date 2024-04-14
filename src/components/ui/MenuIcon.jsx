@@ -16,6 +16,11 @@ const MenuIcon = ({className}) => {
         <div>
           <ul>
             <li>
+              <Link to={`${RoutesList.Categorie}cosmetique`}>
+                  Cosmetique
+              </Link>
+            </li>
+            <li>
               <Link to={`${RoutesList.Categorie}telephone`}>
                   Télephone
               </Link>

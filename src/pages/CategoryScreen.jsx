@@ -26,14 +26,14 @@ const CategoryScreen = ({className}) => {
 
     }
   return (
-    <div style={{paddingTop:"3.4rem",backgroundColor:COLOR.MAIN}}>
-        <div style={{fontSize:'22px',textTransform:'uppercase', fontWeight:'500', textAlign:'center',lineHeight:"35px",marginBottom:"10px",color:`${TEXT_COLOR.SECOND}`,textDecoration:"underline white 1px"}}>{categorie}</div>
+    <div style={{paddingTop:"3.2rem",backgroundColor:COLOR.MAIN,minHeight:"75vh"}}>
+        <div style={{fontSize:'22px',textTransform:'uppercase', fontWeight:'500', textAlign:'center',lineHeight:"35px",marginBottom:"10px",color:`${TEXT_COLOR.SECOND}`,padding:"0.9% 0",backgroundColor:"grey"}}>{categorie}</div>
         <div className={className} >
         {
             articles.filter(article=>(article.categorie==categorie))
             .map(article=>(
                                 <div className="square-box">
-                                    <Link className="link" to={`${RoutesList.Details}${article.id}`}  onClick={()=>active()}>
+                                    <Link className="link" to={`${RoutesList.Details}${article.id}`} >
                                       <img src={article.image[0]} width="100%" alt="" className='w-100' />
                                     </Link>
                                     <div>
@@ -41,7 +41,7 @@ const CategoryScreen = ({className}) => {
                                         <span>{article.price} <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
                                         <p></p>
                                         <div >
-                                            <a target='_blank' href="https://wa.me/message/UNKT6MU5OODWI1">
+                                            <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${article.name}.%20Merci`}>
                                             Acheter maintenant
 
                                             </a> 

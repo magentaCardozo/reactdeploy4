@@ -174,7 +174,7 @@ const ListArticles=({id,articles,category,categories})=>{
                                 return(
 
                                 <div className="square-box">
-                                    <Link className="link" to={`${RoutesList.Details}${article.id}`}  onClick={()=>active()}>
+                                    <Link className="link" to={`${RoutesList.Details}${article.id}`} >
                                         <img src={article.image[0]} width="100%" alt="" className='w-100' />
                                     </Link>
                                     <div>
@@ -182,7 +182,7 @@ const ListArticles=({id,articles,category,categories})=>{
                                         <span><span className='squarePrice'>{article.price}</span> <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
                                         <p></p>
                                         <div >
-                                            <a target='_blank' href="https://wa.me/message/UNKT6MU5OODWI1">
+                                            <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${article.name}.%20Merci`}>
                                             Acheter maintenant
 
                                             </a> 
@@ -208,8 +208,11 @@ const SingleArticle=({name,image,price,pricePromo,longName})=>{
         <span>{name} </span>
         <span>{longName}</span>
         <div className='_button'>
-            Acheter maintenant
-        </div>
+            <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${name}.%20Merci`}>
+                Acheter maintenant
+
+            </a>         
+            </div>
     </div>
     )
 
@@ -245,7 +248,7 @@ const SingleArticle2=({name,image,price,pricePromo,longName})=>{
         <div >
         </div>
         <div className="_button">
-            <a  href="https://wa.me/message/UNKT6MU5OODWI1">
+            <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${name}.%20Merci`}>
             Acheter maintenant
 
             </a>

@@ -5,29 +5,32 @@ import { COLOR,TEXT_COLOR } from "../data/Constantes";
 export const StyledDetailsPage= styled(DetailsPage)`
 background-color :${COLOR.MAIN};
 padding-bottom: 3rem;
-margin-top : 3.3rem;
+padding-top : 3.2rem;
 
 @media screen and (max-width:745px){
         &>div:nth-child(1){
         display:grid;
         grid-template-columns: 20% 80%;
-        min-height: 50vh;
+        height: 50vh;
         width: 100%;
         overflow: hidden;
     }
     &>div:nth-child(2){
         display:grid;
         place-content: center;
+        
     }
     &>div:nth-child(1)>div:first-child{
         display: flex;
         flex-direction: column;
+        flex-grow:1;
+        flex-shrink:0;
         overflow-y: scroll;
         gap:5px;
     }
     .imageBox{
         width:100%;
-        aspect-ratio:1/1;
+        aspect-ratio:1/1 !important;
 
     }
 
@@ -35,6 +38,7 @@ margin-top : 3.3rem;
       
         width : 100%;
         height: 100%;
+        object-fit:fill;
     }
 
     .activate{

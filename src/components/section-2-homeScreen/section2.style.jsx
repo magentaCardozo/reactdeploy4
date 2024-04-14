@@ -413,10 +413,11 @@ singlearticle>*{
     text-transform:uppercase;
     width:100%;
     text-align: center;
+    justify-content:center;
     line-height:25px;
-    text-decoration:underline white 1px;
     color :  ${TEXT_COLOR.MAIN};
-    padding-top:8%;
+    background-color:grey;
+    padding:0.9% 0;
 
 
   }
