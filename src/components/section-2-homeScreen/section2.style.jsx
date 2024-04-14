@@ -431,7 +431,7 @@ singlearticle>*{
 
     line-height:25px;
     font-size : 16px;
-    font-weight:0;
+    font-weight:700;
     padding-left:0.5rem;
     text-align:justify;
   display : block;
