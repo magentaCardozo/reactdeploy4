@@ -1,7 +1,8 @@
+const base=""
 export const RoutesList={
-    Home:"/",
-    Products:'/produits',
-    Categorie:'/produits/',
-    Details:'/produit/',
-    Info:'/info/',
+    Home:base+"/",
+    Products:base+'/produits',
+    Categorie:base+'/produits/',
+    Details:base+'/produit/',
+    Info:base+'/info/',
 }

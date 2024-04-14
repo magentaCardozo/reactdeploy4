@@ -19,10 +19,10 @@ export const StyledInfoScreen=styled(InfoScreen)`
     }
     &>div:nth-child(1)+div{
         margin-top:.8rem;
-        font-size:16px;
+        font-size:17px;
         color:${TEXT_COLOR.MAIN};
         line-height:25px;
-        text-align:justify;
+        text-align:center;
         margin:1.5rem;
     }
 

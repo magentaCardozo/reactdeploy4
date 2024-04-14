@@ -20,10 +20,10 @@ const Footer = () => {
 
                 <ul className="list-unstyled mb-4">
                     <li style={{color: "white"}}>
-                    0810001000
+                    +243840199718
                     </li>
                     <li>
-                    <a mailTo="" className="text-white">ardi2@gmail.com</a>
+                    <a mailTo="" className="text-white">mbuyiarsen095@gmail.com</a>
                     </li>
 
                 </ul>
