@@ -5,6 +5,7 @@ import Error from './Error'
 import { COLOR, TEXT_COLOR } from '../data/Constantes'
 import { Link } from 'react-router-dom';
 import { RoutesList } from '../data/Routes';
+import { base2 } from '../data/Routes'
 
 const CategoryScreen = ({className}) => {
   const { pathname } = useLocation();
@@ -41,7 +42,7 @@ const CategoryScreen = ({className}) => {
                                         <span>{article.price} <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
                                         <p></p>
                                         <div >
-                                            <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${article.name}.%20Merci`}>
+                                            <a target='_blank' href={`https://wa.me/243840199718?text=${base2+RoutesList.Details}${article.id}Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${article.name}.%20Merci`}>
                                             Acheter maintenant
 
                                             </a> 

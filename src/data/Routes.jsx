@@ -1,4 +1,5 @@
 const base=""
+export const base2="https://magentacardozo.github.io/reactdeploy4"
 export const RoutesList={
     Home:base+"/",
     Products:base+'/produits',
