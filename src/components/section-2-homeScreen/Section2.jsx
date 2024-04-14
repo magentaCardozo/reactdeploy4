@@ -198,11 +198,13 @@ const ListArticles=({id,articles,category,categories})=>{
 
     )
 }
-const SingleArticle=({name,image,price,pricePromo,longName})=>{
+const SingleArticle=({name,image,price,pricePromo,longName,id})=>{
     return(
     <div className="singleArticle">
         <div>
-            <img src={image[0]} alt="" width="100%" height="100%" />         
+            <Link className="link" to={`${RoutesList.Details}${id}`} >
+                <img src={image[0]} alt="" width="100%" height="100%" />   
+            </Link>      
         </div>
         <span>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
         <span>{name} </span>
@@ -217,7 +219,7 @@ const SingleArticle=({name,image,price,pricePromo,longName})=>{
     )
 
 }
-const SingleArticle2=({name,image,price,pricePromo,longName})=>{
+const SingleArticle2=({name,image,price,pricePromo,longName,id})=>{
     const [imageOn, setImageOn]=useState(0);
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -231,8 +233,12 @@ const SingleArticle2=({name,image,price,pricePromo,longName})=>{
     return(
     <div className="singleArticle2" >
         <div>
+        <Link className="link" to={`${RoutesList.Details}${id}`} >
             <img src={image[imageOn%image.length]} alt="" width="100%" height="100%"/> 
+        </Link>
+
         </div>
+
         <div>
             {
                 image.map((singleImage,index,images)=>{

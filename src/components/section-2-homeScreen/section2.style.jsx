@@ -146,7 +146,7 @@ position : relative;
     height:290px !important;
     margin-bottom:10px;
   }
-      .singleArticle2>div:nth-child(1)>img{
+      .singleArticle2>div:nth-child(1) img{
       display:block;
 
      
@@ -299,7 +299,7 @@ singlearticle>*{
      width:300px !important;
     height:300px !important;
   }
-    .singleArticle>div:nth-child(1)>img{
+    .singleArticle>div:nth-child(1) img{
       display:block;
 
      
