@@ -29,7 +29,7 @@ const cosmetiques=articles.filter(article=>{
     <div className={className} style={{backgroundColor:COLOR.MAIN}}>
         <div className='nav'>
             <div>
-                Cliquer sur les barres  en haut à gauche pour ouvrir le menu, cliquer sur l'icon de recherche en haut à gauche pour rechercher rapidement parmi tous nos articles et enfin, cliquer sur le bouton acheter maintenant pour discuter diretement avec nous
+                Cliquez sur les barres en haut à gauche pour ouvrir le menu, cliquez sur l'icône de recherche en haut à droite pour effectuer une recherche rapide parmi tous nos articles, cliquez sur une image pour obtenir plus de détails sur le produit, et enfin, cliquez sur le bouton "Acheter maintenant" pour discuter directement avec nous.
             </div>
         </div>
         <div className='section2-1'>

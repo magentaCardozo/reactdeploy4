@@ -26,7 +26,7 @@ padding-top : 3.2rem;
         flex-grow:1;
         flex-shrink:0;
         overflow-y: scroll;
-        gap:5px;
+        gap:1px;
     }
     .imageBox{
         width:100%;
