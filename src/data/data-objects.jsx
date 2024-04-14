@@ -7,6 +7,8 @@ import png6 from '../assets/images/png_6.png'
 import png7 from '../assets/images/png_7.png'
 import png8 from '../assets/images/png_8.png'
 import png9 from '../assets/images/png_9.png'
+import cosmetique1 from '../assets/images/cosmetique1.jpeg'
+import cosmetique2 from '../assets/images/cosmetique2.jpeg'
 
 export const articles=[
 {
@@ -470,24 +472,30 @@ export const articles=[
     image:[png6,png9,png7,png8]
 },
 {
-    id:7,
+    id:777,
     categorie: "cosmetique",
-    name:'techno-7',
-    longName:"pour tous",
-    price:23,
-    pricePromo:19,
-    slug:"",
-    image:[png9,png7,png8]
+    name:'Beure de carité',
+    longName:"beure à huile pour tous",
+    price:20,
+    pricePromo:33,
+    slug:`Disaar à la Vitamine C 🔥🔥🔥💥 Une gamme pour tout type de peau ❌Fini les tampons avec notre crème
+
+ * Elle est très recommandée pour les personnes qui ont une peau fragile due aux produits éclaircissants , élimine les boutons, tâches d'acnés , fards,  rougeurs et enlève également les dégâts laissés par le soleil sur les peaux.
+* Elle est Éclaircissante, hydratante et adoucissante. La gamme complète de Disaar éclairci naturellement ta peau et le rend un teint uniforme grâce à la vitamine C.`,
+    image:[cosmetique1,cosmetique2]
 },
 {
-        id:8,
+        id:888,
     categorie: "cosmetique",
-    name:'samsung-8',
-    longName:"lefsd",
-    price:23,
-    pricePromo:139,
-    slug:"",
-    image:[png9,png7,png8]
+    name:'Huile d\'olive',
+    longName:"lotion eclairecissante",
+    price:20,
+    pricePromo:25,
+    slug:`Disaar à la Vitamine C 🔥🔥🔥💥 Une gamme pour tout type de peau ❌Fini les tampons avec notre crème
+
+ * Elle est très recommandée pour les personnes qui ont une peau fragile due aux produits éclaircissants , élimine les boutons, tâches d'acnés , fards,  rougeurs et enlève également les dégâts laissés par le soleil sur les peaux.
+* Elle est Éclaircissante, hydratante et adoucissante. La gamme complète de Disaar éclairci naturellement ta peau et le rend un teint uniforme grâce à la vitamine C.`,
+    image:[cosmetique2,cosmetique1]
 },
 {
         id:9,

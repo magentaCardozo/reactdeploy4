@@ -339,12 +339,14 @@ singlearticle>*{
     left:0; */
     height:10rem;
     width:100%;
+    margin:2px 0;
   }
   .listImg>div{
     display:flex;
     overflow-x:scroll;
     height:100%;
     width:100%;
+
   }
   .articles{
     display:flex;
@@ -494,6 +496,7 @@ singlearticle>*{
   width:100%;
   height:60%;
   display: block;
+  margin:4px 0;
 }
 .square-box>div>span:nth-child(1){
 

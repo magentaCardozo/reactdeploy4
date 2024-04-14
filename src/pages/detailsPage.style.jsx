@@ -66,6 +66,7 @@ padding-top : 3.2rem;
         display : block;
         width:100%;
         text-align: center;
+        padding:0 1rem;
     }
     .price span{        
         display:inline-block;
