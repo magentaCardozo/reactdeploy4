@@ -7,7 +7,7 @@ const useScrollUp = () => {
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
-    setIsScrollUp(currentScrollY <= prevScrollY.current);
+    setIsScrollUp(currentScrollY < prevScrollY.current);
     prevScrollY.current = currentScrollY;
     console.log("+++++"+isScrollUp)
 
