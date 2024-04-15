@@ -88,13 +88,14 @@ export const StyledCardBox=styled(CardBox)`
             position: absolute;
             bottom:88px;
             right: 0;
-            font-size:20px;
-            line-height:25px;
+            font-size:16px;
+            line-height:20px;
             font-weight:600;
             letter-spacing:1.5px;
             height:90px;
             padding:0 10px;
-            width:150px;
+            max-width:150px;
+            width:30%;
             display: flex;
             align-items:center;
             background-color:#00CEFD;
