@@ -5,7 +5,7 @@ import { COLOR,TEXT_COLOR } from "../data/Constantes";
 export const StyledDetailsPage= styled(DetailsPage)`
 background-color :${COLOR.MAIN};
 padding-bottom: 3rem;
-padding-top : 3.2rem;
+padding-top : 3.3rem;
 
 @media screen and (max-width:745px){
         &>div:nth-child(1){

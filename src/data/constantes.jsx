@@ -7,6 +7,7 @@ export const COLOR={
     THIRD :"grey",
     FOURTH :"#DADAD6",
     FIFTH:"black",
+    SIXTH:"#b1b8c2",
 }
 
 export const TEXT_COLOR={
@@ -14,5 +15,6 @@ export const TEXT_COLOR={
     MAIN:"black",
     SECOND:"black",
     THIRD:"black",
-    FOURTH:"black"
+    FOURTH:"black",
+    FIFTH:"white"
 }

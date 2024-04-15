@@ -5,6 +5,11 @@ import { TEXT_COLOR } from "../../data/Constantes";
 
 
 export const StyledSection2=styled(Section2)`
+  Link{
+    height:100%;
+    width:100%;
+
+  }
   a{
     color: inherit;
     text-decoration:none;
@@ -144,8 +149,9 @@ position : relative;
     align-items:center;
      width:100% !important;
     height:290px !important;
-    margin-bottom:10px;
+    margin-bottom:5rem;
   }
+
       .singleArticle2>div:nth-child(1) img{
       display:block;
 
@@ -301,6 +307,7 @@ singlearticle>*{
   }
     .singleArticle>div:nth-child(1) img{
       display:block;
+      object-fit:contain;
 
      
   }
@@ -339,14 +346,13 @@ singlearticle>*{
     left:0; */
     height:10rem;
     width:100%;
-    margin:2px 0;
+    margin:2px 0 0 0;
   }
   .listImg>div{
     display:flex;
     overflow-x:scroll;
     height:100%;
     width:100%;
-
   }
   .articles{
     display:flex;
@@ -399,7 +405,7 @@ singlearticle>*{
   }
   .category>div:nth-child(1){
 
-    background-color:grey;
+    background-color:${COLOR.FOURTH};
     height:80%;
     width:100%;
     transform: scale(1.3);
@@ -417,9 +423,10 @@ singlearticle>*{
     text-align: center;
     justify-content:center;
     line-height:25px;
-    color :  ${TEXT_COLOR.MAIN};
-    background-color:grey;
+    color :  ${TEXT_COLOR.FIFTH};
+    background-color:${COLOR.FIFTH};
     padding:0.9% 0;
+    font-weight:400;
 
 
   }
@@ -489,7 +496,7 @@ singlearticle>*{
   top:0;
   position: absolute;
   left:0;
-  background-color:${COLOR.FOURTH} ;
+  background-color:grey ;
   transform: rotate(-45deg) translateX(-30%) translateY(-2rem);
 }
 .square-box img{

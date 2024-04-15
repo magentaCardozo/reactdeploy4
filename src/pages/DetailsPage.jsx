@@ -43,16 +43,16 @@ const DetailsPage = ({className}) => {
 
 
         <div >
-        <span className='price'>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign2'>$</span></span>} </span>
-        <span className='maincolor'>{name} </span>
-        <span className='maincolor'> {longName} </span>
-        <span className='maincolor'> {slug} </span>
-        </div>
         <div className="_button">
         <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${name}.%20Merci`}>
             Acheter maintenant
 
             </a>
+        </div>
+        <span className='price'>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign2'>$</span></span>} </span>
+        <span className='maincolor'>{name} </span>
+        <span className='maincolor'> {longName} </span>
+        <span className='maincolor'> {slug} </span>
         </div>
 
     </div>

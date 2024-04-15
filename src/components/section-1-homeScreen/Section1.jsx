@@ -46,8 +46,6 @@ const Section1 = () => {
         </div>
         <StyledCardBox></StyledCardBox>
 
-
-      
     </div>
   )
 }

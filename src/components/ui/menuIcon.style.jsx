@@ -1,9 +1,11 @@
 import MenuIcon from "./MenuIcon";
 import styled from "styled-components";
+import { COLOR, TEXT_COLOR} from "../../data/Constantes";
+
 
 export const StyledMenuIcon=styled(MenuIcon)`
         display:none;
-
+        
 
         @media screen and (max-width: 767px) {
         width:17px;
@@ -15,7 +17,7 @@ export const StyledMenuIcon=styled(MenuIcon)`
 
         }
         &>div>div{
-            background-color:grey;
+            background-color:${COLOR.FIFTH};
             border-right: solid .5px #DADAD6;
             position: absolute;
             width:80vw;
@@ -29,6 +31,7 @@ export const StyledMenuIcon=styled(MenuIcon)`
             transition: display 2s ease-in;
             display	: flex;
             justify-content:space-between;
+            color:grey;
         }
         &>div>div>div{
 
@@ -109,9 +112,19 @@ export const StyledMenuIcon=styled(MenuIcon)`
             animation-fill-mode:forwards;
             animation-delay:1.5s;
         }
+        .menu-down li:nth-child(6){
+            animation: liSlide .3s ;
+            animation-fill-mode:forwards;
+            animation-delay:1.7s;
+        }
+        .menu-down li:nth-child(7){
+            animation: liSlide .4s ;
+            animation-fill-mode:forwards;
+            animation-delay:2.1s;
+        }
         li>*{
             text-decoration: none;
-            color:black;
+            color:${TEXT_COLOR.FIFTH};
 
         }
         .menu-down li:nth-child(5){

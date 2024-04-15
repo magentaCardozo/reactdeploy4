@@ -6,6 +6,11 @@ export const StyledSection1=styled(Section1)`
     width: 100%;
     height: 100vh;
 
+    .moreInfo{
+        width:100%;
+        height:100%;
+        background-color : powderblue;
+    }
 
 .first{
     position: absolute;

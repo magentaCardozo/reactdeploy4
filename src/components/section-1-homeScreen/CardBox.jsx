@@ -8,7 +8,7 @@ const CardBox = ({className}) => {
 
   return (
     <div className={className}>
-        <div className="first">
+        {/* <div className="first">
             <Card image={img2} ></Card>
 
         </div>
@@ -17,7 +17,15 @@ const CardBox = ({className}) => {
         </div>
         <div className="third">
           <Card image={img1} ></Card>
+        </div> */}
+        <div className='phoneStyle'>
+          <div className='img'>
+
+          </div>
+          <div className='text'>Livraison gratuite à partir de 50$</div>
+          <div className='forColor'></div>
         </div>
+
     </div>
   )
 }

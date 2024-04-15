@@ -34,23 +34,24 @@ const MenuIcon = ({className}) => {
               <Link to={`${RoutesList.Categorie}accessoire`}>
                   Accessoires
               </Link>
-              
-              </li>
+            </li>
             <li>
               <Link to={`${RoutesList.Info}modePaiement`}>
                   Mode de paiement
               </Link>
             </li>
-                        <li>
+            <li>
               <Link to={`${RoutesList.Info}commentAcheter`}>
                   Comment acheter chez nous ?
               </Link>
             </li>
-              <li>
+            <li>
               <Link to={`${RoutesList.Info}aPropos`}>
                   A propos
               </Link>
             </li>
+
+
 
           </ul>
         </div>

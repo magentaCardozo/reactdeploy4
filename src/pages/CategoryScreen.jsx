@@ -27,8 +27,8 @@ const CategoryScreen = ({className}) => {
 
     }
   return (
-    <div style={{paddingTop:"3.2rem",backgroundColor:COLOR.MAIN,minHeight:"75vh"}}>
-        <div style={{fontSize:'22px',textTransform:'uppercase', fontWeight:'500', textAlign:'center',lineHeight:"35px",marginBottom:"10px",color:`${TEXT_COLOR.SECOND}`,padding:"0.9% 0",backgroundColor:"grey"}}>{categorie}</div>
+    <div style={{paddingTop:"3.3rem",backgroundColor:COLOR.MAIN,minHeight:"75vh"}}>
+        <div style={{fontSize:'22px',textTransform:'uppercase', fontWeight:'400', textAlign:'center',lineHeight:"35px",marginBottom:"10px",color:`${TEXT_COLOR.FIFTH}`,padding:"0.9% 0",backgroundColor:COLOR.FIFTH}}>{categorie}</div>
         <div className={className} >
         {
             articles.filter(article=>(article.categorie==categorie))
