@@ -940,13 +940,14 @@ grid-template-columns:32% 34% 34%;
             position: absolute;
             bottom:88px;
             right: 0;
-            font-size:20px;
-            line-height:25px;
+            font-size:16px;
+            line-height:20px;
             font-weight:600;
             letter-spacing:1.5px;
             height:90px;
             padding:0 10px;
-            width:150px;
+            max-width:150px;
+            width:30%;
             display: flex;
             align-items:center;
             background-color:#00CEFD;
@@ -1417,7 +1418,7 @@ grid-template-columns:32% 34% 34%;
 
         
     }
-`;let Ti=!1,Wd;const Ly=()=>{[Ti,Wd]=E.useState(!0);const e=E.useRef(0),t=()=>{const n=window.scrollY;Wd(n<=e.current),e.current=n,console.log("+++++"+Ti)};return E.useEffect(()=>(window.addEventListener("scroll",t),()=>{window.removeEventListener("scroll",t)}),[]),Ti},Dy=({className:e})=>u.jsx("div",{children:u.jsx(u.Fragment,{children:u.jsxs("nav",{className:`navbar-css ${e}`,children:[u.jsx("div",{className:(Ti||"hide ")+" navbar  row container-fluid-css-2",children:u.jsxs("div",{className:"first-col col-md-8 col-lg-9 col-12 d-flex align-items-center flex-row justify-content-between",children:[u.jsxs("div",{style:{display:"flex",flexDirection:"row"},children:[u.jsx(Ey,{}),u.jsx("div",{style:{marginRight:"6px"}}),u.jsxs(dt,{to:Fe.Home,className:"link-css title-css navbar-brand  d-block",children:[u.jsx("img",{src:my,width:"30",height:"30",class:"d-inline-block align-top",alt:""}),"ChezArdi"]})]}),u.jsx(Sy,{}),u.jsxs("div",{className:"d-flex flex-row flex-row justify-content-between",children:[u.jsx(ky,{}),u.jsx("div",{style:{marginLeft:"12px"}})]})]})}),u.jsxs("div",{className:"moreInfo",children:[u.jsx("div",{children:"Livraison rapide"}),u.jsx("div",{children:"Paiement cash à la livraison à Kinshasa, Lubumbashi et Kolwezi"})]})]})})});ne(fy)`
+`;let Ti=!1,Wd;const Ly=()=>{[Ti,Wd]=E.useState(!0);const e=E.useRef(0),t=()=>{const n=window.scrollY;Wd(n<e.current),e.current=n,console.log("+++++"+Ti)};return E.useEffect(()=>(window.addEventListener("scroll",t),()=>{window.removeEventListener("scroll",t)}),[]),Ti},Dy=({className:e})=>u.jsx("div",{children:u.jsx(u.Fragment,{children:u.jsxs("nav",{className:`navbar-css ${e}`,children:[u.jsx("div",{className:(Ti||"hide ")+" navbar  row container-fluid-css-2",children:u.jsxs("div",{className:"first-col col-md-8 col-lg-9 col-12 d-flex align-items-center flex-row justify-content-between",children:[u.jsxs("div",{style:{display:"flex",flexDirection:"row"},children:[u.jsx(Ey,{}),u.jsx("div",{style:{marginRight:"6px"}}),u.jsxs(dt,{to:Fe.Home,className:"link-css title-css navbar-brand  d-block",children:[u.jsx("img",{src:my,width:"30",height:"30",class:"d-inline-block align-top",alt:""}),"ChezArdi"]})]}),u.jsx(Sy,{}),u.jsxs("div",{className:"d-flex flex-row flex-row justify-content-between",children:[u.jsx(ky,{}),u.jsx("div",{style:{marginLeft:"12px"}})]})]})}),u.jsxs("div",{className:"moreInfo",children:[u.jsx("div",{children:"Livraison rapide"}),u.jsx("div",{children:"Paiement cash à la livraison à Kinshasa, Lubumbashi et Kolwezi"})]})]})})});ne(fy)`
 width:100%;
 @media screen and (max-width: 500px) {
     
