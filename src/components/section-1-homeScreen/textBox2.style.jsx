@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import TextBox2 from "./TextBox2";
+import { COLOR } from "../../data/Constantes";
 import { TEXT_COLOR } from "../../data/Constantes";
 
 export const StyledTextBox2 = styled(TextBox2)`
@@ -13,7 +14,7 @@ export const StyledTextBox2 = styled(TextBox2)`
     height:70%;
     width:100%;
     margin-top:1rem;
-    background-color:rgba(0,0,0,0.1);
+    background-color:${COLOR.FIFTH};
 
 h2{
     margin-left:5%;
@@ -29,11 +30,11 @@ h2 span{
     color:black;
 }
 h3{
-    margin-top:7%;
+    margin-top:12%;
     margin-left:5%;
     width:70%;
     font-size:20px;
-    text-align:justify;
+    text-align:center;
     letter-spacing:1px;
     color:${TEXT_COLOR.FOURTH};
 }

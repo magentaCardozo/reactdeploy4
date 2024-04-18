@@ -6,7 +6,7 @@ export const COLOR={
     SECOND :"#F9FF00",
     THIRD :"grey",
     FOURTH :"#DADAD6",
-    FIFTH:"black",
+    FIFTH:"#636363",
     SIXTH:"#b1b8c2",
 }
 

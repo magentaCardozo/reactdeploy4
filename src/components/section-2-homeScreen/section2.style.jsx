@@ -6,6 +6,7 @@ import { TEXT_COLOR } from "../../data/Constantes";
 
 export const StyledSection2=styled(Section2)`
   Link{
+    display:block;
     height:100%;
     width:100%;
 
@@ -135,7 +136,6 @@ position : relative;
     width:100%;
     height:100%;
     display: flex;
-
     flex-direction: column;
   }
   .singleArticle2> span{
@@ -143,26 +143,17 @@ position : relative;
   }
 
       .singleArticle2>div:nth-child(1){
-    display:flex;
-    flex-shrink:0;
-    justify-content:center;
-    align-items:center;
+
      width:100% !important;
     height:290px !important;
-    margin-bottom:5rem;
+    margin-bottom:1rem;
   }
 
-      .singleArticle2>div:nth-child(1) img{
-      display:block;
-
-     
-  }
     .singleArticle{
       position:relative;
       box-shadow: 7px 0 5px -5px grey, -7px 0 5px -5px grey;
     width:100%;
     height:100%;
-    border-top: transparent;
     display: flex;
     flex-direction: column;
     border-radius:5px;
@@ -176,20 +167,22 @@ singlearticle>*{
     .singleArticle>span:nth-child(2){
       font-size:40px;
       color: ${TEXT_COLOR.MAIN};
-      padding-bottom:.6rem;
+      padding-bottom:.1rem;
   }
   .square-box>div>span:nth-child(2) span,.singleArticle>span:nth-child(2) span,.singleArticle2>span:nth-child(3) span{
         display:inline-block;
 
   }
-  .square-box>div>span:nth-child(2)>.dollarSign{
-    transform:translate(-50%,-20%);
-    font-size:12px;
+  .square-box>div>span:nth-child(1) .dollarSign{
+    display:inline-block;
+    transform: translate(-40%,0%);
+    font-size:11px;
 
   }
   
   .singleArticle>span:nth-child(2)>.dollarSign,.singleArticle2>span:nth-child(3)>.dollarSign{
-    transform:translate(-50%,-30%);
+    display: inline-block;
+    transform:translate(-130%,-20%);
     
 
   }
@@ -200,6 +193,12 @@ singlearticle>*{
     font-weight:100;
     color: ${TEXT_COLOR.SECOND};
   }
+  .square-box .promo-1{
+    margin-left:15px;
+    text-decoration:line-through ${TEXT_COLOR.SECOND} .5px;
+    font-size:11px;
+    color: ${TEXT_COLOR.SECOND};
+  }
   .dollarSign{
     font-size:13px;
     line-height:14px;
@@ -208,16 +207,14 @@ singlearticle>*{
 
   }
   .dollarSign2{
-    font-size:30px;
+    font-size:15px;
     font-weight:0;
-    line-height:14px;
-    font-weight:900;
-    transform:translate(-100%,-30%);
+    transform:translate(-70%,-10%);
     color :  ${TEXT_COLOR.MAIN};
 
   }
     .singleArticle2>span:nth-child(3){
-      font-size:55px;
+      font-size:30px;
       color:  ${TEXT_COLOR.MAIN};
       text-align:center;
   }
@@ -230,22 +227,20 @@ singlearticle>*{
 
   }
     .singleArticle2>span:nth-child(4){
-      font-size:40px;
+      font-size:25px;
       text-transform:uppercase;
-      font-weight:800;
+      font-weight:600;
       letter-spacing:1px;
       line-height:25px;
       text-align:center;
-      padding-bottom:10px;
+      padding-bottom:5px;
   }
     .singleArticle>span:nth-child(4){
-        padding-top:2px;
-        padding-right: 5px;
+      min-height:40px;
+      justify-content:center;
       font-size:14px;
       line-height:15px;
       color:  ${TEXT_COLOR.SECOND};
-      height:45px;
-      overflow-y:scroll;
   }
   .singleArticle2>div:nth-child(2){
     height: 10px;
@@ -254,34 +249,34 @@ singlearticle>*{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom:3px;
   }
   .circle{
-    border : solid .5px grey;
+    border : solid .5px ${COLOR.FIFTH};
     height: 100%;
     aspect-ratio:1/1;
     border-radius:50%;
     background-color: transparent;
   }
   .imageOn{
-    background-color:grey;
+    background-color:${COLOR.FIFTH};
   }
     .singleArticle2>span:nth-child(5){
-        padding-top:2px;
         padding-right: 5px;
       font-size:14px;
       line-height:15px;
       color: ${TEXT_COLOR.SECOND};
-      height:70px;
+      min-height:40px;
       text-align:center;
-      overflow-y:scroll;
+      margin-bottom:10px;
   }
   ._button{
     text-align:center;
     font-weight:100;
     padding:.3rem;
-    border: solid 1px grey;
+    border: solid 1px ${COLOR.FIFTH};
     border-radius:30px/30px;
-    margin:1rem 1rem;
+    margin:0 .1rem;
     color: ${TEXT_COLOR.MAIN}
   }
     ._button:active{
@@ -297,19 +292,20 @@ singlearticle>*{
 
 
     .singleArticle>div:nth-child(1){
-    display:flex;
-    flex-shrink:0;
-    justify-content:center;
-    align-items:center;
      margin:0;
      width:300px !important;
     height:300px !important;
   }
-    .singleArticle>div:nth-child(1) img{
-      display:block;
-      object-fit:contain;
+    .singleArticle>div:nth-child(1) div{
+      height:100%;
+      width:100%;
 
-     
+  }
+    .singleArticle>div:nth-child(1) div img{
+      height:100%;
+      width:100%;
+      object-fit:fill;
+      
   }
   
   .imgHover::before{
@@ -332,7 +328,7 @@ singlearticle>*{
 
   }
   .articleBox{
-    margin:8px 0;
+    margin-bottom:10px;
     min-height:0rem;
     width:100%;
     overflow:hidden;
@@ -346,13 +342,24 @@ singlearticle>*{
     left:0; */
     height:10rem;
     width:100%;
-    margin:2px 0 0 0;
+    margin:1px 0;
   }
   .listImg>div{
     display:flex;
     overflow-x:scroll;
+    gap:2px;
     height:100%;
     width:100%;
+  }
+  .listImg>div>div{
+    flex-shrink:0;
+    height:100%;
+    aspect-ratio:1/1;
+  }
+  .listImg>div>div img{
+    width:100%;
+    height:100%;
+    object-fit:fill;
   }
   .articles{
     display:flex;
@@ -363,7 +370,7 @@ singlearticle>*{
     right:0; */
     width:100%;
     padding-top:1rem;
-    height:35rem;
+    min-height:33rem;
     background-color:${COLOR.MAIN};
 
   }
@@ -373,7 +380,6 @@ singlearticle>*{
     left:0;
     top:35rem; */
     display:block;
-    overflow-x:hidden;
     min-height:0rem;
     width:100%;
     background-color:${COLOR.MAIN} ;
@@ -385,11 +391,9 @@ singlearticle>*{
 
     background-color: transparent;
     text-align: left;
-    font-size:18px;
-    padding:8px;
+    font-size:16px;
+    padding:10px 15px;
     color :  ${TEXT_COLOR.MAIN};
-
-
   }
   .category{
     margin:0;
@@ -417,7 +421,7 @@ singlearticle>*{
     display:none;
    }
     .category>div:nth-child(2){
-    font-size:22px;
+    font-size:20px;
     text-transform:uppercase;
     width:100%;
     text-align: center;
@@ -426,7 +430,7 @@ singlearticle>*{
     color :  ${TEXT_COLOR.FIFTH};
     background-color:${COLOR.FIFTH};
     padding:0.9% 0;
-    font-weight:400;
+    font-weight:0;
 
 
   }
@@ -481,12 +485,12 @@ singlearticle>*{
 .square-box{
 
   position: relative;
-  height:17rem;
+  min-height:0rem;
   width:100%;
   background-color:${COLOR.MAIN};
   overflow: hidden;
 }
-.square-box::after{
+.promotion::after{
   content:'Promotion';
   font-size:16px;
   text-align: center;
@@ -500,30 +504,35 @@ singlearticle>*{
   transform: rotate(-45deg) translateX(-30%) translateY(-2rem);
 }
 .square-box img{
+  display:block;
   width:100%;
-  height:60%;
+  aspect-ratio:1/1;
   display: block;
   margin:4px 0;
 }
-.square-box>div>span:nth-child(1){
-
-  font-weight:100;
-  text-transform: uppercase;
-  color :  ${TEXT_COLOR.SECOND};
-}
 .square-box>div>span:nth-child(2){
 
+  font-weight:600;
+  text-transform: uppercase;
+  font-size:11px;
+  line-height:11px;
+  color :  ${TEXT_COLOR.SECOND};
+}
+.square-box>div>span:nth-child(1){
+  margin-top:10px;
   color :  ${TEXT_COLOR.SECOND};
   
     display:inline-block;
 
 }
 .squarePrice{
-  font-size:16px;
+  font-size:14px;
+  line-height:14px;
   color:${TEXT_COLOR.MAIN}
 }
 .square-box>div>div{
   color :  ${TEXT_COLOR.FOURTH};
+  margin-top: 10px;
   text-decoration:underline;
   font-size:14px;
   color:${TEXT_COLOR.MAIN};

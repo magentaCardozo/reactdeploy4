@@ -152,10 +152,9 @@ const ListArticles=({id,articles,category,categories})=>{
             <div>
             {articles.map(article=>{
                 return(
-                        <div className={`${focus==article.id ? "imgHover":""}`} style={{height:"100%",aspectRatio:"1/1", flexShrink:0  }}>
-                            <img key={article.id} src={article.image[0]} className={`img-fluid`}
-                            alt="" style={{filter:"drop-shadow(10px 10px 5px 4px)",display:'block', 
-                            height:"100%" ,width:"100%"}}  onClick={()=>changeArticleBox(article.id)}/>
+                        <div key={article.id} className={`${focus==article.id ? "imgHover":""}`} style={{height:"100%",aspectRatio:"1/1", flexShrink:0  }}>
+                            <img  src={article.image[0]} className={`img-fluid`}
+                            alt="" width="100%" height="100%" onClick={()=>changeArticleBox(article.id)}/>
               
                             
                         </div>
@@ -173,14 +172,13 @@ const ListArticles=({id,articles,category,categories})=>{
                             articles.map(article=>{
                                 return(
 
-                                <div className="square-box">
+                                <div key={article.id} className="square-box">
                                     <Link className="link" to={`${RoutesList.Details}${article.id}`} >
                                         <img src={article.image[0]} width="100%" alt="" className='w-100' />
                                     </Link>
                                     <div>
-                                        <span>{article.name}</span>
                                         <span><span className='squarePrice'>{article.price}</span> <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
-                                        <p></p>
+                                        <span>{article.name}</span>
                                         <div >
                                             <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${article.name}.%20Merci`}>
                                             Acheter maintenant
@@ -203,7 +201,10 @@ const SingleArticle=({name,image,price,pricePromo,longName,id})=>{
     <div className="singleArticle">
         <div>
             <Link className="link" to={`${RoutesList.Details}${id}`} >
+                <div>
+
                 <img src={image[0]} alt="" width="100%" height="100%" />   
+                </div>
             </Link>      
         </div>
         <span>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
@@ -224,7 +225,7 @@ const SingleArticle2=({name,image,price,pricePromo,longName,id})=>{
   useEffect(() => {
     const intervalId = setInterval(() => {
       setImageOn(prevCount => (prevCount + 1));
-    }, 4000);
+    }, 6000);
     return () => {
       clearInterval(intervalId);
     };
@@ -243,7 +244,7 @@ const SingleArticle2=({name,image,price,pricePromo,longName,id})=>{
             {
                 image.map((singleImage,index,images)=>{
                     return (
-                        <span className={`${(imageOn %images.length) ==index && "imageOn"} circle`} onClick={()=>setImageOn(index)}></span>
+                        <span key={index} className={`${(imageOn %images.length) ==index && "imageOn"} circle`} onClick={()=>setImageOn(index)}></span>
                     )
                 })
             }

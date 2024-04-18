@@ -20,7 +20,7 @@ const SeachIcon = ({className}) => {
   return (
     <div className={className}>
       <FaSearch  onClick={()=>active()}/>
-      <div className={activated && 'activated'}>
+      <div className={`${activated && "activated"}`}>
         <div className='head'>
           <input type='text' value={text} className='searchField' onChange={(e)=>setText(e.target.value)} />
           <div className='cross' onClick={()=>active()}>
@@ -33,8 +33,8 @@ const SeachIcon = ({className}) => {
             articles.filter(article=>(article.name.toUpperCase().includes(text.toUpperCase()) ||article.longName.toUpperCase().includes(text.toUpperCase()))).length!=0?
             articles.filter(article=>(article.name.toUpperCase().includes(text.toUpperCase()) ||article.longName.toUpperCase().includes(text.toUpperCase()))).map(article=>{
               return(
-                <Link className="link" to={`${RoutesList.Details}${article.id}`}  onClick={()=>active()}>
-                  <div key={article.id} className='article'>
+                <Link key={article.id+parseInt(Date.now())} className="link" to={`${RoutesList.Details}${article.id}`}  onClick={()=>active()}>
+                  <div  className='article'>
                   <div>
                     <img src={article.image[0]} alt="" />
                   </div>

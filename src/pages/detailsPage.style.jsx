@@ -5,33 +5,31 @@ import { COLOR,TEXT_COLOR } from "../data/Constantes";
 export const StyledDetailsPage= styled(DetailsPage)`
 background-color :${COLOR.MAIN};
 padding-bottom: 3rem;
-padding-top : 3.3rem;
+padding-top : 3.4rem;
 
 @media screen and (max-width:745px){
         &>div:nth-child(1){
-        display:grid;
-        grid-template-columns: 20% 80%;
-        height: 50vh;
+        height: 60vh;
         width: 100%;
-        overflow: hidden;
-    }
-    &>div:nth-child(2){
-        display:grid;
-        place-content: center;
-        
-    }
-    &>div:nth-child(1)>div:first-child{
-        display: flex;
-        flex-direction: column;
-        flex-grow:1;
-        flex-shrink:0;
-        overflow-y: scroll;
-        gap:1px;
-    }
-    .imageBox{
-        width:100%;
-        aspect-ratio:1/1 !important;
+        flex-direction:row;
+        display:flex;
+        flex-wrap:nowrap;
+          overflow-x: scroll;
+        align-items:center;
+        gap:5px;
+        padding: 30px 20px;
 
+
+    }
+
+
+    .imageBox{
+      flex-shrink:0 ;
+      flex-grow:1;
+      display: block;
+        width:80% ;
+        height:100% ;
+        border: solid ${COLOR.FIFTH} 1px;
     }
 
     img{
@@ -61,13 +59,14 @@ padding-top : 3.3rem;
 
 
     /* -------------------------- */
-
     &>div:nth-child(2)>span{
         display : block;
         width:100%;
         text-align: center;
         padding:0 1rem;
     }
+
+
     .price span{        
         display:inline-block;
           }
@@ -120,6 +119,7 @@ padding-top : 3.3rem;
   .price+span{
     font-size : 26px;
   }
+
 
     
 }

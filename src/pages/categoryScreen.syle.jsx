@@ -25,63 +25,64 @@ export const StyledCategoryScreen=styled(CategoryScreen)`
     font-weight:100;
     color: ${TEXT_COLOR.SECOND};
   }
-.square-box{
+
+
+  .square-box>div>span:nth-child(2) span,.singleArticle>span:nth-child(2) span,.singleArticle2>span:nth-child(3) span{
+        display:inline-block;
+
+  }
+  .square-box>div>span:nth-child(1) .dollarSign{
+    display:inline-block;
+    transform: translate(-40%,0%);
+    font-size:11px;
+
+  }
+  .square-box .promo-1{
+    margin-left:15px;
+    text-decoration:line-through ${TEXT_COLOR.SECOND} .5px;
+    font-size:11px;
+    color: ${TEXT_COLOR.SECOND};
+  }
+  .square-box{
 
   position: relative;
-  height:  17rem;
-
+  min-height:0rem;
   width:100%;
   background-color:${COLOR.MAIN};
   overflow: hidden;
 }
-.square-box::after{
-  content:'Promotion';
-  font-size:16px;
-  text-align: center;
-  padding-bottom:2px 0px;
-  width:100%;
-  height: 25px;
-  top:0;
-  position: absolute;
-  left:0;
-  background-color:${COLOR.FOURTH} ;
-  transform: rotate(-45deg) translateX(-30%) translateY(-2rem);
-}
 .square-box img{
+  display:block;
   width:100%;
-  height:60%;
+  aspect-ratio:1/1;
   display: block;
-}
-.square-box>div>span:nth-child(1){
-
-  font-weight:100;
-  text-transform: uppercase;
-  color :  ${TEXT_COLOR.SECOND};
+  margin:4px 0;
+  object-fit:fill;
+  border: solid;
 }
 .square-box>div>span:nth-child(2){
 
+  font-weight:600;
+  text-transform: uppercase;
+  font-size:11px;
+  line-height:11px;
+  color :  ${TEXT_COLOR.SECOND};
+}
+.square-box>div>span:nth-child(1){
+  margin-top:10px;
   color :  ${TEXT_COLOR.SECOND};
   
     display:inline-block;
 
 }
 .squarePrice{
-  font-size:16px;
+  font-size:14px;
+  line-height:14px;
   color:${TEXT_COLOR.MAIN}
 }
-.squarePrice{
-  font-size:16px;
-  color:${TEXT_COLOR.MAIN}
-}
-  .dollarSign{
-    font-size:13px;
-    line-height:14px;
-    font-weight:100;
-    color :  ${TEXT_COLOR.MAIN};
-
-  }
 .square-box>div>div{
   color :  ${TEXT_COLOR.FOURTH};
+  margin-top: 10px;
   text-decoration:underline;
   font-size:14px;
   color:${TEXT_COLOR.MAIN};
@@ -106,6 +107,5 @@ export const StyledCategoryScreen=styled(CategoryScreen)`
   width:100%;
   height:25%;
 }
-
 
 `

@@ -11,7 +11,7 @@ const MenuIcon = ({className}) => {
   }
   return (
     <div className={className}>
-      <div className={active && "menu-down"} onClick={()=>changeState()}>
+      <div className={`${active && "menu-down"}`} onClick={()=>changeState()}>
         <span></span><span></span><span></span>
         <div>
           <ul>

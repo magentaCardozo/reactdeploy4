@@ -7,7 +7,7 @@ const InfoScreen = ({className}) => {
       const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({top:0, behavior:'instant'});
   }, [pathname]);
 const {information}=useParams()
 const info= infos.filter(info=> info.title===information)[0];

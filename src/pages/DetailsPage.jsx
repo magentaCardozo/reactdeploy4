@@ -22,13 +22,12 @@ const DetailsPage = ({className}) => {
     const {name,image,price,pricePromo,longName, slug}=article;
 
       useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({top:0, behavior:'instant'});
     setImgCount(0);
   }, [pathname]);
 
   return (
     <div className={`${className} `} >
-        <div className=''>
             <div>
                 {
                     article.image.map((image,index,images)=>(
@@ -38,8 +37,6 @@ const DetailsPage = ({className}) => {
                     ))
                 }
             </div>
-            <div className='grid-center'><img src={image[imgCount]} alt="" width="100%" height="100%"/> </div>
-        </div>
 
 
         <div >
@@ -52,7 +49,7 @@ const DetailsPage = ({className}) => {
         <span className='price'>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign2'>$</span></span>} </span>
         <span className='maincolor'>{name} </span>
         <span className='maincolor'> {longName} </span>
-        <span className='maincolor'> {slug} </span>
+        <span className='maincolor slug'> {slug} </span>
         </div>
 
     </div>

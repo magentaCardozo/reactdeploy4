@@ -10,9 +10,20 @@ import { COLOR } from '../data/Constantes'
 
 
 const Footer = () => {
+   const handleMailToClick = () => {
+    const email = 'mbuyiarsen095@gmail.com';
+    const subject = 'ChezArdi';
+    const body = '';
+
+    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
+  };
   return (
-    <div className='' style={{backgroundColor:'black'}}>
-        <div class="" style={{backgroundColor:'black'}}>
+    <div  style={{backgroundColor:'black'}}>
+        <div className="" style={{backgroundColor:'black'}}>
 
             <footer style={{backgroundColor:COLOR.FIFTH}}className="text-center text-lg-start">
             <div className="container p-4">
@@ -24,7 +35,8 @@ const Footer = () => {
                     +243840199718
                     </li>
                     <li>
-                    <a mailTo="mbuyiarsen095@gmail.com" className="text-white">mbuyiarsen095@gmail.com</a>
+                    <a onClick={handleMailToClick} className="text-white">mbuyiarsen095@gmail.com</a>
+                    {/* <a mailTo="mbuyiarsen095@gmail.com" className="text-white">mbuyiarsen095@gmail.com</a> */}
                     </li>
 
                 </ul>
@@ -32,7 +44,7 @@ const Footer = () => {
             </div>
             </div>
 
-            <div class="text-center p-3 border-top border-black text-white">
+            <div className="text-center p-3 border-top border-black text-white">
             © 2024 Copyright
             </div>
         </footer>
