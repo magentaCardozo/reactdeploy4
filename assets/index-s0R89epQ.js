@@ -1946,7 +1946,7 @@ singlearticle>*{
 
     line-height:25px;
     font-size : 16px;
-    font-weight:700;
+    font-weight:600;
     padding-left:0.5rem;
     text-align:justify;
   display : block;
