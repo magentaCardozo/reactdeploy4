@@ -272,7 +272,7 @@ singlearticle>*{
   }
   ._button{
     text-align:center;
-    font-weight:100;
+    font-weight:600;
     padding:.3rem;
     border: solid 1px ${COLOR.FIFTH};
     border-radius:30px/30px;
@@ -427,7 +427,7 @@ singlearticle>*{
     text-align: center;
     justify-content:center;
     line-height:25px;
-    color :  ${TEXT_COLOR.FIFTH};
+    color :  ${TEXT_COLOR.FIFTH} !important;
     background-color:${COLOR.FIFTH};
     padding:0.9% 0;
     font-weight:0;
@@ -532,11 +532,12 @@ singlearticle>*{
 }
 .square-box>div>div{
   color :  ${TEXT_COLOR.FOURTH};
-  margin-top: 10px;
+  margin-top: 8px;
+
   text-decoration:underline;
   font-size:14px;
   color:${TEXT_COLOR.MAIN};
-    font-weight:100;
+    font-weight:600;
     /* padding:0 5px; */
     /* border: solid 1px grey;
     border-radius:10px/10px; */

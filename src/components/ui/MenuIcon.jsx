@@ -17,7 +17,7 @@ const MenuIcon = ({className}) => {
           <ul>
             <li>
               <Link to={`${RoutesList.Categorie}cosmetique`}>
-                  Cosmetique
+                  Offre premium
               </Link>
             </li>
             <li>

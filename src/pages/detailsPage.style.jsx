@@ -9,7 +9,7 @@ padding-top : 3.4rem;
 
 @media screen and (max-width:745px){
         &>div:nth-child(1){
-        height: 60vh;
+        height: 50vh;
         width: 100%;
         flex-direction:row;
         display:flex;
@@ -18,27 +18,21 @@ padding-top : 3.4rem;
         align-items:center;
         gap:5px;
         padding: 30px 20px;
-
-
     }
-
-
     .imageBox{
       flex-shrink:0 ;
       flex-grow:1;
       display: block;
-        width:80% ;
-        height:100% ;
+        height:90% ;
+        aspect-ratio:1/1;
         border: solid ${COLOR.FIFTH} 1px;
     }
-
     img{
       
         width : 100%;
         height: 100%;
         object-fit:fill;
     }
-
     .activate{
         position : relative;
     }
@@ -106,7 +100,7 @@ padding-top : 3.4rem;
   }
     ._button{
     text-align:center;
-    padding:.3rem;
+    padding:0 .3rem;
   border: solid 1px  ${TEXT_COLOR.MAIN} ;
 
     border-radius:30px/30px;
@@ -117,22 +111,37 @@ padding-top : 3.4rem;
     font-size:14px;
     line-height:14px;
     color: ${TEXT_COLOR.MAIN};
+    font-weight:900;
   }
   .price+span{
     font-size : 26px;
   }
-  .span1 {
-    float : left;
+ 
+  .span1{
     display:block;
+    position: relative;
+    margin-bottom:5px;
   }
-  .span1 *{
-    float : left;
-    color: green;
+  .span1>span{
+      display: inline-block;
+      margin-left:18px;
+      font-weight:900;
+      color: green;
+
+  }
+  .span1>span>span{
+    position: absolute;
+    bottom:0;
+    left:20%;
+      font-weight:900;
+      color: green;
+  }
+  .span1>span>span *{
+
+      font-weight:900;
+      color: green;
   }
 
-  .vert{
-    color: green;
-  }
 
     
 }

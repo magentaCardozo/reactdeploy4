@@ -33,7 +33,7 @@ const cosmetiques=articles.filter(article=>{
             </div>
         </div>
         <div className='section2-1'>
-            <ListArticles  id="accessoitre-link" articles={cosmetiques} categories={categories} category={"cosmetiques"} />
+            <ListArticles  id="accessoitre-link" articles={cosmetiques} categories={categories} category={"cosmetiques"} >salut</ListArticles>
             <ListArticles  id="accessoitre-link" articles={accessoires} categories={categories} category={"accessoires"} />
             <ListArticles id="montre-link" articles={montres} categories={categories} category={"montres"} />
             <ListArticles id="potable-link" articles={telephones} categories={categories} category={"telephones"} />
@@ -101,7 +101,7 @@ const cosmetiques=articles.filter(article=>{
   )
 }
 
-const ListArticles=({id,articles,category,categories})=>{
+const ListArticles=({id,articles,category,categories,children})=>{
     const initArticle=articles[0]
     const [articleBox, setArticleBox]=useState({...initArticle})
     const [focus, setFocus]=useState(initArticle.id);
@@ -119,7 +119,7 @@ const ListArticles=({id,articles,category,categories})=>{
             
         <div className="category" style={{}}>
             <div></div>
-            <div >{category}</div>
+            <div >{children?"Offre premium":category}</div>
             <div id={id}></div>
         </div>
         <div className="articles">

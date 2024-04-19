@@ -44,9 +44,16 @@ const DetailsPage = ({className}) => {
         <div >
         <div className="_button">
         <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${name}.%20Merci`}>
-            Acheter maintenant <br /> <span className='vert'>Discuter avec nous sur whatsapp</span>
+            Acheter maintenant 
             <span className="span1"> 
+            <span>
+
+            Discuter avec nous sur whatsapp
+                <span>
+
               <FaWhatsapp></FaWhatsapp>
+                </span>
+            </span>
               
               
             </span>

@@ -126,7 +126,7 @@ export const StyledMenuIcon=styled(MenuIcon)`
         }
         li>*{
             text-decoration: none;
-            color:${TEXT_COLOR.FIFTH};
+            color:${TEXT_COLOR.FIFTH} !important;
 
         }
         .menu-down li:nth-child(5){

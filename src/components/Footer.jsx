@@ -2,7 +2,7 @@ import Button  from './ui/Button'
 import React from 'react'
 import styled from 'styled-components'
 import { StyledButton } from './footer.style'
-import { COLOR } from '../data/Constantes'
+import { COLOR, TEXT_COLOR } from '../data/Constantes'
 
 
 
@@ -28,14 +28,14 @@ const Footer = () => {
             <footer style={{backgroundColor:COLOR.FIFTH}}className="text-center text-lg-start">
             <div className="container p-4">
             <div className="row">
-                <h5 className="text-uppercase mb-4 text-white">Nous contacter</h5>
+                <h5 className="text-uppercase mb-4 text-white">Contacts</h5>
 
                 <ul className="list-unstyled mb-4">
-                    <li style={{color: "white"}}>
+                    <li style={{color: TEXT_COLOR.FIFTH}}>
                     +243840199718
                     </li>
                     <li>
-                    <a onClick={handleMailToClick} className="text-white">mbuyiarsen095@gmail.com</a>
+                    <span onClick={handleMailToClick} className="text-white">mbuyiarsen095@gmail.com</span>
                     {/* <a mailTo="mbuyiarsen095@gmail.com" className="text-white">mbuyiarsen095@gmail.com</a> */}
                     </li>
 

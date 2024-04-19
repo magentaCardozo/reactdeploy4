@@ -82,11 +82,12 @@ export const StyledCategoryScreen=styled(CategoryScreen)`
 }
 .square-box>div>div{
   color :  ${TEXT_COLOR.FOURTH};
-  margin-top: 10px;
+  margin-top: 8px;
+
   text-decoration:underline;
   font-size:14px;
   color:${TEXT_COLOR.MAIN};
-    font-weight:100;
+    font-weight:600;
     /* padding:0 5px; */
     /* border: solid 1px grey;
     border-radius:10px/10px; */
