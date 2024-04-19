@@ -22,7 +22,7 @@ const Box2 = ({className}) => {
         <div className='second'>
           <div className='container-second'>
 
-            <StyledBox1Image22 ></StyledBox1Image22>
+            {/* <StyledBox1Image22 ></StyledBox1Image22> */}
           </div>
 
         </div>

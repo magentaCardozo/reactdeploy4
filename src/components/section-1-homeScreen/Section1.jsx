@@ -15,9 +15,9 @@ const Section1 = () => {
   const [index,setIndex]=useState(0);
   const slides=[
 
-  // <StyledBox3/>,
+  <StyledBox3/>,
   <StyledBox2/>,
-  // <StyledBox1/>,
+  <StyledBox1/>,
 ]
   const nextSlide=()=>{
     setIndex((previousIndex)=>(previousIndex+1)%slides.length)

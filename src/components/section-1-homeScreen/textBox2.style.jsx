@@ -11,7 +11,7 @@ export const StyledTextBox2 = styled(TextBox2)`
     display:block;
     border-top-right-radius:45%;
     border-bottom-left-radius:45%;
-    height:70%;
+    height:100%;
     width:100%;
     margin-top:1rem;
     background-color:${COLOR.SEVENTH};
