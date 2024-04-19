@@ -11,7 +11,7 @@ export const StyledTextBox2 = styled(TextBox2)`
     display:block;
     border-top-right-radius:45%;
     border-bottom-left-radius:45%;
-    height:100%;
+    height:90%;
     width:100%;
     margin-top:1rem;
     background-color:${COLOR.SEVENTH};
@@ -77,7 +77,7 @@ h3{
 }
 @media screen and  (max-width:400px){
     left:0%;
-        top:5%;
+        top:-10%;
 
     h2{
     font-size:3rem;

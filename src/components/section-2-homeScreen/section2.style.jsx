@@ -458,7 +458,7 @@ singlearticle>*{
   /* rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
   .nav>div{
     border-left: double 1px ${TEXT_COLOR.SECOND};
-    margin: 1rem;
+    margin: 0rem 1rem;
 
     line-height:25px;
     font-size : 16px;
@@ -483,7 +483,7 @@ singlearticle>*{
   gap:0px;
 }
 .nav{
-  margin-top:4rem;
+  margin-top:1rem;
 
 }
 .section2-1+div{

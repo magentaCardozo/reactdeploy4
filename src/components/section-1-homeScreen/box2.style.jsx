@@ -30,7 +30,7 @@ export const StyledBox2=styled(Box2)`
         min-width:400px;
         position: inherit;
         width : 70%;
-        height : 500px;
+        height : 400px;
     }
     .container-second {
         min-width:400px;
