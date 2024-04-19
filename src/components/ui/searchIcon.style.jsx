@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 export const StyledSearchIcon=styled(SeachIcon)`
         display:none;
+        z-index:900000;
+
         
 
     @media screen and (max-width: 767px) {

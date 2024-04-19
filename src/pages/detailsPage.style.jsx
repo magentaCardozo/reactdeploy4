@@ -114,12 +114,25 @@ padding-top : 3.4rem;
 
   }
   ._button>a{
+    font-size:14px;
+    line-height:14px;
     color: ${TEXT_COLOR.MAIN};
   }
   .price+span{
     font-size : 26px;
   }
+  .span1 {
+    float : left;
+    display:block;
+  }
+  .span1 *{
+    float : left;
+    color: green;
+  }
 
+  .vert{
+    color: green;
+  }
 
     
 }

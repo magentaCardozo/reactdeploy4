@@ -5,6 +5,8 @@ import { COLOR, TEXT_COLOR} from "../../data/Constantes";
 
 export const StyledMenuIcon=styled(MenuIcon)`
         display:none;
+        z-index:900000;
+ 
         
 
         @media screen and (max-width: 767px) {

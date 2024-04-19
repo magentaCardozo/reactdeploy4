@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { ArticleContext } from '../App'
 import Error from './Error';
+import { FaWhatsapp } from 'react-icons/fa';
 import { COLOR,TEXT_COLOR } from "../data/Constantes";
 
 
@@ -31,7 +32,8 @@ const DetailsPage = ({className}) => {
             <div>
                 {
                     article.image.map((image,index,images)=>(
-                        <div key={index} className={`${index==imgCount && 'activate'} imageBox`} onClick={()=> setImgCount(index)}>
+                        // <div key={index} className={`${index==imgCount && 'activate'} imageBox`} onClick={()=> setImgCount(index)}>
+                        <div key={index} className={` imageBox`} onClick={()=> setImgCount(index)}>
                             <img src={image} alt="" width="100%" height="100%" />
                         </div>
                     ))
@@ -42,7 +44,12 @@ const DetailsPage = ({className}) => {
         <div >
         <div className="_button">
         <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${name}.%20Merci`}>
-            Acheter maintenant
+            Acheter maintenant <br /> <span className='vert'>Discuter avec nous sur whatsapp</span>
+            <span className="span1"> 
+              <FaWhatsapp></FaWhatsapp>
+              
+              
+            </span>
 
             </a>
         </div>

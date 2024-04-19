@@ -50,9 +50,6 @@ const MenuIcon = ({className}) => {
                   A propos
               </Link>
             </li>
-
-
-
           </ul>
         </div>
       </div>
