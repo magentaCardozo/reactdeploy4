@@ -2,9 +2,9 @@ import Section1 from "./Section1";
 import styled from "styled-components";
 
 export const StyledSection1=styled(Section1)`
+& *{overflow: hidden};
     position: relative;
     width: 100%;
-    height: 100vh;
 
     .moreInfo{
         width:100%;

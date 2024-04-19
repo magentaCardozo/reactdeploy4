@@ -18,10 +18,19 @@ export const  StyledBox1Image1=styled(Box1Image1)`
 
 }
 
-@media screen and  ((width>=350px) and (width<500px)){
+@media screen and  ((width>=350px) and (width<410px)){
     .img{
     position:absolute;
-    top:-8rem; 
+    top:1rem; 
+    left:0rem;
+    display:block;
+
+}
+}
+@media screen and  ((width>=410px) and (width<500px)){
+    .img{
+    position:absolute;
+    top:1rem; 
     left:-1rem;
     display:block;
 

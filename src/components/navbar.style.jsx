@@ -16,7 +16,7 @@ export const StyledNavbar=styled(Navbar)`
     .moreInfo{
         min-height: 50px;
         width:100%;
-        background-color: ${COLOR.FIFTH};
+        background-color: ${COLOR.SEVENTH};
         position: fixed;
         border-radius:0  0 5px 5px;
     }

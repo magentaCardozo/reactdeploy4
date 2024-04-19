@@ -53,7 +53,7 @@ export const StyledBox2=styled(Box2)`
 }
 @media screen and  (max-width:799px){
     grid-template-columns:100%;
-    height:80%;
+    height:100%;
     .second{
         display: none;
     }

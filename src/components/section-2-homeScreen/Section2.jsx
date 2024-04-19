@@ -5,6 +5,7 @@ import png4 from '../../assets/images/png_4.png'
 import png5 from '../../assets/images/png_5.png'
 import png6 from '../../assets/images/png_6.png'
 import png9 from '../../assets/images/png_9.png'
+import { StyledCardBox } from '../section-1-homeScreen/cardBox.style'
 import { ArticleContext } from '../../App'
 import { COLOR } from '../../data/Constantes'
 import { Link } from 'react-router-dom';
@@ -119,7 +120,7 @@ const ListArticles=({id,articles,category,categories,children})=>{
             
         <div className="category" style={{}}>
             <div></div>
-            <div >{children?"Offre premium":category}</div>
+            {/* <div >{children?"Offre premium":category}</div> */}
             <div id={id}></div>
         </div>
         <div className="articles">
@@ -146,11 +147,11 @@ const ListArticles=({id,articles,category,categories,children})=>{
             </div>
 
         </div>
-
+            {children?<StyledCardBox></StyledCardBox>:<div></div>}
 
         <div className="listImg" style={{overflowX:'hidden'}}>
             <div>
-            {articles.map(article=>{
+            {articles.filter((article,index)=>index<4).map(article=>{
                 return(
                         <div key={article.id} className={`${focus==article.id ? "imgHover":""}`} style={{height:"100%",aspectRatio:"1/1", flexShrink:0  }}>
                             <img  src={article.image[0]} className={`img-fluid`}
@@ -162,6 +163,15 @@ const ListArticles=({id,articles,category,categories,children})=>{
             }
             )
             }
+            <div className='enSavoirPlus'>
+                <Link to={`${RoutesList.Categorie+articles[0].categorie}`}>
+                    <div>
+                        Voir d'autres articles de cette categorie d'articles...
+                    </div>
+                   
+              </Link>
+               
+            </div>
             </div>
         </div>
         <div className="articleBox">

@@ -59,7 +59,7 @@ h3{
 }
 @media screen and  (max-width:799px){
     left:0%;
-        top:-13%;
+        top:6%;
 
     h2{
     font-size:3rem;
@@ -73,6 +73,22 @@ h3{
     font-weight:400;
 
 
+    }
+}
+@media screen and  (max-width:400px){
+    left:0%;
+        top:5%;
+
+    h2{
+    font-size:3rem;
+    font-weight:500;
+    text-transform: uppercase;
+
+    }
+        h3{
+    font-size:30px;
+    width:90%;
+    font-weight:400;
     }
 }
 

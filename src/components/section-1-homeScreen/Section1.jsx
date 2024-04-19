@@ -44,7 +44,7 @@ const Section1 = () => {
           {slides[index]}
          {/* <StyledBox3/> */}
         </div>
-        <StyledCardBox></StyledCardBox>
+        {/* <StyledCardBox></StyledCardBox> */}
 
     </div>
   )

@@ -8,6 +8,7 @@ export const COLOR={
     FOURTH :"#DADAD6",
     FIFTH:"#636363",
     SIXTH:"#b1b8c2",
+    SEVENTH:"black",
 }
 
 export const TEXT_COLOR={

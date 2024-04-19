@@ -3,12 +3,15 @@ import { COLOR } from "../../data/Constantes";
 import styled from "styled-components";
 
 export const StyledBox3=styled(Box3)`
+& *{overflow-y:hidden};
+
 
     width: 100%;
     height: 100%;
     display: grid;
     margin-top:3.5rem;
     grid-template-columns: 32% 34% 34%;
+    overflow: hidden;
 .third,
 .first {
     position: relative;

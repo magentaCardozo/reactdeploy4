@@ -342,7 +342,8 @@ singlearticle>*{
     left:0; */
     height:10rem;
     width:100%;
-    margin:1px 0;
+    margin:0 0 10px 0;
+    padding:0 5px;
   }
   .listImg>div{
     display:flex;
@@ -354,12 +355,31 @@ singlearticle>*{
   .listImg>div>div{
     flex-shrink:0;
     height:100%;
+    border-radius:10px/10px;
+    overflow:hidden;
     aspect-ratio:1/1;
   }
   .listImg>div>div img{
     width:100%;
     height:100%;
     object-fit:fill;
+  }
+  .listImg .enSavoirPlus{
+    /* #008080 */
+    background-color:#FFD1DC;
+
+  }
+  .listImg .enSavoirPlus  div{
+    display: grid;
+    place-items: center;
+    height:100%;
+    width:100%;
+    color: ${TEXT_COLOR.MAIN};
+    font-size:18px;
+    padding:1rem;
+    font-weight:600;
+    text-align:center;
+    line-height:18px;
   }
   .articles{
     display:flex;
@@ -409,7 +429,7 @@ singlearticle>*{
   }
   .category>div:nth-child(1){
 
-    background-color:${COLOR.FOURTH};
+    background-color:transparent;
     height:80%;
     width:100%;
     transform: scale(1.3);
@@ -428,7 +448,7 @@ singlearticle>*{
     justify-content:center;
     line-height:25px;
     color :  ${TEXT_COLOR.FIFTH} !important;
-    background-color:${COLOR.FIFTH};
+    background-color:transparent;
     padding:0.9% 0;
     font-weight:0;
 
