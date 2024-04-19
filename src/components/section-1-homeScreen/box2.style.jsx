@@ -39,7 +39,7 @@ export const StyledBox2=styled(Box2)`
         height : 500px;
     }
 @media screen and  ((width>=800px) and (width<950px)){
-        height: 85%;
+        height: 100%;
 
     .container-first{
             min-width :350px;

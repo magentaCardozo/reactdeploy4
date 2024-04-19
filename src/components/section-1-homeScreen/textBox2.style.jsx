@@ -14,20 +14,20 @@ export const StyledTextBox2 = styled(TextBox2)`
     height:70%;
     width:100%;
     margin-top:1rem;
-    background-color:${COLOR.FIFTH};
+    background-color:${COLOR.SEVENTH};
 
 h2{
     margin-left:5%;
     margin-top:12%;
     font-size:5rem;
-    color : black;
+    color:${TEXT_COLOR.FIFTH};
     font-weight:800;
     text-align:left;
     letter-spacing:1px;
     font-weight:100;
 }
 h2 span{
-    color:black;
+    color:${TEXT_COLOR.FIFTH};
 }
 h3{
     margin-top:12%;
@@ -36,7 +36,7 @@ h3{
     font-size:20px;
     text-align:center;
     letter-spacing:1px;
-    color:${TEXT_COLOR.FOURTH};
+    color:${TEXT_COLOR.FIFTH};
 }
 @media screen and  ((width>=500px) and (width<950px)){
     h3{

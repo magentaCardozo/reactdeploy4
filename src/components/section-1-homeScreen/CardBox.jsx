@@ -14,7 +14,7 @@ const CardBox = ({className}) => {
 
         </div>
         <div className="second">
-          <Card text={text} style={{backgroundColor:COLOR.FIFTH}}></Card>
+          <Card text={text} style={{backgroundColor:COLOR.SEVENTH}}></Card>
         </div>
         <div className="third">
           <Card image={img1} ></Card>
