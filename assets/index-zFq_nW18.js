@@ -320,7 +320,7 @@ height:100%;
     display:block;
     border-top-right-radius:45%;
     border-bottom-left-radius:45%;
-    height:100%;
+    height:90%;
     width:100%;
     margin-top:1rem;
     background-color:${Z.SEVENTH};
@@ -386,7 +386,7 @@ h3{
 }
 @media screen and  (max-width:400px){
     left:0%;
-        top:5%;
+        top:-10%;
 
     h2{
     font-size:3rem;
@@ -785,7 +785,7 @@ grid-template-columns:32% 34% 34%;
         min-width:400px;
         position: inherit;
         width : 70%;
-        height : 500px;
+        height : 400px;
     }
     .container-second {
         min-width:400px;
@@ -1942,7 +1942,7 @@ singlearticle>*{
   /* rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
   .nav>div{
     border-left: double 1px ${H.SECOND};
-    margin: 1rem;
+    margin: 0rem 1rem;
 
     line-height:25px;
     font-size : 16px;
@@ -1967,7 +1967,7 @@ singlearticle>*{
   gap:0px;
 }
 .nav{
-  margin-top:4rem;
+  margin-top:1rem;
 
 }
 .section2-1+div{
