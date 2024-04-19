@@ -90,27 +90,27 @@ export const StyledMenuIcon=styled(MenuIcon)`
 
         }
         .menu-down ul li:nth-child(1){
-            animation: liSlide .4s ;
+            animation: liSlide .3s ;
             animation-fill-mode:forwards;
             animation-delay:.7s;
         }
         .menu-down li:nth-child(2){
-            animation: liSlide .4s ;
+            animation: liSlide .3s ;
             animation-fill-mode:forwards;
             animation-delay:.9s;
         }
         .menu-down li:nth-child(3){
-            animation: liSlide .4s ;
+            animation: liSlide .3s ;
             animation-fill-mode:forwards;
             animation-delay:1.1s;
         }
         .menu-down li:nth-child(4){
-            animation: liSlide .4s ;
+            animation: liSlide .3s ;
             animation-fill-mode:forwards;
             animation-delay:1.3s;
         }
         .menu-down li:nth-child(5){
-            animation: liSlide .4s ;
+            animation: liSlide .3s ;
             animation-fill-mode:forwards;
             animation-delay:1.5s;
         }
@@ -120,7 +120,7 @@ export const StyledMenuIcon=styled(MenuIcon)`
             animation-delay:1.7s;
         }
         .menu-down li:nth-child(7){
-            animation: liSlide .4s ;
+            animation: liSlide .3s ;
             animation-fill-mode:forwards;
             animation-delay:2.1s;
         }
@@ -165,7 +165,7 @@ export const StyledMenuIcon=styled(MenuIcon)`
         li{
             font-weight: 400;
             font-size: 19px;
-            transform: translateX(-100%);
+            transform: translateX(-120%);
             opacity: 0.5;
             border-bottom: solid 1px #DADAD6;
             margin: 10px 0;

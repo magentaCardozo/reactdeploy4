@@ -58,7 +58,6 @@ export const StyledCategoryScreen=styled(CategoryScreen)`
   display: block;
   margin:4px 0;
   object-fit:fill;
-  border: solid;
 }
 .square-box>div>span:nth-child(2){
 

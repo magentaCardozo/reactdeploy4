@@ -1,5 +1,6 @@
 import SeachIcon from "./SeachIcon";
 import styled from "styled-components";
+import { COLOR } from "../../data/Constantes";
 
 export const StyledSearchIcon=styled(SeachIcon)`
         display:none;
@@ -33,7 +34,7 @@ export const StyledSearchIcon=styled(SeachIcon)`
             position: absolute;
             top :-13px;
             right: -17px;
-            background-color: grey;
+            background-color: ${COLOR.FIFTH};
             transform: translateX(70%);
             opacity: 0.2;
             flex-direction : column;
@@ -51,10 +52,11 @@ export const StyledSearchIcon=styled(SeachIcon)`
             width:100%;
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 1px;
             overflow-y: scroll;
                 overflow-x:hidden;
-            background-color: #DADAD6;
+            /* background-color: #DADAD6; */
+            background-color: ${COLOR.FIFTH};
         }
         .searchField{
             height: 80%;
@@ -110,18 +112,19 @@ export const StyledSearchIcon=styled(SeachIcon)`
             overflow: hidden;
             background-color: grey;
             flex-shrink:0;
+            border: solid white .2px;
         }
         .article>div:nth-child(1){
             height: 100%;
             aspect-ratio:1/1;
-            background-color:grey;
+            background-color:white;
 
             
         }
         .article>div:nth-child(2){
             height: 100%;
             width: 80%;    
-            background-color:#DADAD6;   
+            background-color:${COLOR.FIFTH};   
             padding: 5px 10px 5px 10px;
         }
         .article>div:nth-child(2)>div:first-child{

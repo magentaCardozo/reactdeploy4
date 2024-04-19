@@ -23,7 +23,7 @@ padding-top : 3.4rem;
       flex-shrink:0 ;
       flex-grow:1;
       display: block;
-        height:90% ;
+        height:100% ;
         aspect-ratio:1/1;
         border: solid ${COLOR.FIFTH} 1px;
     }

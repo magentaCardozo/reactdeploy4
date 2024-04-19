@@ -28,7 +28,7 @@ const CategoryScreen = ({className}) => {
     }
   return (
     <div style={{paddingTop:"3.3rem",backgroundColor:COLOR.MAIN,minHeight:"75vh"}}>
-        <div style={{borderTp:"solid 1px black",fontSize:'22px',textTransform:'uppercase', fontWeight:'400', textAlign:'center',lineHeight:"35px",marginBottom:"10px",color:`${TEXT_COLOR.FIFTH} !important`,margin:"10px 0",backgroundColor:COLOR.FIFTH}}>{categorie}</div>
+        <div style={{borderTp:"solid 1px black",fontSize:'22px',textTransform:'uppercase', fontWeight:'400', textAlign:'center',lineHeight:"35px",marginBottom:"10px",color:`${TEXT_COLOR.FIFTH}`,margin:"10px 0",backgroundColor:COLOR.FIFTH}}>{categorie.toUpperCase()==="COSMETIQUE"?"Offre premium":categorie}</div>
         <div className={className} >
         {
             articles.filter(article=>(article.categorie==categorie))
