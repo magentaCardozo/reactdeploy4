@@ -6,6 +6,7 @@ import { COLOR, TEXT_COLOR } from '../data/Constantes'
 import { Link } from 'react-router-dom';
 import { RoutesList } from '../data/Routes';
 import { base2 } from '../data/Routes'
+import { _url } from '../data/Constantes'
 
 const CategoryScreen = ({className}) => {
   const { pathname } = useLocation();
@@ -20,8 +21,9 @@ const CategoryScreen = ({className}) => {
 
     if(articles.filter(article=>(article.categorie==categorie)).length==0){
                return  (
-                <Error>
-                </Error>
+                <div style={{padding:"7rem 3rem", height:"80vh"}}>
+                Cette categorie n est pas encore disponible, retrouver nous prochainement
+                </div>
 
                )
 
@@ -35,7 +37,7 @@ const CategoryScreen = ({className}) => {
             .map(article=>(
                                 <div key={article.id} className="square-box">
                                     <Link className="link" to={`${RoutesList.Details}${article.id}`} >
-                                        <img  src={article.image[0]}  width="100%" alt="" className='w-100' />
+                                        <img  src={_url.MAIN+article.image[0]}  width="100%" alt="" className='w-100' />
                                     </Link>
                                     <div>
                                         <span><span className='squarePrice'>{article.price}</span> <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>

@@ -19,3 +19,11 @@ export const TEXT_COLOR={
     FOURTH:"black",
     FIFTH:"white"
 }
+export const _url={
+    MAIN:"http://localhost:3000/images/"
+}
+
+export const ACTION={
+    CREATE:'CREATE',
+    
+}

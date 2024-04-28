@@ -4,6 +4,8 @@ import { ArticleContext } from '../App'
 import Error from './Error';
 import { FaWhatsapp } from 'react-icons/fa';
 import { COLOR,TEXT_COLOR } from "../data/Constantes";
+import { _url } from '../data/Constantes';
+import useGetApi from '../utils/functions';
 
 
 const DetailsPage = ({className}) => {
@@ -13,20 +15,23 @@ const DetailsPage = ({className}) => {
 
 
     const [imgCount, setImgCount]=useState(0);
-    const {articles}=useContext(ArticleContext)
     const {id}=useParams()
-    const article= articles.filter(article=> article.id===Number(id))[0];
+    const {isError,isLoading,articles} = useGetApi(`http://localhost:3000/articles/${id}`)
+    const article= articles;
 
-    if (!article){
+    const {name,image,price,pricePromo,longName, slug}=article;
+    
+    useEffect(() => {
+      window.scrollTo({top:0, behavior:'instant'});
+      setImgCount(0);
+    }, [pathname]);
+    
+    if (isError){
        return  <Error/>
     }
-    const {name,image,price,pricePromo,longName, slug}=article;
-
-      useEffect(() => {
-    window.scrollTo({top:0, behavior:'instant'});
-    setImgCount(0);
-  }, [pathname]);
-
+  if (isLoading){
+    return (<>isloading</>)
+  } 
   return (
     <div className={`${className} `} >
             <div>
@@ -34,7 +39,7 @@ const DetailsPage = ({className}) => {
                     article.image.map((image,index,images)=>(
                         // <div key={index} className={`${index==imgCount && 'activate'} imageBox`} onClick={()=> setImgCount(index)}>
                         <div key={index} className={` imageBox`} onClick={()=> setImgCount(index)}>
-                            <img src={image} alt="" width="100%" height="100%" />
+                            <img   src={_url.MAIN+image} alt="" width="100%" height="100%" />
                         </div>
                     ))
                 }

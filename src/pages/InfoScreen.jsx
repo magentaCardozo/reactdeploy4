@@ -2,8 +2,10 @@ import React, { useContext, useEffect } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import { ArticleContext } from '../App'
 import Error from './Error'
-import { infos } from '../data/data-objects'
+
+
 const InfoScreen = ({className}) => {
+  const {infos}=useContext(ArticleContext)
       const { pathname } = useLocation();
 
   useEffect(() => {

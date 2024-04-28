@@ -1,105 +1,34 @@
-// // import { useState, useEffect, useRef, useCallback } from "react";
-// // export let isScrollUp=false
-// // let setIsScrollUp
-// // const useScrollUp = () => {
-// //     [isScrollUp, setIsScrollUp] = useState(true);
-// //    const prevScrollY= useRef(0);
-// //   const  currentScrollY=useRef(0)
-// //   const defineBool=useCallback(()=>{
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-// //       setIsScrollUp(currentScrollY.current<prevScrollY.current);
-// //     console.log("C= "+(currentScrollY.current-prevScrollY.current)+"****"+" P= "+prevScrollY.current)
-// //     console.log("########"+isScrollUp)
-// //      prevScrollY.current=currentScrollY.current;
-// //   },[currentScrollY.current])
+function useGetApi(url){
+    const [articles,setArticles]=useState("")
+    const [isLoading, setIsloading]=useState(true)
+    const [isError, setIsError]=useState(false)
+    useEffect(()=>{
+        axios.get(url)
+        .then(response=>{
+            if (response.status>=400 && response.status<500){
 
-// //   function handleScroll(){
-// //     currentScrollY.current = window.scrollY;
+                setIsError(true)
+                setIsloading(false)
+                return
+            }
+            return response.data
 
-// //     console.log("C= "+(currentScrollY.current)+"****"+" P= "+prevScrollY.current)
+        })
+        .then(data=>{
+            if (data){
+                setArticles(data);
+                setIsloading(false)
+            }
+        })
+        .catch(err=>{
+                setIsError(true)
+                setIsloading(false)
+        })
+    },[url])
 
-
-// //   };
-// //     //   useEffect(
-// //     //     ()=>{
-// //     //         let timeOutId=setTimeout(() => {
-// //     //             setIsScrollUp(false)
-                
-// //     //         }, 3000);
-// //     //         return ()=>{
-// //     //             clearTimeout(timeOutId)
-// //     //         }
-// //     //     },[isScrollUp]
-// //     // )
-
-// //   useEffect(() => {
-// //     window.addEventListener("scroll",handleScroll());
-// //     return () => {
-// //       window.removeEventListener("scroll",handleScroll());
-// //     };
-// //   }, []);
-
-// //   return isScrollUp;
-// // };
-
-
-
-// // export default useScrollUp;
-
-
-
-
-
-// // import React, { useState, useEffect } from 'react';
-// // export let scrollDirection;
-// // let setScrollDirection;
-
-// // function useScrollDirection() {
-// //   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
-// //    [scrollDirection, setScrollDirection] = useState(true);
-
-// //   useEffect(() => {
-// //     const handleScroll = () => {
-// //       const currentScrollPosition = window.scrollY;
-// //       setScrollDirection(currentScrollPosition < scrollPosition);
-// //       console.log(scrollPosition+' :: Prev+++::curr :: '+currentScrollPosition)
-
-// //       setScrollPosition(currentScrollPosition);
-// //     };
-
-// //     window.addEventListener('scroll', ()=>handleScroll());
- 
-
-// //     return () => {
-// //       window.removeEventListener('scroll', ()=>handleScroll());
-// //     };
-
-// //   }, [scrollDirection]); 
-
-
-// //   return scrollDirection;
-// // }
-
-// // export default useScrollDirection;
-
-
-
-
-
-
-// import { useState, useEffect } from 'react';
-// import { useScrollPosition } from 'react-use-scroll-position';
-// export let scrollDirection;
-// let setScrollDirection
-// function useScrollDirection() {
-//   [scrollDirection, setScrollDirection] = useState(true); // Assuming true for scrolling down, false for scrolling up
-//   const scrollPosition = useScrollPosition();
-
-//   useEffect(() => {
-//     setScrollDirection(scrollPosition.prevPos.y < scrollPosition.currPos.y);
-//   }, [scrollPosition]);
-
-//   return scrollDirection;
-// }
-
-// export default useScrollDirection;
+    return ({isError,isLoading,articles, setIsError, setIsloading, setArticles})
+}
+export default useGetApi

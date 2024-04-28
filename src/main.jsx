@@ -12,6 +12,7 @@ import Error from './pages/Error'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
 import { StyledInfoScreen } from './pages/infoScreen.style';
+import Login from './pages/Login';
 
 
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
         <Route path='/' element={<App/>}>
             <Route index element={<HomeScreen/>}></Route>
             <Route path={RoutesList.Products} element={<ProductsPage/>}></Route>
+            <Route path={RoutesList.Login} element={<Login/>}></Route>
             <Route path={`${RoutesList.Categorie}:categorie`} element={<StyledCategoryScreen/>}></Route>
             <Route path={`${RoutesList.Details}:id`} element={<StyledDetailsPage/>}></Route>
             <Route path={`${RoutesList.Info}:information`} element={<StyledInfoScreen/>}></Route>

@@ -6,4 +6,5 @@ export const RoutesList={
     Categorie:base+'/produits/',
     Details:base+'/produit/',
     Info:base+'/info/',
+    Login:base+'/admin/login'
 }

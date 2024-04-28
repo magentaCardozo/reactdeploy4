@@ -10,6 +10,7 @@ import { ArticleContext } from '../../App'
 import { COLOR } from '../../data/Constantes'
 import { Link } from 'react-router-dom';
 import { RoutesList } from '../../data/Routes'
+import { _url } from '../../data/Constantes'
 const Section2 = ({className}) => {
 const {articles,categories} =useContext(ArticleContext)
 
@@ -34,10 +35,14 @@ const cosmetiques=articles.filter(article=>{
             </div>
         </div>
         <div className='section2-1'>
-            <ListArticles  id="accessoitre-link" articles={cosmetiques} categories={categories} category={"cosmetiques"} >salut</ListArticles>
-            <ListArticles  id="accessoitre-link" articles={accessoires} categories={categories} category={"accessoires"} />
-            <ListArticles id="montre-link" articles={montres} categories={categories} category={"montres"} />
-            <ListArticles id="potable-link" articles={telephones} categories={categories} category={"telephones"} />
+            {cosmetiques.length !==0 && <ListArticles  id="accessoitre-link" articles={cosmetiques} categories={categories} category={"cosmetiques"} >salut</ListArticles>}
+            {accessoires.length !==0 && <ListArticles  id="accessoitre-link" articles={accessoires} categories={categories} category={"accessoires"} />}
+            {montres.length !==0 && <ListArticles id="montre-link" articles={montres} categories={categories} category={"montres"} />}
+            {telephones.length !==0 && <ListArticles id="potable-link" articles={telephones} categories={categories} category={"telephones"} />}
+            
+            
+            
+            
 
             <div className="box2-1 flexDisplay hoverEffect" >
                 <div   className='textStyle'>
@@ -154,7 +159,7 @@ const ListArticles=({id,articles,category,categories,children})=>{
             {articles.filter((article,index)=>index<4).map(article=>{
                 return(
                         <div key={article.id} className={`${focus==article.id ? "imgHover":""}`} style={{height:"100%",aspectRatio:"1/1", flexShrink:0  }}>
-                            <img  src={article.image[0]} className={`img-fluid`}
+                            <img  src={_url.MAIN+article.image[0]} className={`img-fluid`}
                             alt="" width="100%" height="100%" onClick={()=>changeArticleBox(article.id)}/>
               
                             
@@ -184,7 +189,7 @@ const ListArticles=({id,articles,category,categories,children})=>{
 
                                 <div key={article.id} className="square-box">
                                     <Link className="link" to={`${RoutesList.Details}${article.id}`} >
-                                        <img src={article.image[0]} width="100%" alt="" className='w-100' />
+                                        <img src={_url.MAIN+article.image[0]} width="100%" alt="" className='w-100' />
                                     </Link>
                                     <div>
                                         <span><span className='squarePrice'>{article.price}</span> <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
@@ -213,7 +218,7 @@ const SingleArticle=({name,image,price,pricePromo,longName,id})=>{
             <Link className="link" to={`${RoutesList.Details}${id}`} >
                 <div>
 
-                <img src={image[0]} alt="" width="100%" height="100%" />   
+                <img src={_url.MAIN+image[0]} alt="" width="100%" height="100%" />   
                 </div>
             </Link>      
         </div>
@@ -245,7 +250,7 @@ const SingleArticle2=({name,image,price,pricePromo,longName,id})=>{
     <div className="singleArticle2" >
         <div>
         <Link className="link" to={`${RoutesList.Details}${id}`} >
-            <img src={image[imageOn%image.length]} alt="" width="100%" height="100%"/> 
+            <img src={_url.MAIN+image[imageOn%image.length]} alt="" width="100%" height="100%"/> 
         </Link>
 
         </div>
