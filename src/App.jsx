@@ -49,8 +49,12 @@ const App=()=> {
         })
     },[look])
 
+    
+
+      const check=  localStorage.getItem("credential");
+
     useEffect(() => {
-    axios.get("https://chez-ardi.onrender.com/users/admin/check",{
+    axios.post("https://chez-ardi.onrender.com/users/admin/check",{check},{
         withCredentials: true
       })
         .then(response => {

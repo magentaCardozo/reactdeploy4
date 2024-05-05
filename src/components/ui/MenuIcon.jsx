@@ -12,7 +12,9 @@ const MenuIcon = ({className}) => {
 
   const removeCoockie=()=>{
      removeCookie('jwt', { path: '/' });
-    console.log(cookies)
+     // Remove the item with the key "credential" from local storage
+    localStorage.removeItem("credential");
+    // console.log(cookies)
     setLookCon(previous=>!previous)
 
   }
