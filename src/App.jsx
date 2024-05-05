@@ -59,8 +59,9 @@ const App=()=> {
 
 
       }else{
+        const value=localStorage.getItem('credential')
 
-    axios.post("https://chez-ardi.onrender.com/users/admin/check", { check: localStorage.getItem('credential')})
+    axios.post("https://chez-ardi.onrender.com/users/admin/check", { check:value})
   .then(response => {
     const data = response.data;
     if (data && data.status === "allowed") {
