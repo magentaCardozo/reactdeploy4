@@ -21,7 +21,7 @@ const WaitComponent = () => {
     <div className={classes.loadingContainer}>
       <CircularProgress />
       <Typography variant="body1" className={classes.loadingText}>
-        Loading...
+        chargement...
       </Typography>
     </div>
   );

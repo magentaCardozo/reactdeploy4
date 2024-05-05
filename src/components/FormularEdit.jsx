@@ -17,6 +17,10 @@ import {
   Grid,
   makeStyles,
   TextareaAutosize,
+    Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -69,6 +73,7 @@ const navigate=useNavigate()
   
   const [success, setSuccess]=useState(false)
   const [incomplete, SetIsIncomplete]=useState(false)
+  const [chargement, setChargement]=useState(false)
   const [formData, setFormData] = useState({
     name: article?.name,
     longName: article?.longName,
@@ -101,6 +106,7 @@ const handleFileUpload = (files) => {
       SetIsIncomplete(true)
       return
     }
+    setChargement(true)
 axios.patch(`https://chez-ardi.onrender.com/articles/${id}`, formData,{withCredentials:true})
   .then(res => {
     // console.log(res.status);
@@ -117,6 +123,7 @@ axios.patch(`https://chez-ardi.onrender.com/articles/${id}`, formData,{withCrede
   })
     setLook(previous=>!previous)
     setSuccess(true)
+    setChargement(false)
     navigate(RoutesList.ARTICLESPAGE)
     } else {
       setSuccess(false);
@@ -210,6 +217,13 @@ axios.patch(`https://chez-ardi.onrender.com/articles/${id}`, formData,{withCrede
           </Grid>
         </Grid>
       </form>
+          <Dialog open={chargement} onClose={()=>setChargement(false)}>
+        <DialogContent>
+          <Typography variant="body1">
+            chargement ....
+          </Typography>
+        </DialogContent>
+      </Dialog>
     </Container>
   );
 };

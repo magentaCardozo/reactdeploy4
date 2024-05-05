@@ -113,7 +113,7 @@ const LoginForm = () => {
           </Grid>
           <Grid item xs={12}>
             <Button variant="contained" color="primary" type="submit">
-              Login
+              Connexion
             </Button>
           </Grid>
         </Grid>

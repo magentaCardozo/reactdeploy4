@@ -4,6 +4,7 @@ import usePostArticle from '../services/api';
 import FileBase64 from 'react-file-base64';
 import MessageBox from './MessageBox';
 import { ArticleContext } from '../App';
+import WaitComponent from './WaitComponent';
 import {
   Container,
   TextField,
@@ -15,6 +16,10 @@ import {
   Grid,
   makeStyles,
   TextareaAutosize,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -58,6 +63,8 @@ const Formular = () => {
 
   const [success, setSuccess]=useState(false)
   const [incomplete, SetIsIncomplete]=useState(false)
+  const [envoyer, setEnvoyer]=useState(false)
+  const [chargement,setChargement]=useState(false)
   const [formData, setFormData] = useState({
     name: '',
     longName: '',
@@ -90,6 +97,7 @@ const handleFileUpload = (files) => {
       SetIsIncomplete(true)
       return
     }
+    setChargement(true)
 axios.post("https://chez-ardi.onrender.com/articles/", formData,{withCredentials:true})
   .then(res => {
     // console.log(res.status);
@@ -105,6 +113,8 @@ axios.post("https://chez-ardi.onrender.com/articles/", formData,{withCredentials
       })
       setLook(previous=>!previous)
       setSuccess(true);
+      setEnvoyer(true)
+      setChargement(false)
       // console.log(success)
     } else {
       setSuccess(false);
@@ -122,6 +132,7 @@ axios.post("https://chez-ardi.onrender.com/articles/", formData,{withCredentials
     <Container className={classes.container}>
       <MessageBox message={"Article ajouté avec succes !"} open={success} onClose={()=>{setSuccess(false)}}></MessageBox>
       <MessageBox message={"Veuillez remplir tous les champs !"} open={incomplete} onClose={()=>{SetIsIncomplete(false)}}></MessageBox>
+      {success && WaitComponent}
       <form onSubmit={handleSubmit}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
@@ -198,6 +209,13 @@ axios.post("https://chez-ardi.onrender.com/articles/", formData,{withCredentials
           </Grid>
         </Grid>
       </form>
+        <Dialog open={chargement} onClose={()=>setChargement(false)}>
+        <DialogContent>
+          <Typography variant="body1">
+            chargement ....
+          </Typography>
+        </DialogContent>
+      </Dialog>
     </Container>
   );
 };
