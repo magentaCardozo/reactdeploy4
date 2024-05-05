@@ -60,7 +60,7 @@ const App=()=> {
         .then(data => {
             if(data && data?.status==="allowed"){
                 setIsConnected(true)
-                // console.log('connected')
+                console.log('connected')
                 
             }
         })
