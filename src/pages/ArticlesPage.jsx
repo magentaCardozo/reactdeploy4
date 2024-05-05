@@ -112,7 +112,6 @@ const {articles, setLook, isConnected} = useContext(ArticleContext)
       />
       <Grid container spacing={2}>
       <AddComponent></AddComponent>
-        {!articles && <LoadingPage></LoadingPage>}
         {filteredArticles.map((article) => (
           <Grid item xs={12} sm={6} md={4} key={article.id}>
             <Paper elevation={3} className={classes.paper}>
