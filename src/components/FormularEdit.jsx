@@ -21,6 +21,7 @@ import {
   DialogTitle,
   DialogContent,
   DialogActions,
+  Typography
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
