@@ -55,6 +55,7 @@ const App=()=> {
     useEffect(() => {
       if(!localStorage.getItem('credential')){
           setIsConnected(false);
+          console.log('Faux tete')
 
 
       }else{
