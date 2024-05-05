@@ -25,17 +25,22 @@ import {
 const useStyles = makeStyles((theme) => ({
   formControl: {
     minWidth: 200,
-    backgroundColor:'white',
+    backgroundColor: 'white',
     marginBottom: theme.spacing(2),
+    color: 'black', // Set the text color to black
   },
   textarea: {
     resize: 'vertical',
     width: '100%',
     padding: theme.spacing(1),
     fontFamily: theme.typography.fontFamily,
+    backgroundColor: 'white',
+    color: 'black', // Set the text color to black
   },
   container: {
     padding: theme.spacing(3),
+    backgroundColor: 'white',
+    color: 'black', // Set the text color to black
   },
 }));
 
