@@ -53,7 +53,11 @@ const App=()=> {
 
 
     useEffect(() => {
-      if(localStorage.getItem('credential')){
+      if(!localStorage.getItem('credential')){
+          setIsConnected(false);
+
+
+      }else{
         console.log("###"+localStorage.getItem('credential').token)
 
     axios.post("https://chez-ardi.onrender.com/users/admin/check", { check: localStorage.getItem('credential').token})
@@ -77,9 +81,6 @@ const App=()=> {
   })
   .finally(() => {
   });
-}else{
-      setIsConnected(false);
-
 }
 
     }, [lookCon]);
