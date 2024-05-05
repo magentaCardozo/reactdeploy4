@@ -54,6 +54,7 @@ const App=()=> {
 
     useEffect(() => {
       if(localStorage.getItem('credential')){
+        console.log("###"+localStorage.getItem('credential').token)
 
     axios.post("https://chez-ardi.onrender.com/users/admin/check", { check: localStorage.getItem('credential').token})
   .then(response => {
