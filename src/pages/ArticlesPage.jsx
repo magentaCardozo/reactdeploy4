@@ -84,6 +84,7 @@ const {articles, setLook, isConnected} = useContext(ArticleContext)
             // console.log("success")
             setDeleteLoading(false)
             setChargement(false)
+            setLook(p=>!p)
         }
     })
     .catch(err=>{
