@@ -55,32 +55,27 @@ const App=()=> {
       console.log("+"+check)
 
     useEffect(() => {
-    axios.post("https://chez-ardi.onrender.com/users/admin/check",{check:localStorage.getItem("credential")})
-        .then(response => {
-
-        return response.data;
-        })
-        .then(data => {
-            if(data && data?.status==="allowed"){
-                setIsConnected(true)
-                console.log('connected')
-                
-            }
-        })
-        .catch(error => {
-      if (error.response && error.response.status === 401) {
-        console.error('bon');
-        console.error(error)
-        setIsConnected(false)
-      } else {
-        console.error('An error occurred:$$', error.message);
-        setIsConnected(false)
-
-      }
-    })
-    .finally(()=>{
-        // console.log(isConnected)
-    })
+    axios.post("https://chez-ardi.onrender.com/users/admin/check", { check: localStorage.getItem("credential") })
+  .then(response => {
+    const data = response.data;
+    if (data && data.status === "allowed") {
+      setIsConnected(true);
+      console.log('Connected');
+    } else {
+      setIsConnected(false);
+      console.log('Not allowed');
+    }
+  })
+  .catch(error => {
+    if (error.response && error.response.status === 401) {
+      console.error('Unauthorized');
+    } else {
+      console.error('An error occurred:', error.message);
+    }
+    setIsConnected(false);
+  })
+  .finally(() => {
+  });
     }, [lookCon]);
 
   
