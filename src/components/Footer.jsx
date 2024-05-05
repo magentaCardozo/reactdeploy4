@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { StyledButton } from './footer.style'
 import { COLOR, TEXT_COLOR } from '../data/Constantes'
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -10,6 +11,10 @@ import { COLOR, TEXT_COLOR } from '../data/Constantes'
 
 
 const Footer = () => {
+    let navigate = useNavigate();
+    const openWin=()=>{
+        navigate("/admin/login");
+  }
    const handleMailToClick = () => {
     const email = 'mbuyiarsen095@gmail.com';
     const subject = 'ChezArdi';
@@ -44,7 +49,7 @@ const Footer = () => {
             </div>
             </div>
 
-            <div className="text-center p-3 border-top border-black text-white">
+            <div className="text-center p-3 border-top border-black text-white" onDoubleClick={openWin}>
             © 2024 Copyright
             </div>
         </footer>

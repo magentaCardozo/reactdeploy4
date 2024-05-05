@@ -6,25 +6,91 @@ import { StyledNavbar } from './components/navbar.style'
 import {  categories,infos } from './data/data-objects'
 import useGetApi from './utils/functions'
 import Headroom from 'react-headroom'
+import axios from 'axios'
 export const ArticleContext = createContext();
 // import { pathUrl,setPathUrl } from './data/global_variable'
 
 const App=()=> {
   // setPathUrl()
 
-  const {isError,isLoading,articles}=useGetApi("http://localhost:3000/articles/")
+  const [look, setLook]=useState(false)
+  const [lookCon, setLookCon]=useState(false)
+  const [isError, setIsError]=useState(false)
+  const [articles, setArticles]=useState([])
+  const [isLoading, setIsLoading]=useState(true)
+  const [isConnected, setIsConnected]=useState(false)
 
+    useEffect(()=>{
+        axios.get("https://chez-ardi.onrender.com/articles")
+        .then(response=>{
+            if (response.status>=400 && response.status<500){
+
+                setIsError(true)
+                setIsLoading(false)
+                return
+            }
+            return response.data
+
+        })
+        .then(data=>{
+            if (data){
+                setArticles(data);
+
+                setIsLoading(false)
+            }else{
+              setIsLoading(false)
+
+            }
+        })
+        .catch(err=>{
+                setIsError(true)
+                setIsLoading(false)
+                console.error(err)
+        })
+    },[look])
+
+    useEffect(() => {
+    axios.get("https://chez-ardi.onrender.com/users/admin/check",{
+        withCredentials: true
+      })
+        .then(response => {
+
+        return response.data;
+        })
+        .then(data => {
+            if(data && data?.status==="allowed"){
+                setIsConnected(true)
+                // console.log('connected')
+                
+            }
+        })
+        .catch(error => {
+      if (error.response && error.response.status === 401) {
+        console.error('bon');
+        console.error(error)
+        setIsConnected(false)
+      } else {
+        console.error('An error occurred:$$', error.message);
+        setIsConnected(false)
+
+      }
+    })
+    .finally(()=>{
+        // console.log(isConnected)
+    })
+    }, [lookCon]);
+
+  
   if (isError){
     return (<>Error</>)
   } 
-  if (isLoading){
-    return (<>isloading</>)
-  } 
+
+ 
   // return(
   //   <>{articles[0].categorie}</>
   // )
   return (
-    <ArticleContext.Provider value={{articles,categories,infos}}>
+    <ArticleContext.Provider value={{isError,setIsError, articles,categories,infos,setArticles,look,setLook,lookCon,setLookCon,isLoading, isConnected,setIsConnected}}>
     <div className='theApp' >
 
  

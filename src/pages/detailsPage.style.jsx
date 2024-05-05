@@ -101,7 +101,7 @@ padding-top : 3.4rem;
     ._button{
     text-align:center;
     padding:0 .3rem;
-  border: solid 1px  ${TEXT_COLOR.MAIN} ;
+  border: solid 1px  ${COLOR.SECOND} ;
 
     border-radius:30px/30px;
     margin:1rem 1rem;

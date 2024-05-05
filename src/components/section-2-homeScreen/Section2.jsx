@@ -11,8 +11,13 @@ import { COLOR } from '../../data/Constantes'
 import { Link } from 'react-router-dom';
 import { RoutesList } from '../../data/Routes'
 import { _url } from '../../data/Constantes'
+import LoadingPage from '../LoadingPage'
+import { FaWhatsapp } from 'react-icons/fa';
+
 const Section2 = ({className}) => {
-const {articles,categories} =useContext(ArticleContext)
+
+    const {articles,categories,isLoading,look,setLook} =useContext(ArticleContext)
+
 
 
 const accessoires=articles.filter(article=>{
@@ -34,6 +39,7 @@ const cosmetiques=articles.filter(article=>{
                 Cliquez sur les barres en haut à gauche pour ouvrir le menu, cliquez sur l'icône de recherche en haut à droite pour effectuer une recherche rapide parmi tous nos articles, cliquez sur une image pour obtenir plus de détails sur le produit, et enfin, cliquez sur le bouton "Acheter maintenant" pour discuter directement avec nous.
             </div>
         </div>
+        {isLoading && <LoadingPage></LoadingPage>}
         <div className='section2-1'>
             {cosmetiques.length !==0 && <ListArticles  id="accessoitre-link" articles={cosmetiques} categories={categories} category={"cosmetiques"} >salut</ListArticles>}
             {accessoires.length !==0 && <ListArticles  id="accessoitre-link" articles={accessoires} categories={categories} category={"accessoires"} />}
@@ -189,14 +195,17 @@ const ListArticles=({id,articles,category,categories,children})=>{
 
                                 <div key={article.id} className="square-box">
                                     <Link className="link" to={`${RoutesList.Details}${article.id}`} >
-                                        <img src={_url.MAIN+article.image[0]} width="100%" alt="" className='w-100' />
+                                        <img src={_url.MAIN+article.image[0]}  width="100%" alt="" className='w-100' />
                                     </Link>
                                     <div>
                                         <span><span className='squarePrice'>{article.price}</span> <span className='dollarSign'>$</span> {!article.pricePromo || <span className='promo-1'>{article.pricePromo} <span className='dollarSign'>$</span></span>} </span>
                                         <span>{article.name}</span>
-                                        <div >
+                                        <div className='link-box'>
                                             <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${article.name}.%20Merci`}>
                                             Acheter maintenant
+                                            <span>
+                                                <FaWhatsapp></FaWhatsapp>
+                                            </span>
 
                                             </a> 
                                        </div>
@@ -228,6 +237,9 @@ const SingleArticle=({name,image,price,pricePromo,longName,id})=>{
         <div className='_button'>
             <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${name}.%20Merci`}>
                 Acheter maintenant
+                 <span>
+                    <FaWhatsapp></FaWhatsapp>
+                </span>
 
             </a>         
             </div>
@@ -272,7 +284,9 @@ const SingleArticle2=({name,image,price,pricePromo,longName,id})=>{
         <div className="_button">
             <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${name}.%20Merci`}>
             Acheter maintenant
-
+                <span>
+                    <FaWhatsapp></FaWhatsapp>
+                </span>
             </a>
         </div>
 

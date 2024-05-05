@@ -83,7 +83,7 @@ export const StyledCategoryScreen=styled(CategoryScreen)`
   color :  ${TEXT_COLOR.FOURTH};
   margin-top: 8px;
 
-  text-decoration:underline;
+  text-decoration:underline yellow;
   font-size:14px;
   color:${TEXT_COLOR.MAIN};
     font-weight:600;
@@ -107,5 +107,17 @@ export const StyledCategoryScreen=styled(CategoryScreen)`
   width:100%;
   height:25%;
 }
+.link-box a{
+    position : relative;
+    margin-left :1rem;
+
+  }
+  .link-box span{
+    position : absolute;
+    left :-1rem;
+    top: 0;
+    color:green;
+
+  }
 
 `

@@ -6,6 +6,8 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { COLOR,TEXT_COLOR } from "../data/Constantes";
 import { _url } from '../data/Constantes';
 import useGetApi from '../utils/functions';
+import LoadingPage from '../components/LoadingPage';
+import axios from 'axios';
 
 
 const DetailsPage = ({className}) => {
@@ -13,11 +15,42 @@ const DetailsPage = ({className}) => {
       const { pathname } = useLocation();
 
 
+      const {setIsError,isError,look} =useContext(ArticleContext)
+
+      const [article, setArticle]=useState([])
+      const [isLoading, setIsLoading]=useState([])
+
+
+
 
     const [imgCount, setImgCount]=useState(0);
     const {id}=useParams()
-    const {isError,isLoading,articles} = useGetApi(`http://localhost:3000/articles/${id}`)
-    const article= articles;
+
+    useEffect(()=>{
+        axios.get(`https://chez-ardi.onrender.com/articles/${id}`)
+        .then(response=>{
+            if (response.status>=400 && response.status<500){
+
+                setIsError(true)
+                setIsLoading(false)
+                return
+            }
+            return response.data
+
+        })
+        .then(data=>{
+            if (data){
+                setArticle(data);
+                setIsLoading(false)
+            }
+        })
+        .catch(err=>{
+                setIsError(true)
+                setIsLoading(false)
+                // console.error(err)
+        })
+    },[look])
+
 
     const {name,image,price,pricePromo,longName, slug}=article;
     
@@ -30,7 +63,7 @@ const DetailsPage = ({className}) => {
        return  <Error/>
     }
   if (isLoading){
-    return (<>isloading</>)
+    return (<LoadingPage></LoadingPage>)
   } 
   return (
     <div className={`${className} `} >

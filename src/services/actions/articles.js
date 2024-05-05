@@ -6,5 +6,5 @@ const fetchArticles=()=>(dispatch)=>{
     .then(res=>{
         return res.data
     })
-    .catch(err=>console.log(err))
+    // .catch(err=>console.log(err))
 } 

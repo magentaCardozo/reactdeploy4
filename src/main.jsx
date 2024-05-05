@@ -13,10 +13,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
 import { StyledInfoScreen } from './pages/infoScreen.style';
 import Login from './pages/Login';
-
-
-
-
+import Register from './pages/Register';
+import ArticlesPage from './pages/ArticlesPage';
+import AddArticle from './pages/AddArticle';
+import EditArticle from './pages/EditArticle';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -27,14 +27,12 @@ const router = createBrowserRouter(
             <Route path={`${RoutesList.Categorie}:categorie`} element={<StyledCategoryScreen/>}></Route>
             <Route path={`${RoutesList.Details}:id`} element={<StyledDetailsPage/>}></Route>
             <Route path={`${RoutesList.Info}:information`} element={<StyledInfoScreen/>}></Route>
-
+            <Route path={`${RoutesList.REGISTER}`} element={<AddArticle/>}></Route>
+            <Route path={`${RoutesList.ARTICLESPAGE}`} element={<ArticlesPage/>}></Route>
+            <Route path={`${RoutesList.EDITARTICLE}:id`} element={<EditArticle/>}></Route>
             <Route path="/error" element={<Error/>}></Route>
             <Route path="*" element={<Error/>}></Route>
-
-
         </Route>
-
-
     )
 );
 

@@ -124,6 +124,22 @@ export const StyledMenuIcon=styled(MenuIcon)`
             animation-fill-mode:forwards;
             animation-delay:2.1s;
         }
+        .menu-down li:nth-child(8){
+            position: absolute;
+            bottom:10%;
+            width:80%;
+            animation: liSlide .3s ;
+            animation-fill-mode:forwards;
+            animation-delay:2.1s;
+        }
+        .menu-down li:nth-child(9){
+            position: absolute;
+            bottom:5%;
+            width:80%;
+            animation: liSlide .3s ;
+            animation-fill-mode:forwards;
+            animation-delay:2.1s;
+        }
         li>*{
             text-decoration: none;
             color:${TEXT_COLOR.FIFTH} !important;
@@ -156,6 +172,7 @@ export const StyledMenuIcon=styled(MenuIcon)`
         display:block;
         transform:translateY(50%);
         ul{
+            position:relative;
             height:100%;
             list-style-type:none;
         }

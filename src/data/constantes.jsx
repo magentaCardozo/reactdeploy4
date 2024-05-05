@@ -20,7 +20,8 @@ export const TEXT_COLOR={
     FIFTH:"white"
 }
 export const _url={
-    MAIN:"http://localhost:3000/images/"
+    // MAIN:"http://localhost:3000/images/";
+    MAIN:""
 }
 
 export const ACTION={

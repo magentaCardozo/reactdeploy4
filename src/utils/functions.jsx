@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-function useGetApi(url){
+function useGetApi(url,look){
     const [articles,setArticles]=useState("")
     const [isLoading, setIsloading]=useState(true)
     const [isError, setIsError]=useState(false)
@@ -26,8 +26,9 @@ function useGetApi(url){
         .catch(err=>{
                 setIsError(true)
                 setIsloading(false)
+                // console.error(err)
         })
-    },[url])
+    },[look])
 
     return ({isError,isLoading,articles, setIsError, setIsloading, setArticles})
 }

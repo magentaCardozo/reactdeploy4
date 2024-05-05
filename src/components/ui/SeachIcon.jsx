@@ -3,21 +3,26 @@ import { FaSearch } from 'react-icons/fa';
 import { ArticleContext } from '../../App';
 import { Link } from 'react-router-dom';
 import { RoutesList } from '../../data/Routes';
+import LoadingPage from '../LoadingPage';
 
 
 
 
 const SeachIcon = ({className}) => {
-  const {articles,categories} =useContext(ArticleContext)
-
+      if(!useContext(ArticleContext)){
+      return
+  }
+  const {articles,categories,isLoading} =useContext(ArticleContext)
   const [listArticle, setListArticle]=useState([]);
   const [activated, setActivated]=useState(false)
   const [text, setText]=useState("")
+
 
   const active=()=>{
     setActivated(state=>!state)
   }
   return (
+
     <div className={className}>
       <FaSearch  onClick={()=>active()}/>
       <div className={`${activated && "activated"}`}>
@@ -29,6 +34,7 @@ const SeachIcon = ({className}) => {
           </div>
         </div>
         <div className='result'>
+      {isLoading && <LoadingPage></LoadingPage>}
           {
             articles.filter(article=>(article.name.toUpperCase().includes(text.toUpperCase()) ||article.longName.toUpperCase().includes(text.toUpperCase()))).length!=0?
             articles.filter(article=>(article.name.toUpperCase().includes(text.toUpperCase()) ||article.longName.toUpperCase().includes(text.toUpperCase()))).map(article=>{
@@ -49,7 +55,7 @@ const SeachIcon = ({className}) => {
                 </Link>
 
               )
-            }) : <div style={{color:'red', textAlign:"center", fontSize:"20px"}}>Aucun Article correstondant</div>
+            }) : !isLoading && <div style={{color:'red', textAlign:"center", fontSize:"20px"}}>Aucun Article correstondant</div>
 
           }
 

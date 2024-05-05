@@ -145,7 +145,7 @@ position : relative;
       .singleArticle2>div:nth-child(1){
 
      width:100% !important;
-    height:290px !important;
+    height:100vw !important;
     margin-bottom:1rem;
   }
 
@@ -270,17 +270,38 @@ singlearticle>*{
       text-align:center;
       margin-bottom:10px;
   }
+  ._button a{
+    position: relative;
+    margin-left: 1rem;
+  }
+  ._button span{
+    position:absolute;
+    left:-1.5rem;
+    top: 0;
+    color: green;
+  }
   ._button{
     text-align:center;
     font-weight:600;
     padding:.3rem;
-    border: solid 1px ${COLOR.FIFTH};
+    border: solid 1px ${COLOR.SECOND};
     border-radius:30px/30px;
     margin:0 .1rem;
     color: ${TEXT_COLOR.MAIN}
   }
     ._button:active{
         background-color:${COLOR.SECOND} ;
+  }
+  .link-box a{
+    position : relative;
+    margin-left :1rem;
+
+  }
+  .link-box span{
+    position : absolute;
+    left :-1rem;
+    top: 0;
+    color:green;
   }
   .singleArticle2>a{
     display: block;
@@ -503,7 +524,7 @@ singlearticle>*{
   grid-template-rows:unset;
 }
 .square-box{
-
+  border-bottom: solid .5px ${COLOR.FIFTH};
   position: relative;
   min-height:0rem;
   width:100%;
@@ -554,7 +575,7 @@ singlearticle>*{
   color :  ${TEXT_COLOR.FOURTH};
   margin-top: 8px;
 
-  text-decoration:underline;
+  text-decoration:underline yellow;
   font-size:14px;
   color:${TEXT_COLOR.MAIN};
     font-weight:600;
