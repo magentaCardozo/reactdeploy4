@@ -71,7 +71,7 @@ const MenuIcon = ({className}) => {
               </Link>
             </li>}
             {isConnected && <li onClick={removeCoockie}>
-                  Deconnection
+                  Deconnexion
             </li>}
           </ul>
         </div>

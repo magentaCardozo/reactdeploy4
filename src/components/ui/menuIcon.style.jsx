@@ -139,6 +139,7 @@ export const StyledMenuIcon=styled(MenuIcon)`
             animation: liSlide .3s ;
             animation-fill-mode:forwards;
             animation-delay:2.1s;
+            color: white;
         }
         li>*{
             text-decoration: none;
