@@ -60,6 +60,7 @@ const App=()=> {
 
       }else{
         console.log("###"+localStorage.getItem('credential').token)
+        console.log('---'+localStorage.getItem('credential'))
 
     axios.post("https://chez-ardi.onrender.com/users/admin/check", { check: localStorage.getItem('credential').token})
   .then(response => {
