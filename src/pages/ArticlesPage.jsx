@@ -148,6 +148,13 @@ const {articles, setLook, isConnected} = useContext(ArticleContext)
           </Grid>
         ))}
       </Grid>
+            <Dialog open={chargement} onClose={()=>setChargement(false)}>
+        <DialogContent>
+          <Typography variant="body1">
+            chargement ....
+          </Typography>
+        </DialogContent>
+      </Dialog>
       <Dialog open={openDeleteDialog} onClose={handleDeleteDialogClose}>
         <DialogTitle>Supprimer un article</DialogTitle>
         <DialogContent>
@@ -164,13 +171,7 @@ const {articles, setLook, isConnected} = useContext(ArticleContext)
           </Button>
         </DialogActions>
       </Dialog>
-          <Dialog open={chargement} onClose={()=>setChargement(false)}>
-        <DialogContent>
-          <Typography variant="body1">
-            chargement ....
-          </Typography>
-        </DialogContent>
-      </Dialog>
+
     </Container>
   );
 };
