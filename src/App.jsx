@@ -55,9 +55,7 @@ const App=()=> {
       console.log("+"+check)
 
     useEffect(() => {
-    axios.post("https://chez-ardi.onrender.com/users/admin/check",{check},{
-        withCredentials: true
-      })
+    axios.post("https://chez-ardi.onrender.com/users/admin/check",{check:localStorage.getItem("credential")})
         .then(response => {
 
         return response.data;
