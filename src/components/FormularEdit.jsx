@@ -11,6 +11,7 @@ import {
   TextField,
   FormControl,
   InputLabel,
+  Typography,
   Select,
   MenuItem,
   Button,
@@ -18,10 +19,7 @@ import {
   makeStyles,
   TextareaAutosize,
     Dialog,
-  DialogTitle,
   DialogContent,
-  DialogActions,
-  Typography
 
 } from '@material-ui/core';
 

@@ -17,10 +17,8 @@ import {
   makeStyles,
   TextareaAutosize,
   Dialog,
-  DialogTitle,
   DialogContent,
   Typography,
-  DialogActions,
 
 } from '@material-ui/core';
 
