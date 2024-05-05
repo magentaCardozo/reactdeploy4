@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
   formControl: {
     minWidth: 200,
     marginBottom: theme.spacing(2),
+    backgroundColor:'white'
   },
   textarea: {
     resize: 'vertical',

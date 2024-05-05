@@ -20,6 +20,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   formControl: {
     minWidth: 200,
+    backgroundColor:'white',
     marginBottom: theme.spacing(2),
   },
   textarea: {
@@ -103,7 +104,7 @@ axios.post("https://chez-ardi.onrender.com/articles/", formData,{withCredentials
         image: [],
       })
       setLook(previous=>!previous)
-      setSuccess(p=>!p);
+      setSuccess(true);
       // console.log(success)
     } else {
       setSuccess(false);
@@ -119,7 +120,7 @@ axios.post("https://chez-ardi.onrender.com/articles/", formData,{withCredentials
 
   return (
     <Container className={classes.container}>
-      <MessageBox message={"Article ajouté avec succes !"} open={success} onClose={()=>{setSuccess(p=>!p)}}></MessageBox>
+      <MessageBox message={"Article ajouté avec succes !"} open={success} onClose={()=>{setSuccess(false)}}></MessageBox>
       <MessageBox message={"Veuillez remplir tous les champs !"} open={incomplete} onClose={()=>{SetIsIncomplete(false)}}></MessageBox>
       <form onSubmit={handleSubmit}>
         <Grid container spacing={2}>
