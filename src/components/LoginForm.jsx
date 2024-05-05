@@ -72,8 +72,9 @@ const LoginForm = () => {
               return
             }            
             localStorage.setItem("credential",{...data})
+            const t=localStorage.getItem("credential")
             console.log(data)
-            console.log("*"+localStorage.getItem("credential"))
+            console.log("*"+t)
             setLookCon(previous=>!previous)
         })
         .catch(err=>{
