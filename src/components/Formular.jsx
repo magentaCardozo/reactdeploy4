@@ -19,8 +19,8 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  DialogActions,
   Typography,
+  DialogActions,
 
 } from '@material-ui/core';
 
