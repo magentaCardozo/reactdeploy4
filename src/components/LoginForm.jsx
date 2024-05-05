@@ -71,7 +71,8 @@ const LoginForm = () => {
             if (!data){
               return
             }            
-            localStorage.setItem("credential",{...data})
+            const stringData=JSON.stringify(data);
+            localStorage.setItem("credential",{...stringData})
             const t=localStorage.getItem("credential")
             console.log(data.token)
             console.log("*"+t)
