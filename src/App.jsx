@@ -51,11 +51,11 @@ const App=()=> {
 
     
 
-      const check=  localStorage.getItem("credential");
-      console.log("+"+check)
 
     useEffect(() => {
-    axios.post("https://chez-ardi.onrender.com/users/admin/check", { check: localStorage.getItem("credential") })
+      if(localStorage.getItem('credential')){
+
+    axios.post("https://chez-ardi.onrender.com/users/admin/check", { check: localStorage.getItem('credential').token})
   .then(response => {
     const data = response.data;
     if (data && data.status === "allowed") {
@@ -76,6 +76,11 @@ const App=()=> {
   })
   .finally(() => {
   });
+}else{
+      setIsConnected(false);
+
+}
+
     }, [lookCon]);
 
   
