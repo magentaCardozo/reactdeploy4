@@ -55,6 +55,7 @@ const {articles, setLook, isConnected} = useContext(ArticleContext)
   const [searchTerm, setSearchTerm] = useState('');
   const [openDeleteDialog, setOpenDeleteDialog] = useState(false);
   const [deleteLoading,setDeleteLoading]=useState(false)
+  const [chargement, setChargement]=useState(false)
   const [id, setId]=useState(null)
 
   const handleEditClick=()=>{
@@ -75,12 +76,14 @@ const {articles, setLook, isConnected} = useContext(ArticleContext)
   const handleDeleteDialogAction = () => {
     setDeleteLoading(true)
     setOpenDeleteDialog(false);
+    setChargement(true)
     setLook(p=>!p)
     axios.delete(`https://chez-ardi.onrender.com/articles/${identifiant.current}`,{withCredentials:true})
     .then(response=>{
         if (response.status===200){
             // console.log("success")
             setDeleteLoading(false)
+            setChargement(false)
         }
     })
     .catch(err=>{
@@ -160,6 +163,13 @@ const {articles, setLook, isConnected} = useContext(ArticleContext)
             Supprimer
           </Button>
         </DialogActions>
+      </Dialog>
+          <Dialog open={chargement} onClose={()=>setChargement(false)}>
+        <DialogContent>
+          <Typography variant="body1">
+            chargement ....
+          </Typography>
+        </DialogContent>
       </Dialog>
     </Container>
   );
