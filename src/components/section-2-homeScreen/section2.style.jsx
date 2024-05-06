@@ -287,7 +287,7 @@ position : relative;
     text-align:center;
     font-weight:600;
     padding:.3rem;
-    width:310px !important;
+    width:300px !important;
     border: solid 1px ${COLOR.SEVENTH};
     border-radius:30px/30px;
     margin:0 .1rem;
