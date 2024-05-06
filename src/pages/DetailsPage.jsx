@@ -104,15 +104,15 @@ const DetailsPage = ({className}) => {
         <span className='maincolor child'>{name} </span>
         <span className='maincolor child'> {longName} </span>
         <span className='maincolor slug'>
-            <ul>
 
-             {_slug.map(singleSlug=>{
-                return (
-                    <li>
-                        {singleSlug}
-                    </li>
-                )
-             })}
+            <ul>
+             {_slug.map(singleSlug => {
+                 return (
+                     <li>
+                         {singleSlug}
+                </li>
+                            );
+            })}
             </ul>
         </span>
         </div>

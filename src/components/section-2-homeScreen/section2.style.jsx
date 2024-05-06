@@ -163,7 +163,8 @@ position : relative;
 
 .singlearticle>*{
   padding-left:10px;
-  width:300px !important;
+  max-width:300px !important;
+  border: solid red;
 }
 
 
