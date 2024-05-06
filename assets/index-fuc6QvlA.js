@@ -1665,13 +1665,9 @@ position : relative;
       position:relative;
       box-shadow: 7px 0 5px -5px grey, -7px 0 5px -5px grey;
     height:100%;
-    width: 90%;
-    flex-shrink:0;
+    width: 90% !important;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    
     border-radius:5px;
     padding:5px;
   }
