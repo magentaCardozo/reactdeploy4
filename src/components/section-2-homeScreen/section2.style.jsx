@@ -152,8 +152,8 @@ position : relative;
     .singleArticle{
       position:relative;
       box-shadow: 7px 0 5px -5px grey, -7px 0 5px -5px grey;
-     width:310px !important;
     height:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-radius:5px;
@@ -287,8 +287,7 @@ position : relative;
     text-align:center;
     font-weight:600;
     padding:.3rem;
-    width:100%;
-    max-width:100%;
+    width:310px !important;
     border: solid 1px ${COLOR.SEVENTH};
     border-radius:30px/30px;
     margin:0 .1rem;
@@ -580,7 +579,7 @@ position : relative;
   color :  ${TEXT_COLOR.FOURTH};
   margin-top: 8px;
 
-  text-decoration:underline yellow;
+  text-decoration:underline black;
   font-size:14px;
   color:${TEXT_COLOR.MAIN};
     font-weight:600;
