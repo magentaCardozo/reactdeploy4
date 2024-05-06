@@ -1670,6 +1670,7 @@ position : relative;
     flex-shrink:0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-radius:5px;
     padding:5px;
   }
