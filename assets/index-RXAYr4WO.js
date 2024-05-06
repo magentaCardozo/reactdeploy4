@@ -2560,7 +2560,7 @@ height :100vh;
 
   }
 
-`,$4=({className:e})=>{const{pathname:t}=un(),{setIsError:n,isError:r,look:i}=h.useContext(st),[o,a]=h.useState([]),[s,l]=h.useState([]),[u,c]=h.useState(0),{id:d}=Zl();h.useEffect(()=>{Ve.get(`https://chez-ardi.onrender.com/articles/${d}`).then(v=>{if(v.status>=400&&v.status<500){n(!0),l(!1);return}return v.data}).then(v=>{v&&(a(v),l(!1))}).catch(v=>{n(!0),l(!1)})},[i]);const{name:p,image:x,price:y,pricePromo:w,longName:E,slug:g}=o;return h.useEffect(()=>{window.scrollTo({top:0,behavior:"instant"}),c(0)},[t]),r?f.jsx(of,{}):s?f.jsx(au,{}):f.jsxs("div",{className:`${e} `,children:[f.jsx("div",{children:o.image.map((v,m,C)=>f.jsx("div",{className:" imageBox",onClick:()=>c(m),children:f.jsx("img",{src:fo.MAIN+v,alt:"",width:"100%",height:"100%"})},m))}),f.jsxs("div",{children:[f.jsx("div",{className:"_button",children:f.jsxs("a",{target:"_blank",href:`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${p}.%20Merci`,children:["Acheter maintenant",f.jsx("span",{className:"span1",children:f.jsxs("span",{children:["Discuter avec nous sur whatsapp",f.jsx("span",{children:f.jsx(Qa,{})})]})})]})}),f.jsxs("span",{className:"price",children:[y," ",f.jsx("span",{className:"dollarSign",children:"$"})," ",!w||f.jsxs("span",{className:"promo-1",children:[w," ",f.jsx("span",{className:"dollarSign2",children:"$"})]})," "]}),f.jsxs("span",{className:"maincolor",children:[p," "]}),f.jsxs("span",{className:"maincolor",children:[" ",E," "]}),f.jsxs("span",{className:"maincolor slug",children:[" ",g," "]})]})]})},L4=_e($4)`
+`,$4=({className:e})=>{const{pathname:t}=un(),{setIsError:n,isError:r,look:i}=h.useContext(st),[o,a]=h.useState([]),[s,l]=h.useState(!0),[u,c]=h.useState([]),[d,p]=h.useState(0),{id:x}=Zl();h.useEffect(()=>{Ve.get(`https://chez-ardi.onrender.com/articles/${x}`).then(C=>{if(C.status>=400&&C.status<500){n(!0),l(!1);return}return C.data}).then(C=>{C&&(a(C),l(!1),c(C.slug.split(";")))}).catch(C=>{n(!0),l(!1)})},[i]);const{name:y,image:w,price:E,pricePromo:g,longName:v,slug:m}=o;return h.useEffect(()=>{window.scrollTo({top:0,behavior:"instant"}),p(0)},[t]),r?f.jsx(of,{}):s?f.jsx(au,{}):f.jsxs("div",{className:`${e} `,children:[f.jsx("div",{children:o.image.map((C,S,b)=>f.jsx("div",{className:" imageBox",onClick:()=>p(S),children:f.jsx("img",{src:fo.MAIN+C,alt:"",width:"100%",height:"100%"})},S))}),f.jsxs("div",{children:[f.jsx("div",{className:"_button",children:f.jsxs("a",{target:"_blank",href:`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${y}.%20Merci`,children:["Acheter maintenant",f.jsx("span",{className:"span1",children:f.jsxs("span",{children:["Discuter avec nous sur whatsapp",f.jsx("span",{children:f.jsx(Qa,{})})]})})]})}),f.jsxs("span",{className:"price",children:[E," ",f.jsx("span",{className:"dollarSign",children:"$"})," ",!g||f.jsxs("span",{className:"promo-1",children:[g," ",f.jsx("span",{className:"dollarSign2",children:"$"})]})," "]}),f.jsxs("span",{className:"maincolor",children:[y," "]}),f.jsxs("span",{className:"maincolor",children:[" ",v," "]}),f.jsx("span",{className:"maincolor slug",children:f.jsx("ul",{children:u.map(C=>f.jsx("li",{children:"singleSlug"}))})})]})]})},L4=_e($4)`
 background-color :${Se.MAIN};
 padding-bottom: 3rem;
 padding-top : 3.4rem;
@@ -2611,16 +2611,16 @@ padding-top : 3.4rem;
 
 
     /* -------------------------- */
-    &>div:nth-child(2)>span:nth-child(1),div:nth-child(2)>span:nth-child(2),div:nth-child(2)>span:nth-child(3){
+    &>div:nth-child(2)>span:nth-child(3),&>div:nth-child(2)>span:nth-child(2),&>div:nth-child(2)>span:nth-child(1){
         display : block;
         width:100%;
         text-align: center;
         padding:0 1rem;
     }
     .slug{
-      border: solid black;
       display: block !important;
       text-align: left !important;
+      padding: 0 1rem;
 
     }
 
