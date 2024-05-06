@@ -92,10 +92,13 @@ const navigate=useNavigate()
 const handleFileUpload = (files) => {
   const base64Files = files.map((file) => file.base64);
   
-  setFormData({
-    ...formData,
-    image: base64Files,
-  });
+  if(base64Files.length!=0){
+    setFormData({
+      ...formData,
+      image: base64Files,
+    });
+
+  }
 };
 
   const handleInputChange = (event) => {
