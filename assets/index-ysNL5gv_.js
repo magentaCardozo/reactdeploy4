@@ -1664,20 +1664,19 @@ position : relative;
     .singleArticle{
       position:relative;
       box-shadow: 7px 0 5px -5px grey, -7px 0 5px -5px grey;
-    width:100%;
+     width:300px !important;
     height:100%;
     max-width:100%;
     display: flex;
     flex-direction: column;
     border-radius:5px;
     padding:5px;
-    border: solid yellow;
   }
 
 .singlearticle>*{
   padding-left:10px;
-  max-width:300px !important;
-  border: solid red;
+  /* max-width:300px !important;
+  border: solid red; */
 }
 
 
