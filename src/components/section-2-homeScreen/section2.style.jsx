@@ -152,7 +152,7 @@ position : relative;
     .singleArticle{
       position:relative;
       box-shadow: 7px 0 5px -5px grey, -7px 0 5px -5px grey;
-     width:340px !important;
+     width:325px !important;
     height:100%;
     display: flex;
     flex-direction: column;
