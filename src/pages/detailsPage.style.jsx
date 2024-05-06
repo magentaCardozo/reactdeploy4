@@ -60,7 +60,8 @@ padding-top : 3.4rem;
         padding:0 1rem;
     }
     .slug{
-      text-align: left;
+      display: block !important;
+      text-align: left !important;
 
     }
 
