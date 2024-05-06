@@ -161,7 +161,7 @@ position : relative;
     padding:5px;
   }
 
-singlearticle>*{
+.singlearticle>*{
   padding-left:10px;
   width:300px !important;
 }
