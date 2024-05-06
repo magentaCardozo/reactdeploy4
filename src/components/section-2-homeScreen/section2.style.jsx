@@ -152,7 +152,8 @@ position : relative;
     .singleArticle{
       position:relative;
       box-shadow: 7px 0 5px -5px grey, -7px 0 5px -5px grey;
-     width:300px !important;
+     width:100% !important;
+     max-width:310px !important;
     height:100%;
     max-width:100%;
     display: flex;
