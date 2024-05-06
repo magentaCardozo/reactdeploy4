@@ -154,6 +154,7 @@ position : relative;
       box-shadow: 7px 0 5px -5px grey, -7px 0 5px -5px grey;
     width:100%;
     height:100%;
+    max-width:100%;
     display: flex;
     flex-direction: column;
     border-radius:5px;
@@ -284,13 +285,15 @@ singlearticle>*{
     text-align:center;
     font-weight:600;
     padding:.3rem;
-    border: solid 1px ${COLOR.SECOND};
+    width:100%;
+    max-width:100%;
+    border: solid 1px ${COLOR.SEVENTH};
     border-radius:30px/30px;
     margin:0 .1rem;
     color: ${TEXT_COLOR.MAIN}
   }
     ._button:active{
-        background-color:${COLOR.SECOND} ;
+        background-color:${COLOR.SEVENTH} ;
   }
   .link-box a{
     position : relative;

@@ -41,7 +41,7 @@ const cosmetiques=articles.filter(article=>{
         </div>
         {isLoading && <LoadingPage></LoadingPage>}
         <div className='section2-1'>
-            {cosmetiques.length !==0 && <ListArticles  id="accessoitre-link" articles={cosmetiques} categories={categories} category={"cosmetiques"} >salut</ListArticles>}
+            {cosmetiques.length !==0 && <ListArticles  id="cosmetique-link" articles={cosmetiques} categories={categories} category={"cosmetiques"} >salut</ListArticles>}
             {accessoires.length !==0 && <ListArticles  id="accessoitre-link" articles={accessoires} categories={categories} category={"accessoires"} />}
             {montres.length !==0 && <ListArticles id="montre-link" articles={montres} categories={categories} category={"montres"} />}
             {telephones.length !==0 && <ListArticles id="potable-link" articles={telephones} categories={categories} category={"telephones"} />}
@@ -139,9 +139,7 @@ const ListArticles=({id,articles,category,categories,children})=>{
             articles.map((article, index)=>{
                 return(
                     <SingleArticle key={index} {...article}/>
-
                 )
-
             })
         }
         </div>

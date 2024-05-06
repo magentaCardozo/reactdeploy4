@@ -83,7 +83,7 @@ export const StyledCategoryScreen=styled(CategoryScreen)`
   color :  ${TEXT_COLOR.FOURTH};
   margin-top: 8px;
 
-  text-decoration:underline yellow;
+  text-decoration:underline black;
   font-size:14px;
   color:${TEXT_COLOR.MAIN};
     font-weight:600;
