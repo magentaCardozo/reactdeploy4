@@ -153,7 +153,7 @@ position : relative;
       position:relative;
       box-shadow: 7px 0 5px -5px grey, -7px 0 5px -5px grey;
     height:100%;
-    width: 90% !important;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-radius:5px;
