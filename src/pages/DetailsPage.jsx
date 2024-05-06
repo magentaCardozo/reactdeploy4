@@ -18,7 +18,8 @@ const DetailsPage = ({className}) => {
       const {setIsError,isError,look} =useContext(ArticleContext)
 
       const [article, setArticle]=useState([])
-      const [isLoading, setIsLoading]=useState([])
+      const [isLoading, setIsLoading]=useState(true)
+      const [_slug, _setSlug]=useState([])
 
 
 
@@ -42,6 +43,7 @@ const DetailsPage = ({className}) => {
             if (data){
                 setArticle(data);
                 setIsLoading(false)
+                _setSlug(data.slug.split(";"))
             }
         })
         .catch(err=>{
@@ -101,7 +103,18 @@ const DetailsPage = ({className}) => {
         <span className='price'>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign2'>$</span></span>} </span>
         <span className='maincolor'>{name} </span>
         <span className='maincolor'> {longName} </span>
-        <span className='maincolor slug'> {slug} </span>
+        <span className='maincolor slug'>
+            <ul>
+
+             {_slug.map(singleSlug=>{
+                return (
+                    <li>
+                        singleSlug
+                    </li>
+                )
+             })}
+            </ul>
+        </span>
         </div>
 
     </div>
