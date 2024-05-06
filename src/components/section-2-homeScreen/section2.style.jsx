@@ -163,7 +163,9 @@ position : relative;
 
 singlearticle>*{
   padding-left:10px;
+  width:300px !important;
 }
+
 
     .singleArticle>span:nth-child(2){
       font-size:40px;
