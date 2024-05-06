@@ -1665,12 +1665,12 @@ position : relative;
       position:relative;
       box-shadow: 7px 0 5px -5px grey, -7px 0 5px -5px grey;
     height:100%;
-    width: 100%;
+    width: 90%;
     flex-grow:1;
     flex-shrink:0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     border-radius:5px;
     padding:5px;
   }
