@@ -159,6 +159,7 @@ position : relative;
     flex-direction: column;
     border-radius:5px;
     padding:5px;
+    border: solid yellow;
   }
 
 .singlearticle>*{

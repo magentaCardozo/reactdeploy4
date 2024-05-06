@@ -60,6 +60,7 @@ padding-top : 3.4rem;
         padding:0 1rem;
     }
     .slug{
+      margin-top: 16px;
       display: block !important;
       text-align: left !important;
       padding: 0 1rem;
