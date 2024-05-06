@@ -1664,8 +1664,8 @@ position : relative;
     .singleArticle{
       position:relative;
       box-shadow: 7px 0 5px -5px grey, -7px 0 5px -5px grey;
-     width:310px !important;
     height:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-radius:5px;
@@ -1799,8 +1799,7 @@ position : relative;
     text-align:center;
     font-weight:600;
     padding:.3rem;
-    width:100%;
-    max-width:100%;
+    width:310px !important;
     border: solid 1px ${Se.SEVENTH};
     border-radius:30px/30px;
     margin:0 .1rem;
@@ -2092,7 +2091,7 @@ position : relative;
   color :  ${ce.FOURTH};
   margin-top: 8px;
 
-  text-decoration:underline yellow;
+  text-decoration:underline black;
   font-size:14px;
   color:${ce.MAIN};
     font-weight:600;
@@ -2666,7 +2665,7 @@ padding-top : 3.4rem;
     ._button{
     text-align:center;
     padding:0 .3rem;
-  border: solid 1px  ${Se.SECOND} ;
+  border: solid 1px  ${Se.SEVENTH} ;
 
     border-radius:30px/30px;
     margin:1rem 1rem;
