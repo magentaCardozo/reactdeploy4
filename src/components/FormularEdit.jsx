@@ -86,7 +86,7 @@ const navigate=useNavigate()
     slug: article?.slug,
     price: article?.price,
     pricePromo: article?.pricePromo,
-    image: article?.image,
+    image: [],
   });
 
 const handleFileUpload = (files) => {
@@ -124,7 +124,7 @@ axios.patch(`https://chez-ardi.onrender.com/articles/${id}`, formData,{withCrede
     slug: article?.slug,
     price: article?.price,
     pricePromo: article?.pricePromo,
-    image: article?.image,
+    image: article?.pricePromo,
   })
     setLook(previous=>!previous)
     setSuccess(true)
