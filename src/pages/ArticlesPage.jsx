@@ -118,7 +118,7 @@ const {articles, setLook, isConnected} = useContext(ArticleContext)
         {filteredArticles.map((article) => (
           <Grid item xs={12} sm={6} md={4} key={article.id}>
             <Paper elevation={3} className={classes.paper}>
-              <img src={article.image} alt={article.name} height="300px" width="300px"/>
+              <img src={article.image} alt={article.name} height="300px" width="200px"/>
               <Typography variant="h6" gutterBottom>
                 {article.name}
               </Typography>
