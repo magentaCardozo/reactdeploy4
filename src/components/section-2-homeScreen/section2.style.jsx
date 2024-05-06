@@ -294,6 +294,16 @@ position : relative;
     margin:0 .1rem;
     color: ${TEXT_COLOR.MAIN}
   }
+  ._button1{
+    text-align:center;
+    font-weight:600;
+    padding:.3rem;
+    width:300px !important;
+    border: solid 1px ${COLOR.SEVENTH};
+    border-radius:30px/30px;
+    margin:0 .1rem;
+    color: ${TEXT_COLOR.MAIN}
+  }
     ._button:active{
         background-color:${COLOR.SEVENTH} ;
   }

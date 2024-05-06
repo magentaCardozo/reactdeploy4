@@ -233,7 +233,7 @@ const SingleArticle=({name,image,price,pricePromo,longName,id})=>{
         <span>{price} <span className='dollarSign'>$</span> {!pricePromo || <span className='promo-1'>{pricePromo} <span className='dollarSign'>$</span></span>} </span>
         <span>{name} </span>
         <span>{longName}</span>
-        <div className='_button'>
+        <div className='_button1'>
             <a target='_blank' href={`https://wa.me/243840199718?text=Bonjour,%20je%20suis%20interessé%20par%20le%20produit%20${name}.%20Merci`}>
                 Acheter maintenant
                  <span>
