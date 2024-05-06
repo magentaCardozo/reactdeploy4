@@ -53,13 +53,14 @@ padding-top : 3.4rem;
 
 
     /* -------------------------- */
-    &>div:nth-child(2)>span{
+    &>div:nth-child(2)>span:nth-child(1),div:nth-child(2)>span:nth-child(2),div:nth-child(2)>span:nth-child(3){
         display : block;
         width:100%;
         text-align: center;
         padding:0 1rem;
     }
     .slug{
+      border: solid black;
       display: block !important;
       text-align: left !important;
 
