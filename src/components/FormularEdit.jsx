@@ -86,7 +86,7 @@ const navigate=useNavigate()
     slug: article?.slug,
     price: article?.price,
     pricePromo: article?.pricePromo,
-    image: [],
+    image: [0],
   });
 
 const handleFileUpload = (files) => {
